@@ -12,8 +12,9 @@ import Compare from './components/Compare';
 import CreatePlace from './components/CreatePlace';
 import EditPlace from './components/EditPlace';
 import Contact from './components/Contact';
+import AboutUs from './components/AboutUs';
 
-// contacto, acerca de nosotros, reviews
+// acerca de nosotros, reviews
 
 class App extends Component {
     render() {
@@ -32,6 +33,7 @@ class App extends Component {
                         <Route path="/compare" component={Compare}/>
                         <Route path="/near" component={NearPlaces}/>
                         <Route path="/contact" component={Contact}/>
+                        <Route path="/about" component={AboutUs}/>
                         <Redirect from='*' to='/' />
                     </Switch>
                 </div>
