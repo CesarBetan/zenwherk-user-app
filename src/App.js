@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import './App.css';
 import Landing from './components/Landing';
-import Test from './components/Test';
 import Place from './components/Place';
 import SearchResults from './components/SearchResults'
 import Login from './components/Login';
@@ -25,7 +24,6 @@ class App extends Component {
                         <Route exact path="/" component={Landing}/>
                         <Route path="/login" component={Login}/>
                         <Route path="/register" component={Register}/>
-                        <Route path="/test" component={Test}/>
                         <Route path="/place/:id/create" component={CreatePlace}/>
                         <Route path="/place/:id/edit" component={EditPlace}/>
                         <Route path="/place/:id/reviews" component={Reviews}/>
