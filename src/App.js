@@ -4,6 +4,7 @@ import './App.css';
 import Landing from './components/Landing';
 import Test from './components/Test';
 import Place from './components/Place';
+import SearchResults from './components/SearchResults'
 
 class App extends Component {
     render() {
@@ -14,6 +15,7 @@ class App extends Component {
                         <Route exact path="/" component={Landing}/>
                         <Route path="/test" component={Test}/>
                         <Route path="/place/:id" component={Place}/>
+                        <Route path="/search" component={SearchResults}/>
                         <Redirect from='*' to='/' />
                     </Switch>
                 </div>
