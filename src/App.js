@@ -13,8 +13,8 @@ import CreatePlace from './components/CreatePlace';
 import EditPlace from './components/EditPlace';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
+import Reviews from './components/Reviews';
 
-// acerca de nosotros, reviews
 
 class App extends Component {
     render() {
@@ -28,6 +28,7 @@ class App extends Component {
                         <Route path="/test" component={Test}/>
                         <Route path="/place/:id/create" component={CreatePlace}/>
                         <Route path="/place/:id/edit" component={EditPlace}/>
+                        <Route path="/place/:id/reviews" component={Reviews}/>
                         <Route path="/place/:id" component={Place}/>
                         <Route path="/search" component={SearchResults}/>
                         <Route path="/compare" component={Compare}/>
