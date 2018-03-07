@@ -9,6 +9,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import NearPlaces from './components/NearPlaces';
 import Compare from './components/Compare';
+import CreatePlace from './components/CreatePlace';
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
                         <Route path="/login" component={Login}/>
                         <Route path="/register" component={Register}/>
                         <Route path="/test" component={Test}/>
+                        <Route path="/place/:id/create" component={CreatePlace}/>
                         <Route path="/place/:id" component={Place}/>
                         <Route path="/search" component={SearchResults}/>
                         <Route path="/compare" component={Compare}/>
