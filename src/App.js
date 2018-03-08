@@ -4,7 +4,7 @@ import './App.css';
 import Landing from './components/Landing';
 import Place from './components/Place';
 import SearchResults from './components/SearchResults';
-import Login from './components/Login';
+//import Login from './components/Login';
 import Register from './components/Register';
 import NearPlaces from './components/NearPlaces';
 import Compare from './components/Compare';
@@ -23,7 +23,6 @@ class App extends Component {
                 <div className="App">
                     <Switch>
                         <Route exact path="/" component={Landing}/>
-                        <Route path="/login" component={Login}/>
                         <Route path="/register" component={Register}/>
                         <Route path="/place/create" component={CreatePlace}/>
                         <Route path="/place/:id/edit" component={EditPlace}/>
