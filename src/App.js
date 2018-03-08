@@ -6,7 +6,7 @@ import Place from './components/Place';
 import SearchResults from './components/SearchResults';
 import RegistrationForm from './components/RegistrationForm';
 import NearPlaces from './components/NearPlaces';
-import Compare from './components/Compare';
+import CompareView from './components/CompareView';
 import PlaceForm from './components/PlaceForm';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
@@ -27,7 +27,7 @@ class App extends Component {
                         <Route path="/place/:id/reviews" component={Reviews}/>
                         <Route path="/place/:id" component={Place}/>
                         <Route path="/search" component={SearchResults}/>
-                        <Route path="/compare/:id_1/:id_2" component={Compare}/>
+                        <Route path="/compare/:id_1/:id_2" component={CompareView}/>
                         <Route path="/near" component={NearPlaces}/>
                         <Route path="/contact" component={Contact}/>
                         <Route path="/about" component={AboutUs}/>
