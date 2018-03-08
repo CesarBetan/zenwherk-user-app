@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import './App.css';
 import Landing from './components/Landing';
 import Place from './components/Place';
-import SearchResults from './components/SearchResults'
+import SearchResults from './components/SearchResults';
 import Login from './components/Login';
 import Register from './components/Register';
 import NearPlaces from './components/NearPlaces';
