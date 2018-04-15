@@ -1,0 +1,19 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background-color: #00DE91;
+  min-height: calc(3.125rem - (0.625rem * 2));
+  min-width: calc(10rem - (2.1875rem * 2));
+  width: auto;
+  color: white;
+  max-width: calc(100% - 2.5rem);
+  padding: 0.625rem 2.1875rem;
+  border-radius: 0.3125rem;
+  margin: 1.25rem 0;
+}
+
+.button-text {
+  margin-top: 0.35rem;
+}

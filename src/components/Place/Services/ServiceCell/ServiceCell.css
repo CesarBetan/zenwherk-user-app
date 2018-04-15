@@ -1,0 +1,23 @@
+.service-cell-container {
+  min-width: calc(100% - (1.25rem * 3));
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.service-cell-icon {
+  min-width: 1.25rem;
+  max-width: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+}
+
+.service-cell-text {
+  font-size: 0.8125rem;
+  text-align: left;
+  margin-left: 0.625rem;
+}

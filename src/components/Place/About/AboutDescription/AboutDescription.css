@@ -1,0 +1,14 @@
+.about-description-place-container {
+  display: block;
+  width: calc(100% - (1.25rem * 2));
+  height: auto;
+  color: black;
+  padding: 1.25rem;
+  padding-top: 0.3125rem;
+}
+
+.about-description-place-text {
+  font-size: 0.9375rem;
+  text-align: justify;
+  margin: 0;
+}

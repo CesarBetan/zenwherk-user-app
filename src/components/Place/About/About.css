@@ -1,0 +1,13 @@
+.about-place-container {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-place-full-width-button {
+  margin-bottom: 0.625rem;
+}
+
+.about-place-full-width-button:last-of-type {
+  margin-bottom: 1.25rem;
+}

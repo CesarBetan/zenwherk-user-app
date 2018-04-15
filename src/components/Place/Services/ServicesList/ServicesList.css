@@ -1,0 +1,9 @@
+.services-list-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1.25rem;
+   width: calc(100% - (1.25rem * 2));
+   height: auto;
+   padding: 1.25rem;
+   padding-bottom: 0;
+}

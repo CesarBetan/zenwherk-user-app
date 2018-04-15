@@ -1,0 +1,81 @@
+import React, { Component } from 'react';
+import './DraggableMap.css';
+
+class DraggableMap extends Component {
+
+    placeMarker(event) {
+      if (this.state.marker == null) {
+        const google = window.google;
+        const location = event.latLng;
+        var marker = new google.maps.Marker({
+          position: location,
+          map: this.map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+        });
+        marker.addListener('click', this.toggleBounce);
+        this.setState({marker : marker});
+        this.map.setCenter(location);
+      }
+      console.log(event.latLng.toString());
+    }
+
+    createInitialMarker(event) {
+      if (this.state.marker == null) {
+        const google = window.google;
+        const location = event.latLng;
+        var marker = new google.maps.Marker({
+          position: location,
+          map: this.map,
+          draggable:false, // Change to true in create view.
+          animation: google.maps.Animation.DROP,
+        });
+        this.setState({marker : marker});
+        this.map.setCenter(location);
+      }
+    }
+
+    toggleBounce() {
+      const google = window.google;
+      const marker = this.state.marker
+      if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+        window.setTimeout(this.toggleBounce, 500);
+      }
+    }
+
+    constructor(props) {
+      super(props)
+      this.state = {
+        marker: null,
+      }
+      this.createInitialMarker = this.createInitialMarker.bind(this)
+      this.placeMarker = this.placeMarker.bind(this)
+      this.toggleBounce = this.toggleBounce.bind(this)
+    }
+
+    componentDidMount() {
+      const EIFFEL_TOWER_POSITION = {
+        lat: 48.858608,
+        lng: 2.294471
+      };
+      const google = window.google;
+      this.map = new google.maps.Map(this.refs.map, {
+        mapTypeControl: false,
+        fullscreenControl: false,
+        streetViewControl: false,
+        center: EIFFEL_TOWER_POSITION,
+        zoom: 16
+      });
+      google.maps.event.addListener(this.map, 'click', this.placeMarker);
+    }
+    render() {
+        return (
+          <div ref="map" className="map"></div>
+        );
+    }
+}
+
+export default DraggableMap;

@@ -1,0 +1,38 @@
+export const reviews = [
+  {
+    id: '1',
+    userName: 'John A.',
+    numberOfUserReviews: 21,
+    rating: 4,
+    content: "Great coffee and really quiet place but a little expensive.",
+    userImage: null,
+    date: 1523731144,
+  },
+  {
+    id: '2',
+    userName: 'Eduardo V.',
+    numberOfUserReviews: 19,
+    rating: 5,
+    content: "Best coffee place in LA. Period.",
+    userImage: null,
+    date: 1523145600,
+  },
+  {
+    id: '3',
+    userName: 'Month V.',
+    numberOfUserReviews: 19,
+    rating: 5,
+    content: "Best coffee place in LA. Period.",
+    userImage: null,
+    date: 1499074860,
+  },
+  {
+    id: '4',
+    userName: 'Year V.',
+    numberOfUserReviews: 19,
+    rating: 5,
+    content: "Best coffee place in LA. Period.",
+    userImage: null,
+    date: 1492041600,
+  },
+]

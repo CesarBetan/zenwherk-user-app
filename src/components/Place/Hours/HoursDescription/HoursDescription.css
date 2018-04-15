@@ -1,0 +1,30 @@
+.hours-description-container {
+  height: auto;
+  width: calc(100% - (1.25rem * 2));
+  padding: 1.25rem 1.25rem;
+}
+
+.hours-description-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.hours-description-day {
+  font-size: 1.0625rem;
+  text-align: left;
+  width: 40%;
+}
+
+.hours-description-times {
+  font-size: 1.0625rem;
+  text-align: right;
+  width: 60%;
+  padding-bottom: 0.625rem;
+}
+
+.hours-description-times:last-of-type {
+  padding-bottom: 0;
+}
