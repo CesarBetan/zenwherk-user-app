@@ -10,3 +10,9 @@
   position: absolute;
   z-index: 5;
 }
+
+.hamburguer{
+  position: fixed;
+  left: 20px;
+  top: 15px;
+}

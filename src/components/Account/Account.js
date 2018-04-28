@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './Account.css';
 import NavBar from '../NavBar/index'
+import {apiUrl} from "../../Constants";
 
 class Account extends Component {
 
     constructor(props){
         super(props);
         let user = JSON.parse(localStorage.getItem('user'));
-        if(user == null){
-            user = [{uuid:"494380fb-fcdf-4987-b244-2a0a60b78170"}];
-            localStorage.setItem('user', JSON.stringify({user}));
+        if(user != null){
+            this.state = {uuid: user.uuid, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "", userEmail: "", userNewPassword: ""};
+        }else{
+            this.state = {uuid: null, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "", userEmail: "", userNewPassword: ""};
         }
-        user = JSON.parse(localStorage.getItem('user'));
-        user = user.user[0].uuid;
-        this.state = {uuid: user, userData:[], apiKey:"http://192.168.0.16:8080/v1/user/"};
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeLastName = this.handleChangeLastName.bind(this);
         this.handleChangeNewPassword = this.handleChangeNewPassword.bind(this);
@@ -22,16 +21,24 @@ class Account extends Component {
     }
 
     getUser(){
-        axios.get(this.state.apiKey + this.state.uuid).then(res => {
-            this.setState({userData:res.data});
-            this.setState({userName:res.data.name});
-            this.setState({userLastName:res.data.lastName});
-            this.setState({userNewPassword: ''});
-        });
+        if(localStorage.getItem("accesstoken")){
+            const config = {
+                headers:{'Authorization':'Bearer ' + localStorage.getItem("accesstoken")}
+            };
+            axios.get(this.state.endpoint + this.state.uuid, config).then(res => {
+                this.setState({userData:res.data});
+                this.setState({userName:res.data.name});
+                this.setState({userLastName:res.data.lastName});
+                this.setState({userEmail:res.data.email});
+                this.setState({userNewPassword: ''});
+            });
+        }
     }
 
     componentWillMount(){
         this.getUser();
+        if(this.state.uuid === null){
+        }
     }
 
     handleChangeName(event) {
@@ -51,7 +58,7 @@ class Account extends Component {
         }else if(this.state.userLastName.trim().length < 1) {
             alert("El apellido debe de tener al menos 1 caracter");
         }else if(this.state.userNewPassword === ''){
-            axios.put(this.state.apiKey + this.state.uuid, {
+            axios.put(this.state.endpoint + this.state.uuid, {
                 name: this.state.userName,
                 lastName: this.state.userLastName
             }).then(res => {
@@ -61,7 +68,7 @@ class Account extends Component {
         }else if(this.state.userNewPassword.trim.length > 0 && this.state.userNewPassword.trim.length < 8){
             console.log("La contraseña debe tener al menos 8 caracteres");
         }else{
-            axios.put(this.state.apiKey + this.state.uuid, {
+            axios.put(this.state.endpoint + this.state.uuid, {
                 name: this.state.userName,
                 lastName: this.state.userLastName,
                 password: this.state.userNewPassword
@@ -96,8 +103,8 @@ class Account extends Component {
                             </li>
                             <li>
                                 <label htmlFor="email">Correo Electrónico</label>
-                                <input type="email" className="PraxisNext-Bold user-input-disabled" name="email"
-                                       value={this.state.userData.email} disabled/>
+                                <input type="email" className="PraxisNext-Bold" name="email"
+                                       value={this.state.userEmail} />
                                 <span>Ingresa un correo electrónico válido</span>
                             </li>
                             <li>
