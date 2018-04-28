@@ -1,5 +1,9 @@
-.reviews-container {
+.services-container {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.services-show-all-button {
+  margin-top: 1.25rem;
 }

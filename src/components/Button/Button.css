@@ -11,9 +11,18 @@
   max-width: calc(100% - 2.5rem);
   padding: 0.625rem 2.1875rem;
   border-radius: 0.3125rem;
-  margin: 1.25rem 0;
 }
 
 .button-text {
   margin-top: 0.35rem;
+}
+
+.white-button {
+  color: #00DE91;
+  background-color: white;
+}
+
+.green-button {
+  color: white;
+  background-color: #00DE91;
 }

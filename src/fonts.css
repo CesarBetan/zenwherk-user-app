@@ -1,130 +1,238 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3556570, 2018-04-11T14:12:47-0400
- * 
+ * MyFonts Webfont Build ID 3561190, 2018-04-18T21:53:40-0400
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: PraxisNext-Light by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/light/
- * 
+ *
  * Webfont: PraxisNext-Italic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/italic/
- * 
+ *
  * Webfont: PraxisNext-MediumItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/medium-italic/
- * 
+ *
  * Webfont: PraxisNext-LightItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/light-italic/
- * 
+ *
  * Webfont: PraxisNext-SemiBoldItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/semibold-italic/
- * 
+ *
  * Webfont: PraxisNext-Medium by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/medium/
- * 
+ *
  * Webfont: PraxisNext-HeavyItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/heavy-italic/
- * 
+ *
  * Webfont: PraxisNext-Regular by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/regular/
- * 
+ *
+ * Webfont: PraxisNext-CnRegular by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-regular/
+ *
  * Webfont: PraxisNext-SemiBold by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/semibold/
- * 
+ *
  * Webfont: PraxisNext-Bold by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/bold/
- * 
+ *
  * Webfont: PraxisNext-BoldItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/bold-italic/
- * 
+ *
+ * Webfont: PraxisNext-CnLight by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-light/
+ *
  * Webfont: PraxisNext-Black by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/black/
- * 
+ *
  * Webfont: PraxisNext-BlackItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/black-italic/
- * 
+ *
  * Webfont: PraxisNext-ExtraBlackItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/extra-black-italic/
- * 
+ *
  * Webfont: PraxisNext-Heavy by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/heavy/
- * 
+ *
+ * Webfont: PraxisNext-CnMedium by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-medium/
+ *
+ * Webfont: PraxisNext-CnSemiBold by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-semibold/
+ *
+ * Webfont: PraxisNext-CnBold by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-bold/
+ *
+ * Webfont: PraxisNext-CnExtraBlack by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-extra-black/
+ *
  * Webfont: PraxisNext-ExtraBlack by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/extra-black/
- * 
+ *
+ * Webfont: PraxisNext-CnBlack by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-black/
+ *
+ * Webfont: PraxisNext-CnHeavy by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-heavy/
+ *
  * Webfont: PraxisNext-UltraItalic by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/ultra-italic/
- * 
+ *
+ * Webfont: PraxisNext-CnUltra by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-ultra/
+ *
+ * Webfont: PraxisNext-CnMediumIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-medium-italic/
+ *
+ * Webfont: PraxisNext-CnIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-italic/
+ *
+ * Webfont: PraxisNext-CnLightIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/con-light-italic/
+ *
  * Webfont: PraxisNext-Ultra by Linotype
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/ultra/
- * 
- * 
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3556570
+ *
+ * Webfont: PraxisNext-CnSemiBoldIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-semibold-italic/
+ *
+ * Webfont: PraxisNext-CnBoldIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-bold-italic/
+ *
+ * Webfont: PraxisNext-CnHeavyIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-heavy-italic/
+ *
+ * Webfont: PraxisNext-CnBlackIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-black-italic/
+ *
+ * Webfont: PraxisNext-CnUltraIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-ultra-italic/
+ *
+ * Webfont: PraxisNext-CnExtraBlackIt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-extra-black-italic/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3561190
  * Licensed pageviews: 250,000
  * Webfonts copyright: Copyright &#x00A9; 2017 Monotype Imaging Inc. All rights reserved.
- * 
+ *
  * © 2018 MyFonts Inc
 */
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3644da");
+@import url("//hello.myfonts.net/count/3656e6");
 
-  
-@font-face {font-family: 'PraxisNext-Light';src: url('webfonts/3644DA_0_0.eot');src: url('webfonts/3644DA_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_0_0.woff2') format('woff2'),url('webfonts/3644DA_0_0.woff') format('woff'),url('webfonts/3644DA_0_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Italic';src: url('webfonts/3644DA_1_0.eot');src: url('webfonts/3644DA_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_1_0.woff2') format('woff2'),url('webfonts/3644DA_1_0.woff') format('woff'),url('webfonts/3644DA_1_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-MediumItalic';src: url('webfonts/3644DA_2_0.eot');src: url('webfonts/3644DA_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_2_0.woff2') format('woff2'),url('webfonts/3644DA_2_0.woff') format('woff'),url('webfonts/3644DA_2_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-LightItalic';src: url('webfonts/3644DA_3_0.eot');src: url('webfonts/3644DA_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_3_0.woff2') format('woff2'),url('webfonts/3644DA_3_0.woff') format('woff'),url('webfonts/3644DA_3_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-SemiBoldItalic';src: url('webfonts/3644DA_4_0.eot');src: url('webfonts/3644DA_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_4_0.woff2') format('woff2'),url('webfonts/3644DA_4_0.woff') format('woff'),url('webfonts/3644DA_4_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Medium';src: url('webfonts/3644DA_5_0.eot');src: url('webfonts/3644DA_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_5_0.woff2') format('woff2'),url('webfonts/3644DA_5_0.woff') format('woff'),url('webfonts/3644DA_5_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-HeavyItalic';src: url('webfonts/3644DA_6_0.eot');src: url('webfonts/3644DA_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_6_0.woff2') format('woff2'),url('webfonts/3644DA_6_0.woff') format('woff'),url('webfonts/3644DA_6_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Regular';src: url('webfonts/3644DA_7_0.eot');src: url('webfonts/3644DA_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_7_0.woff2') format('woff2'),url('webfonts/3644DA_7_0.woff') format('woff'),url('webfonts/3644DA_7_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-SemiBold';src: url('webfonts/3644DA_8_0.eot');src: url('webfonts/3644DA_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_8_0.woff2') format('woff2'),url('webfonts/3644DA_8_0.woff') format('woff'),url('webfonts/3644DA_8_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Bold';src: url('webfonts/3644DA_9_0.eot');src: url('webfonts/3644DA_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_9_0.woff2') format('woff2'),url('webfonts/3644DA_9_0.woff') format('woff'),url('webfonts/3644DA_9_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-BoldItalic';src: url('webfonts/3644DA_A_0.eot');src: url('webfonts/3644DA_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_A_0.woff2') format('woff2'),url('webfonts/3644DA_A_0.woff') format('woff'),url('webfonts/3644DA_A_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Black';src: url('webfonts/3644DA_B_0.eot');src: url('webfonts/3644DA_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_B_0.woff2') format('woff2'),url('webfonts/3644DA_B_0.woff') format('woff'),url('webfonts/3644DA_B_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-BlackItalic';src: url('webfonts/3644DA_C_0.eot');src: url('webfonts/3644DA_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_C_0.woff2') format('woff2'),url('webfonts/3644DA_C_0.woff') format('woff'),url('webfonts/3644DA_C_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-ExtraBlackItalic';src: url('webfonts/3644DA_D_0.eot');src: url('webfonts/3644DA_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_D_0.woff2') format('woff2'),url('webfonts/3644DA_D_0.woff') format('woff'),url('webfonts/3644DA_D_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Heavy';src: url('webfonts/3644DA_E_0.eot');src: url('webfonts/3644DA_E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_E_0.woff2') format('woff2'),url('webfonts/3644DA_E_0.woff') format('woff'),url('webfonts/3644DA_E_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-ExtraBlack';src: url('webfonts/3644DA_F_0.eot');src: url('webfonts/3644DA_F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_F_0.woff2') format('woff2'),url('webfonts/3644DA_F_0.woff') format('woff'),url('webfonts/3644DA_F_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-UltraItalic';src: url('webfonts/3644DA_10_0.eot');src: url('webfonts/3644DA_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_10_0.woff2') format('woff2'),url('webfonts/3644DA_10_0.woff') format('woff'),url('webfonts/3644DA_10_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'PraxisNext-Ultra';src: url('webfonts/3644DA_11_0.eot');src: url('webfonts/3644DA_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3644DA_11_0.woff2') format('woff2'),url('webfonts/3644DA_11_0.woff') format('woff'),url('webfonts/3644DA_11_0.ttf') format('truetype');}
+
+@font-face {font-family: 'PraxisNext-Light';src: url('webfonts/3656E6_0_0.eot');src: url('webfonts/3656E6_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_0_0.woff2') format('woff2'),url('webfonts/3656E6_0_0.woff') format('woff'),url('webfonts/3656E6_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Italic';src: url('webfonts/3656E6_1_0.eot');src: url('webfonts/3656E6_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1_0.woff2') format('woff2'),url('webfonts/3656E6_1_0.woff') format('woff'),url('webfonts/3656E6_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-MediumItalic';src: url('webfonts/3656E6_2_0.eot');src: url('webfonts/3656E6_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_2_0.woff2') format('woff2'),url('webfonts/3656E6_2_0.woff') format('woff'),url('webfonts/3656E6_2_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-LightItalic';src: url('webfonts/3656E6_3_0.eot');src: url('webfonts/3656E6_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_3_0.woff2') format('woff2'),url('webfonts/3656E6_3_0.woff') format('woff'),url('webfonts/3656E6_3_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-SemiBoldItalic';src: url('webfonts/3656E6_4_0.eot');src: url('webfonts/3656E6_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_4_0.woff2') format('woff2'),url('webfonts/3656E6_4_0.woff') format('woff'),url('webfonts/3656E6_4_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Medium';src: url('webfonts/3656E6_5_0.eot');src: url('webfonts/3656E6_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_5_0.woff2') format('woff2'),url('webfonts/3656E6_5_0.woff') format('woff'),url('webfonts/3656E6_5_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-HeavyItalic';src: url('webfonts/3656E6_6_0.eot');src: url('webfonts/3656E6_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_6_0.woff2') format('woff2'),url('webfonts/3656E6_6_0.woff') format('woff'),url('webfonts/3656E6_6_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Regular';src: url('webfonts/3656E6_7_0.eot');src: url('webfonts/3656E6_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_7_0.woff2') format('woff2'),url('webfonts/3656E6_7_0.woff') format('woff'),url('webfonts/3656E6_7_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnRegular';src: url('webfonts/3656E6_8_0.eot');src: url('webfonts/3656E6_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_8_0.woff2') format('woff2'),url('webfonts/3656E6_8_0.woff') format('woff'),url('webfonts/3656E6_8_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-SemiBold';src: url('webfonts/3656E6_9_0.eot');src: url('webfonts/3656E6_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_9_0.woff2') format('woff2'),url('webfonts/3656E6_9_0.woff') format('woff'),url('webfonts/3656E6_9_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Bold';src: url('webfonts/3656E6_A_0.eot');src: url('webfonts/3656E6_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_A_0.woff2') format('woff2'),url('webfonts/3656E6_A_0.woff') format('woff'),url('webfonts/3656E6_A_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-BoldItalic';src: url('webfonts/3656E6_B_0.eot');src: url('webfonts/3656E6_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_B_0.woff2') format('woff2'),url('webfonts/3656E6_B_0.woff') format('woff'),url('webfonts/3656E6_B_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnLight';src: url('webfonts/3656E6_C_0.eot');src: url('webfonts/3656E6_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_C_0.woff2') format('woff2'),url('webfonts/3656E6_C_0.woff') format('woff'),url('webfonts/3656E6_C_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Black';src: url('webfonts/3656E6_D_0.eot');src: url('webfonts/3656E6_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_D_0.woff2') format('woff2'),url('webfonts/3656E6_D_0.woff') format('woff'),url('webfonts/3656E6_D_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-BlackItalic';src: url('webfonts/3656E6_E_0.eot');src: url('webfonts/3656E6_E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_E_0.woff2') format('woff2'),url('webfonts/3656E6_E_0.woff') format('woff'),url('webfonts/3656E6_E_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-ExtraBlackItalic';src: url('webfonts/3656E6_F_0.eot');src: url('webfonts/3656E6_F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_F_0.woff2') format('woff2'),url('webfonts/3656E6_F_0.woff') format('woff'),url('webfonts/3656E6_F_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Heavy';src: url('webfonts/3656E6_10_0.eot');src: url('webfonts/3656E6_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_10_0.woff2') format('woff2'),url('webfonts/3656E6_10_0.woff') format('woff'),url('webfonts/3656E6_10_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnMedium';src: url('webfonts/3656E6_11_0.eot');src: url('webfonts/3656E6_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_11_0.woff2') format('woff2'),url('webfonts/3656E6_11_0.woff') format('woff'),url('webfonts/3656E6_11_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnSemiBold';src: url('webfonts/3656E6_12_0.eot');src: url('webfonts/3656E6_12_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_12_0.woff2') format('woff2'),url('webfonts/3656E6_12_0.woff') format('woff'),url('webfonts/3656E6_12_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnBold';src: url('webfonts/3656E6_13_0.eot');src: url('webfonts/3656E6_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_13_0.woff2') format('woff2'),url('webfonts/3656E6_13_0.woff') format('woff'),url('webfonts/3656E6_13_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnExtraBlack';src: url('webfonts/3656E6_14_0.eot');src: url('webfonts/3656E6_14_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_14_0.woff2') format('woff2'),url('webfonts/3656E6_14_0.woff') format('woff'),url('webfonts/3656E6_14_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-ExtraBlack';src: url('webfonts/3656E6_15_0.eot');src: url('webfonts/3656E6_15_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_15_0.woff2') format('woff2'),url('webfonts/3656E6_15_0.woff') format('woff'),url('webfonts/3656E6_15_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnBlack';src: url('webfonts/3656E6_16_0.eot');src: url('webfonts/3656E6_16_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_16_0.woff2') format('woff2'),url('webfonts/3656E6_16_0.woff') format('woff'),url('webfonts/3656E6_16_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnHeavy';src: url('webfonts/3656E6_17_0.eot');src: url('webfonts/3656E6_17_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_17_0.woff2') format('woff2'),url('webfonts/3656E6_17_0.woff') format('woff'),url('webfonts/3656E6_17_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-UltraItalic';src: url('webfonts/3656E6_18_0.eot');src: url('webfonts/3656E6_18_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_18_0.woff2') format('woff2'),url('webfonts/3656E6_18_0.woff') format('woff'),url('webfonts/3656E6_18_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnUltra';src: url('webfonts/3656E6_19_0.eot');src: url('webfonts/3656E6_19_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_19_0.woff2') format('woff2'),url('webfonts/3656E6_19_0.woff') format('woff'),url('webfonts/3656E6_19_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnMediumIt';src: url('webfonts/3656E6_1A_0.eot');src: url('webfonts/3656E6_1A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1A_0.woff2') format('woff2'),url('webfonts/3656E6_1A_0.woff') format('woff'),url('webfonts/3656E6_1A_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnIt';src: url('webfonts/3656E6_1B_0.eot');src: url('webfonts/3656E6_1B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1B_0.woff2') format('woff2'),url('webfonts/3656E6_1B_0.woff') format('woff'),url('webfonts/3656E6_1B_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnLightIt';src: url('webfonts/3656E6_1C_0.eot');src: url('webfonts/3656E6_1C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1C_0.woff2') format('woff2'),url('webfonts/3656E6_1C_0.woff') format('woff'),url('webfonts/3656E6_1C_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-Ultra';src: url('webfonts/3656E6_1D_0.eot');src: url('webfonts/3656E6_1D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1D_0.woff2') format('woff2'),url('webfonts/3656E6_1D_0.woff') format('woff'),url('webfonts/3656E6_1D_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnSemiBoldIt';src: url('webfonts/3656E6_1E_0.eot');src: url('webfonts/3656E6_1E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1E_0.woff2') format('woff2'),url('webfonts/3656E6_1E_0.woff') format('woff'),url('webfonts/3656E6_1E_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnBoldIt';src: url('webfonts/3656E6_1F_0.eot');src: url('webfonts/3656E6_1F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1F_0.woff2') format('woff2'),url('webfonts/3656E6_1F_0.woff') format('woff'),url('webfonts/3656E6_1F_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnHeavyIt';src: url('webfonts/3656E6_20_0.eot');src: url('webfonts/3656E6_20_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_20_0.woff2') format('woff2'),url('webfonts/3656E6_20_0.woff') format('woff'),url('webfonts/3656E6_20_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnBlackIt';src: url('webfonts/3656E6_21_0.eot');src: url('webfonts/3656E6_21_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_21_0.woff2') format('woff2'),url('webfonts/3656E6_21_0.woff') format('woff'),url('webfonts/3656E6_21_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnUltraIt';src: url('webfonts/3656E6_22_0.eot');src: url('webfonts/3656E6_22_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_22_0.woff2') format('woff2'),url('webfonts/3656E6_22_0.woff') format('woff'),url('webfonts/3656E6_22_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnExtraBlackIt';src: url('webfonts/3656E6_23_0.eot');src: url('webfonts/3656E6_23_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_23_0.woff2') format('woff2'),url('webfonts/3656E6_23_0.woff') format('woff'),url('webfonts/3656E6_23_0.ttf') format('truetype');}
  

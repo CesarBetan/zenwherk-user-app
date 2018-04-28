@@ -1,0 +1,14 @@
+.features-quick-search-container {
+  width: calc(100% - (0.625rem * 2));
+  height: auto;
+}
+
+.features-quick-search-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding: 0.625rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.625rem;
+}

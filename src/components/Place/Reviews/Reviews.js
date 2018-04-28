@@ -11,7 +11,7 @@ class Reviews extends Component {
           <div className="reviews-container">
             <SectionTitle title={`Reviews (${reviews.length})`}/>
             <ReviewsList reviews={reviews}/>
-            <Button title="Read More"/>
+            <Button className="reviews-read-more-button" title="Read More"/>
           </div>
         );
     }

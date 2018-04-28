@@ -8,10 +8,10 @@ import Button from '../../Button';
 class Services extends Component {
     render() {
         return (
-          <div className="reviews-container">
+          <div className="services-container">
             <SectionTitle title="Services"/>
             <ServicesList services={services}/>
-            <Button title="See All"/>
+            <Button className="services-show-all-button" title="See All"/>
           </div>
         );
     }
