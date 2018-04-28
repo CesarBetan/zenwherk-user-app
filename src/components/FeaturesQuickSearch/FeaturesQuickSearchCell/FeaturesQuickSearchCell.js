@@ -7,10 +7,13 @@ class FeaturesQuickSearchCell extends Component {
         const feature = this.props.feature;
         return (
             <div className="features-quick-search-cell-container PraxisNext-CnSemiBold">
-              <img
+              <img className="features-quick-search-cell-icon"
               alt={feature.iconAlt === null ? 'Feature Quick Search Icon'
               : feature.iconAlt}
               src={feature.icon === null ? placeholderIcon :  feature.icon}/>
+              <span className="features-quick-search-cell-title">
+                { feature.name }
+              </span>
             </div>
         );
     }

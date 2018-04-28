@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './TallSearchHeader.css';
 import TextField from '../TextField';
 import Button from '../Button';
+import smallDarkSearchIcon from '../../assets/Global/small-dark-search-icon.svg';
 
 class TallSearchHeader extends Component {
 
@@ -15,10 +16,7 @@ class TallSearchHeader extends Component {
               <div className="tall-search-header-textfield-wrapper">
                 <TextField className="tall-search-header-textfield"
                 name="query" placeholder="What do you need?"
-                icon={null}/>
-                <TextField className="tall-search-header-textfield"
-                name="location" placeholder="Where do you want it?"
-                icon={null}/>
+                icon={smallDarkSearchIcon}/>
               </div>
               <Button color="white" title="Buscar"/>
             </div>

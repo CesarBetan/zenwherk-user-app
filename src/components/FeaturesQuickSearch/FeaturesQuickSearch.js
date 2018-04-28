@@ -9,7 +9,6 @@ class FeaturesQuickSearch extends Component {
             <div className="features-quick-search-container">
               <div className="features-quick-search-grid">
                 {
-                  console.log(features),
                   features.map((feature, i) => (
                     <FeaturesQuickSearchCell key={i} feature={feature}/>
                   ))

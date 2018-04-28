@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3561190, 2018-04-18T21:53:40-0400
+ * MyFonts Webfont Build ID 3569899, 2018-04-28T14:23:17-0400
  *
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are
@@ -117,7 +117,7 @@
  * URL: https://www.myfonts.com/fonts/linotype/praxis-next/cond-extra-black-italic/
  *
  *
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3561190
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3569899
  * Licensed pageviews: 250,000
  * Webfonts copyright: Copyright &#x00A9; 2017 Monotype Imaging Inc. All rights reserved.
  *
@@ -126,113 +126,293 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3656e6");
+@import url("//hello.myfonts.net/count/3678eb");
 
 
-@font-face {font-family: 'PraxisNext-Light';src: url('webfonts/3656E6_0_0.eot');src: url('webfonts/3656E6_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_0_0.woff2') format('woff2'),url('webfonts/3656E6_0_0.woff') format('woff'),url('webfonts/3656E6_0_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Light';src: url('webfonts/3678EB_0_0.eot');src: url('webfonts/3678EB_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_0_0.woff2') format('woff2'),url('webfonts/3678EB_0_0.woff') format('woff'),url('webfonts/3678EB_0_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Italic';src: url('webfonts/3656E6_1_0.eot');src: url('webfonts/3656E6_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1_0.woff2') format('woff2'),url('webfonts/3656E6_1_0.woff') format('woff'),url('webfonts/3656E6_1_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Italic';src: url('webfonts/3678EB_1_0.eot');src: url('webfonts/3678EB_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1_0.woff2') format('woff2'),url('webfonts/3678EB_1_0.woff') format('woff'),url('webfonts/3678EB_1_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-MediumItalic';src: url('webfonts/3656E6_2_0.eot');src: url('webfonts/3656E6_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_2_0.woff2') format('woff2'),url('webfonts/3656E6_2_0.woff') format('woff'),url('webfonts/3656E6_2_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-MediumItalic';src: url('webfonts/3678EB_2_0.eot');src: url('webfonts/3678EB_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_2_0.woff2') format('woff2'),url('webfonts/3678EB_2_0.woff') format('woff'),url('webfonts/3678EB_2_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-LightItalic';src: url('webfonts/3656E6_3_0.eot');src: url('webfonts/3656E6_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_3_0.woff2') format('woff2'),url('webfonts/3656E6_3_0.woff') format('woff'),url('webfonts/3656E6_3_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-LightItalic';src: url('webfonts/3678EB_3_0.eot');src: url('webfonts/3678EB_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_3_0.woff2') format('woff2'),url('webfonts/3678EB_3_0.woff') format('woff'),url('webfonts/3678EB_3_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-SemiBoldItalic';src: url('webfonts/3656E6_4_0.eot');src: url('webfonts/3656E6_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_4_0.woff2') format('woff2'),url('webfonts/3656E6_4_0.woff') format('woff'),url('webfonts/3656E6_4_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-SemiBoldItalic';src: url('webfonts/3678EB_4_0.eot');src: url('webfonts/3678EB_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_4_0.woff2') format('woff2'),url('webfonts/3678EB_4_0.woff') format('woff'),url('webfonts/3678EB_4_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Medium';src: url('webfonts/3656E6_5_0.eot');src: url('webfonts/3656E6_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_5_0.woff2') format('woff2'),url('webfonts/3656E6_5_0.woff') format('woff'),url('webfonts/3656E6_5_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Medium';src: url('webfonts/3678EB_5_0.eot');src: url('webfonts/3678EB_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_5_0.woff2') format('woff2'),url('webfonts/3678EB_5_0.woff') format('woff'),url('webfonts/3678EB_5_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-HeavyItalic';src: url('webfonts/3656E6_6_0.eot');src: url('webfonts/3656E6_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_6_0.woff2') format('woff2'),url('webfonts/3656E6_6_0.woff') format('woff'),url('webfonts/3656E6_6_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-HeavyItalic';src: url('webfonts/3678EB_6_0.eot');src: url('webfonts/3678EB_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_6_0.woff2') format('woff2'),url('webfonts/3678EB_6_0.woff') format('woff'),url('webfonts/3678EB_6_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Regular';src: url('webfonts/3656E6_7_0.eot');src: url('webfonts/3656E6_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_7_0.woff2') format('woff2'),url('webfonts/3656E6_7_0.woff') format('woff'),url('webfonts/3656E6_7_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Regular';src: url('webfonts/3678EB_7_0.eot');src: url('webfonts/3678EB_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_7_0.woff2') format('woff2'),url('webfonts/3678EB_7_0.woff') format('woff'),url('webfonts/3678EB_7_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnRegular';src: url('webfonts/3656E6_8_0.eot');src: url('webfonts/3656E6_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_8_0.woff2') format('woff2'),url('webfonts/3656E6_8_0.woff') format('woff'),url('webfonts/3656E6_8_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnRegular';src: url('webfonts/3678EB_8_0.eot');src: url('webfonts/3678EB_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_8_0.woff2') format('woff2'),url('webfonts/3678EB_8_0.woff') format('woff'),url('webfonts/3678EB_8_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-SemiBold';src: url('webfonts/3656E6_9_0.eot');src: url('webfonts/3656E6_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_9_0.woff2') format('woff2'),url('webfonts/3656E6_9_0.woff') format('woff'),url('webfonts/3656E6_9_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-SemiBold';src: url('webfonts/3678EB_9_0.eot');src: url('webfonts/3678EB_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_9_0.woff2') format('woff2'),url('webfonts/3678EB_9_0.woff') format('woff'),url('webfonts/3678EB_9_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Bold';src: url('webfonts/3656E6_A_0.eot');src: url('webfonts/3656E6_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_A_0.woff2') format('woff2'),url('webfonts/3656E6_A_0.woff') format('woff'),url('webfonts/3656E6_A_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Bold';src: url('webfonts/3678EB_A_0.eot');src: url('webfonts/3678EB_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_A_0.woff2') format('woff2'),url('webfonts/3678EB_A_0.woff') format('woff'),url('webfonts/3678EB_A_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-BoldItalic';src: url('webfonts/3656E6_B_0.eot');src: url('webfonts/3656E6_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_B_0.woff2') format('woff2'),url('webfonts/3656E6_B_0.woff') format('woff'),url('webfonts/3656E6_B_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-BoldItalic';src: url('webfonts/3678EB_B_0.eot');src: url('webfonts/3678EB_B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_B_0.woff2') format('woff2'),url('webfonts/3678EB_B_0.woff') format('woff'),url('webfonts/3678EB_B_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnLight';src: url('webfonts/3656E6_C_0.eot');src: url('webfonts/3656E6_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_C_0.woff2') format('woff2'),url('webfonts/3656E6_C_0.woff') format('woff'),url('webfonts/3656E6_C_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnLight';src: url('webfonts/3678EB_C_0.eot');src: url('webfonts/3678EB_C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_C_0.woff2') format('woff2'),url('webfonts/3678EB_C_0.woff') format('woff'),url('webfonts/3678EB_C_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Black';src: url('webfonts/3656E6_D_0.eot');src: url('webfonts/3656E6_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_D_0.woff2') format('woff2'),url('webfonts/3656E6_D_0.woff') format('woff'),url('webfonts/3656E6_D_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Black';src: url('webfonts/3678EB_D_0.eot');src: url('webfonts/3678EB_D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_D_0.woff2') format('woff2'),url('webfonts/3678EB_D_0.woff') format('woff'),url('webfonts/3678EB_D_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-BlackItalic';src: url('webfonts/3656E6_E_0.eot');src: url('webfonts/3656E6_E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_E_0.woff2') format('woff2'),url('webfonts/3656E6_E_0.woff') format('woff'),url('webfonts/3656E6_E_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-BlackItalic';src: url('webfonts/3678EB_E_0.eot');src: url('webfonts/3678EB_E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_E_0.woff2') format('woff2'),url('webfonts/3678EB_E_0.woff') format('woff'),url('webfonts/3678EB_E_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-ExtraBlackItalic';src: url('webfonts/3656E6_F_0.eot');src: url('webfonts/3656E6_F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_F_0.woff2') format('woff2'),url('webfonts/3656E6_F_0.woff') format('woff'),url('webfonts/3656E6_F_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-ExtraBlackItalic';src: url('webfonts/3678EB_F_0.eot');src: url('webfonts/3678EB_F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_F_0.woff2') format('woff2'),url('webfonts/3678EB_F_0.woff') format('woff'),url('webfonts/3678EB_F_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Heavy';src: url('webfonts/3656E6_10_0.eot');src: url('webfonts/3656E6_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_10_0.woff2') format('woff2'),url('webfonts/3656E6_10_0.woff') format('woff'),url('webfonts/3656E6_10_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Heavy';src: url('webfonts/3678EB_10_0.eot');src: url('webfonts/3678EB_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_10_0.woff2') format('woff2'),url('webfonts/3678EB_10_0.woff') format('woff'),url('webfonts/3678EB_10_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnMedium';src: url('webfonts/3656E6_11_0.eot');src: url('webfonts/3656E6_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_11_0.woff2') format('woff2'),url('webfonts/3656E6_11_0.woff') format('woff'),url('webfonts/3656E6_11_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnMedium';src: url('webfonts/3678EB_11_0.eot');src: url('webfonts/3678EB_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_11_0.woff2') format('woff2'),url('webfonts/3678EB_11_0.woff') format('woff'),url('webfonts/3678EB_11_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnSemiBold';src: url('webfonts/3656E6_12_0.eot');src: url('webfonts/3656E6_12_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_12_0.woff2') format('woff2'),url('webfonts/3656E6_12_0.woff') format('woff'),url('webfonts/3656E6_12_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnSemiBold';src: url('webfonts/3678EB_12_0.eot');src: url('webfonts/3678EB_12_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_12_0.woff2') format('woff2'),url('webfonts/3678EB_12_0.woff') format('woff'),url('webfonts/3678EB_12_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnBold';src: url('webfonts/3656E6_13_0.eot');src: url('webfonts/3656E6_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_13_0.woff2') format('woff2'),url('webfonts/3656E6_13_0.woff') format('woff'),url('webfonts/3656E6_13_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnBold';src: url('webfonts/3678EB_13_0.eot');src: url('webfonts/3678EB_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_13_0.woff2') format('woff2'),url('webfonts/3678EB_13_0.woff') format('woff'),url('webfonts/3678EB_13_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnExtraBlack';src: url('webfonts/3656E6_14_0.eot');src: url('webfonts/3656E6_14_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_14_0.woff2') format('woff2'),url('webfonts/3656E6_14_0.woff') format('woff'),url('webfonts/3656E6_14_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnExtraBlack';src: url('webfonts/3678EB_14_0.eot');src: url('webfonts/3678EB_14_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_14_0.woff2') format('woff2'),url('webfonts/3678EB_14_0.woff') format('woff'),url('webfonts/3678EB_14_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-ExtraBlack';src: url('webfonts/3656E6_15_0.eot');src: url('webfonts/3656E6_15_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_15_0.woff2') format('woff2'),url('webfonts/3656E6_15_0.woff') format('woff'),url('webfonts/3656E6_15_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-ExtraBlack';src: url('webfonts/3678EB_15_0.eot');src: url('webfonts/3678EB_15_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_15_0.woff2') format('woff2'),url('webfonts/3678EB_15_0.woff') format('woff'),url('webfonts/3678EB_15_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnBlack';src: url('webfonts/3656E6_16_0.eot');src: url('webfonts/3656E6_16_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_16_0.woff2') format('woff2'),url('webfonts/3656E6_16_0.woff') format('woff'),url('webfonts/3656E6_16_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnBlack';src: url('webfonts/3678EB_16_0.eot');src: url('webfonts/3678EB_16_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_16_0.woff2') format('woff2'),url('webfonts/3678EB_16_0.woff') format('woff'),url('webfonts/3678EB_16_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnHeavy';src: url('webfonts/3656E6_17_0.eot');src: url('webfonts/3656E6_17_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_17_0.woff2') format('woff2'),url('webfonts/3656E6_17_0.woff') format('woff'),url('webfonts/3656E6_17_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnHeavy';src: url('webfonts/3678EB_17_0.eot');src: url('webfonts/3678EB_17_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_17_0.woff2') format('woff2'),url('webfonts/3678EB_17_0.woff') format('woff'),url('webfonts/3678EB_17_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-UltraItalic';src: url('webfonts/3656E6_18_0.eot');src: url('webfonts/3656E6_18_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_18_0.woff2') format('woff2'),url('webfonts/3656E6_18_0.woff') format('woff'),url('webfonts/3656E6_18_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-UltraItalic';src: url('webfonts/3678EB_18_0.eot');src: url('webfonts/3678EB_18_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_18_0.woff2') format('woff2'),url('webfonts/3678EB_18_0.woff') format('woff'),url('webfonts/3678EB_18_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnUltra';src: url('webfonts/3656E6_19_0.eot');src: url('webfonts/3656E6_19_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_19_0.woff2') format('woff2'),url('webfonts/3656E6_19_0.woff') format('woff'),url('webfonts/3656E6_19_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnUltra';src: url('webfonts/3678EB_19_0.eot');src: url('webfonts/3678EB_19_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_19_0.woff2') format('woff2'),url('webfonts/3678EB_19_0.woff') format('woff'),url('webfonts/3678EB_19_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnMediumIt';src: url('webfonts/3656E6_1A_0.eot');src: url('webfonts/3656E6_1A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1A_0.woff2') format('woff2'),url('webfonts/3656E6_1A_0.woff') format('woff'),url('webfonts/3656E6_1A_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnMediumIt';src: url('webfonts/3678EB_1A_0.eot');src: url('webfonts/3678EB_1A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1A_0.woff2') format('woff2'),url('webfonts/3678EB_1A_0.woff') format('woff'),url('webfonts/3678EB_1A_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnIt';src: url('webfonts/3656E6_1B_0.eot');src: url('webfonts/3656E6_1B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1B_0.woff2') format('woff2'),url('webfonts/3656E6_1B_0.woff') format('woff'),url('webfonts/3656E6_1B_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnIt';src: url('webfonts/3678EB_1B_0.eot');src: url('webfonts/3678EB_1B_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1B_0.woff2') format('woff2'),url('webfonts/3678EB_1B_0.woff') format('woff'),url('webfonts/3678EB_1B_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnLightIt';src: url('webfonts/3656E6_1C_0.eot');src: url('webfonts/3656E6_1C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1C_0.woff2') format('woff2'),url('webfonts/3656E6_1C_0.woff') format('woff'),url('webfonts/3656E6_1C_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnLightIt';src: url('webfonts/3678EB_1C_0.eot');src: url('webfonts/3678EB_1C_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1C_0.woff2') format('woff2'),url('webfonts/3678EB_1C_0.woff') format('woff'),url('webfonts/3678EB_1C_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-Ultra';src: url('webfonts/3656E6_1D_0.eot');src: url('webfonts/3656E6_1D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1D_0.woff2') format('woff2'),url('webfonts/3656E6_1D_0.woff') format('woff'),url('webfonts/3656E6_1D_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-Ultra';src: url('webfonts/3678EB_1D_0.eot');src: url('webfonts/3678EB_1D_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1D_0.woff2') format('woff2'),url('webfonts/3678EB_1D_0.woff') format('woff'),url('webfonts/3678EB_1D_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnSemiBoldIt';src: url('webfonts/3656E6_1E_0.eot');src: url('webfonts/3656E6_1E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1E_0.woff2') format('woff2'),url('webfonts/3656E6_1E_0.woff') format('woff'),url('webfonts/3656E6_1E_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnSemiBoldIt';src: url('webfonts/3678EB_1E_0.eot');src: url('webfonts/3678EB_1E_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1E_0.woff2') format('woff2'),url('webfonts/3678EB_1E_0.woff') format('woff'),url('webfonts/3678EB_1E_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnBoldIt';src: url('webfonts/3656E6_1F_0.eot');src: url('webfonts/3656E6_1F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_1F_0.woff2') format('woff2'),url('webfonts/3656E6_1F_0.woff') format('woff'),url('webfonts/3656E6_1F_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnBoldIt';src: url('webfonts/3678EB_1F_0.eot');src: url('webfonts/3678EB_1F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_1F_0.woff2') format('woff2'),url('webfonts/3678EB_1F_0.woff') format('woff'),url('webfonts/3678EB_1F_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnHeavyIt';src: url('webfonts/3656E6_20_0.eot');src: url('webfonts/3656E6_20_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_20_0.woff2') format('woff2'),url('webfonts/3656E6_20_0.woff') format('woff'),url('webfonts/3656E6_20_0.ttf') format('truetype');}
+@font-face {font-family: 'PraxisNext-CnHeavyIt';src: url('webfonts/3678EB_20_0.eot');src: url('webfonts/3678EB_20_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_20_0.woff2') format('woff2'),url('webfonts/3678EB_20_0.woff') format('woff'),url('webfonts/3678EB_20_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'PraxisNext-CnBlackIt';src: url('webfonts/3656E6_21_0.eot');src: url('webfonts/3656E6_21_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_21_0.woff2') format('woff2'),url('webfonts/3656E6_21_0.woff') format('woff'),url('webfonts/3656E6_21_0.ttf') format('truetype');}
-
-
-@font-face {font-family: 'PraxisNext-CnUltraIt';src: url('webfonts/3656E6_22_0.eot');src: url('webfonts/3656E6_22_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_22_0.woff2') format('woff2'),url('webfonts/3656E6_22_0.woff') format('woff'),url('webfonts/3656E6_22_0.ttf') format('truetype');}
-
-
-@font-face {font-family: 'PraxisNext-CnExtraBlackIt';src: url('webfonts/3656E6_23_0.eot');src: url('webfonts/3656E6_23_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3656E6_23_0.woff2') format('woff2'),url('webfonts/3656E6_23_0.woff') format('woff'),url('webfonts/3656E6_23_0.ttf') format('truetype');}
- 
+@font-face {font-family: 'PraxisNext-CnBlackIt';src: url('webfonts/3678EB_21_0.eot');src: url('webfonts/3678EB_21_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_21_0.woff2') format('woff2'),url('webfonts/3678EB_21_0.woff') format('woff'),url('webfonts/3678EB_21_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnUltraIt';src: url('webfonts/3678EB_22_0.eot');src: url('webfonts/3678EB_22_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_22_0.woff2') format('woff2'),url('webfonts/3678EB_22_0.woff') format('woff'),url('webfonts/3678EB_22_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'PraxisNext-CnExtraBlackIt';src: url('webfonts/3678EB_23_0.eot');src: url('webfonts/3678EB_23_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3678EB_23_0.woff2') format('woff2'),url('webfonts/3678EB_23_0.woff') format('woff'),url('webfonts/3678EB_23_0.ttf') format('truetype');}
+
+.PraxisNext-Light {
+	font-family: PraxisNext-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Italic {
+	font-family: PraxisNext-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-MediumItalic {
+	font-family: PraxisNext-MediumItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-LightItalic {
+	font-family: PraxisNext-LightItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-SemiBoldItalic {
+	font-family: PraxisNext-SemiBoldItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Medium {
+	font-family: PraxisNext-Medium;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-HeavyItalic {
+	font-family: PraxisNext-HeavyItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Regular {
+	font-family: PraxisNext-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnRegular {
+	font-family: PraxisNext-CnRegular;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-SemiBold {
+	font-family: PraxisNext-SemiBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Bold {
+	font-family: PraxisNext-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-BoldItalic {
+	font-family: PraxisNext-BoldItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnLight {
+	font-family: PraxisNext-CnLight;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Black {
+	font-family: PraxisNext-Black;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-BlackItalic {
+	font-family: PraxisNext-BlackItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-ExtraBlackItalic {
+	font-family: PraxisNext-ExtraBlackItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Heavy {
+	font-family: PraxisNext-Heavy;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnMedium {
+	font-family: PraxisNext-CnMedium;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnSemiBold {
+	font-family: PraxisNext-CnSemiBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnBold {
+	font-family: PraxisNext-CnBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnExtraBlack {
+	font-family: PraxisNext-CnExtraBlack;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-ExtraBlack {
+	font-family: PraxisNext-ExtraBlack;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnBlack {
+	font-family: PraxisNext-CnBlack;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnHeavy {
+	font-family: PraxisNext-CnHeavy;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-UltraItalic {
+	font-family: PraxisNext-UltraItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnUltra {
+	font-family: PraxisNext-CnUltra;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnMediumIt {
+	font-family: PraxisNext-CnMediumIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnIt {
+	font-family: PraxisNext-CnIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnLightIt {
+	font-family: PraxisNext-CnLightIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-Ultra {
+	font-family: PraxisNext-Ultra;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnSemiBoldIt {
+	font-family: PraxisNext-CnSemiBoldIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnBoldIt {
+	font-family: PraxisNext-CnBoldIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnHeavyIt {
+	font-family: PraxisNext-CnHeavyIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnBlackIt {
+	font-family: PraxisNext-CnBlackIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnUltraIt {
+	font-family: PraxisNext-CnUltraIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PraxisNext-CnExtraBlackIt {
+	font-family: PraxisNext-CnExtraBlackIt;
+	font-weight: normal;
+	font-style: normal;
+}

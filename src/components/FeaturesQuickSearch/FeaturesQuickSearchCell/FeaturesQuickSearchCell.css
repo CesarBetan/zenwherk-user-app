@@ -4,10 +4,19 @@
   background-color: #E5E5E5;
 }
 
-.features-quick-search-cell-title {
-
+.features-quick-search-cell-container:hover {
+  filter: brightness(0.9);
 }
 
 .features-quick-search-cell-icon {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.0625rem;
+}
+
+.features-quick-search-cell-title {
+  display: block;
+  margin-top: 0.625rem;
+  font-size: 0.75rem;
 
 }

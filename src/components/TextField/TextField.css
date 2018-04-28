@@ -1,17 +1,42 @@
 .textfield-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  min-width: calc(100% - (2.375rem * 2));
+  max-width: calc(100% - (2.375rem * 2));
   width: calc(100% - (2.375rem * 2));
   height: 2.375rem;
   color: #002F37;
   border-radius: 0.3125rem;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .textfield-input {
   border: none;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: calc(100% - (0.9375rem * 2));
+  width: calc(100% - 3.125rem);
   height: calc(100% - (0.3125rem * 2));
-  padding: 0.3125rem 0.9375rem;
+  padding: 0.3125rem 0.625rem;
   font-size: 1.0625rem;
   padding-top: 0.4rem;
+  padding-right: 0;
+  background: transparent;
+  color: #002F37;
+}
+
+.textfield-image {
+  object-fit: cover;
+}
+
+.textfield-image-placeholder {
+  opacity: 0.5;
+}
+
+.textfield-input::placeholder {
+  color: rgba(0, 47, 55, 0.5);
+}
+
+.textfield-input:focus {
+  outline: none;
 }
