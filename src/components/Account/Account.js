@@ -46,9 +46,9 @@ class Account extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        if(this.state.userName.value.trim().length < 1){
+        if(this.state.userName.trim().length < 1){
             console.log("El nombre debe de tener al menos 1 caracter");
-        }else if(this.state.userLastName.value.trim().length < 1) {
+        }else if(this.state.userLastName.trim().length < 1) {
             alert("El apellido debe de tener al menos 1 caracter");
         }else if(this.state.userNewPassword === ''){
             axios.put(this.state.apiKey + this.state.uuid, {
@@ -77,32 +77,32 @@ class Account extends Component {
             <div className="user-view">
                 <NavBar/>
                 <div>
-                    <form class="form-style-user" onSubmit={this.handleSubmit}>
+                    <form className="form-style-user" onSubmit={this.handleSubmit}>
                         <ul className="PraxisNext-Bold">
                             <h2>Cuenta</h2>
                             <li>
-                                <label for="name">Nombre</label>
-                                <input type="text" className="PraxisNext-Bold" name="name" maxlength="100"
+                                <label htmlFor="name">Nombre</label>
+                                <input type="text" className="PraxisNext-Bold" name="name"
                                        onChange={this.handleChangeName}
                                        value={this.state.userName} />
                                 <span>* Ingresa tu nombre o nombres aquí</span>
                             </li>
                             <li>
-                                <label for="lastName">Apellido</label>
-                                <input type="text" className="PraxisNext-Bold" name="lastName" maxlength="100"
+                                <label htmlFor="lastName">Apellido</label>
+                                <input type="text" className="PraxisNext-Bold" name="lastName"
                                        onChange={this.handleChangeLastName}
                                        value={this.state.userLastName} />
                                 <span>* Ingresa tus apellidos aquí</span>
                             </li>
                             <li>
-                                <label for="email">Correo Electrónico</label>
-                                <input type="email" className="PraxisNext-Bold user-input-disabled" name="email" maxlength="100"
+                                <label htmlFor="email">Correo Electrónico</label>
+                                <input type="email" className="PraxisNext-Bold user-input-disabled" name="email"
                                        value={this.state.userData.email} disabled/>
                                 <span>Ingresa un correo electrónico válido</span>
                             </li>
                             <li>
-                                <label for="password">Contraseña</label>
-                                <input type="password" className="PraxisNext-Bold" name="password" maxlength="100"
+                                <label htmlFor="password">Contraseña</label>
+                                <input type="password" className="PraxisNext-Bold" name="password"
                                        onChange={this.handleChangeNewPassword}
                                        value={this.state.userNewPassword} />
                                 <span>Ingresa una nueva contraseña</span>
