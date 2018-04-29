@@ -7,11 +7,6 @@ import { NavLink } from 'react-router-dom';
 
 class Menu extends Component {
 
-    constructor(props){
-        super(props);
-        let user = JSON.parse(localStorage.getItem('user'));
-    }
-
     remove_hash_from_url() {
         const uri = window.location.toString();
         if (uri.indexOf("#") > 0) {
