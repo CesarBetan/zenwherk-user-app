@@ -37,7 +37,8 @@ class Account extends Component {
 
     componentWillMount(){
         this.getUser();
-        if(this.state.uuid === null){
+        if(!localStorage.getItem('accesstoken')) {
+            this.props.history.push('/');
         }
     }
 
