@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Account.css';
 import NavBar from '../NavBar/index';
 import {apiUrl} from "../../Constants";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 class Account extends Component {
 
@@ -149,7 +150,7 @@ class Account extends Component {
                                 {this.state.errorServer}
                                 <a onClick={this.closeAccountError}>X</a>
                             </div>
-                            <h2>Cuenta</h2>
+                            <SectionTitle title={"Cuenta"}/>
                             <li>
                                 <label htmlFor="name">Nombre</label>
                                 <input type="text" className="PraxisNext-Bold" name="name"

@@ -46,6 +46,9 @@ class Menu extends Component {
                         Nearby
                     </li>
                     <li>
+                        <NavLink to={"/search"}>Search</NavLink>
+                    </li>
+                    <li>
                         About
                     </li>
                     <li>
@@ -56,19 +59,19 @@ class Menu extends Component {
                     !localStorage.getItem('accesstoken') ?
                         <ul className="list-account">
                             <li>
-                                <a href={authUrl + "oauth/authorize?client_id=zenwherk&response_type=token&redirect_uri="+frontUrl}> Iniciar Sesión</a>
+                                <a href={authUrl + "oauth/authorize?client_id=zenwherk&response_type=token&redirect_uri="+frontUrl}>Login</a>
                             </li>
                             <li>
-                                <NavLink to = {'/register'}>Registrarse</NavLink>
+                                <NavLink to = {'/register'}>Register</NavLink>
                             </li>
                         </ul>
                         :
                         <ul className="list-account">
                             <li>
-                                <NavLink to ={'/account'}>Ver Cuenta </NavLink>
+                                <NavLink to ={'/account'}>Account</NavLink>
                             </li>
                             <li>
-                                <NavLink to ={'/favorites'}>Ver Favoritos</NavLink>
+                                <NavLink to ={'/favorites'}>Favorites</NavLink>
                             </li>
                             <li>
                                 <a
@@ -78,7 +81,7 @@ class Menu extends Component {
                                         localStorage.removeItem("user");
                                         window.location.href = authUrl + 'logout';
                                     }
-                                    }>Salir</a>
+                                    }>Log Out</a>
                             </li>
                         </ul>
                 }

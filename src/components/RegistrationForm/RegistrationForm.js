@@ -3,6 +3,7 @@ import axios from 'axios';
 import './RegistrationForm.css';
 import NavBar from '../NavBar/index'
 import {apiUrl} from "../../Constants";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 class RegistrationForm extends Component {
 
@@ -117,7 +118,7 @@ class RegistrationForm extends Component {
                                 {this.state.errorServer}
                                 <a onClick={this.closeRegisterError}>X</a>
                             </div>
-                            <h2>Registro</h2>
+                            <SectionTitle title={"Register"}/>
                             <li>
                                 <label htmlFor="name">Nombre</label>
                                 <input type="text" className="PraxisNext-Bold" name="name"

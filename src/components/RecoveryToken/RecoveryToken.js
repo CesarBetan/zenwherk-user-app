@@ -6,6 +6,7 @@ import axios from "axios/index";
 import queryString from 'query-string'
 import Button from "../Button/Button";
 import { NavLink } from 'react-router-dom';
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 class RecoveryToken extends Component {
 
@@ -90,7 +91,7 @@ class RecoveryToken extends Component {
                                 {this.state.errorServer}
                                 <a onClick={this.closeRecoverTokenError}>X</a>
                             </div>
-                            <h2>Recuperar Contraseña</h2>
+                            <SectionTitle title={"Recuperar Contraseña"}/>
                             <li>
                                 <label htmlFor="password">Nueva Contraseña</label>
                                 <input type="password" className="PraxisNext-Bold" name="password"

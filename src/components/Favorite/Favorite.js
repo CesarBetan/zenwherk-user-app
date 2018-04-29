@@ -3,6 +3,8 @@ import './Favorite.css';
 import {apiUrl} from "../../Constants";
 import NavBar from '../NavBar/index';
 import axios from "axios/index";
+import FavoritePlaceList from "./FavoritePlaceList/FavoritePlaceList";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 class Favorite extends Component {
 
@@ -35,10 +37,15 @@ class Favorite extends Component {
     }
 
     render() {
+        const result = {};
+        result.reviewRating = 9;
         return (
             <div className="favorite-view">
                 <NavBar/>
-
+                <div className="favorites-list PraxisNext-ExtraBlack">
+                    <SectionTitle title={"Favorites"}/>
+                    <FavoritePlaceList userFavorites={this.state.userFavorites} />
+                </div>
             </div>
         );
     }

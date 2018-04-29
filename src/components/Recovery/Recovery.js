@@ -3,6 +3,7 @@ import './Recovery.css';
 import {apiUrl} from "../../Constants";
 import NavBar from '../NavBar/index';
 import axios from "axios/index";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 class Recovery extends Component {
 
@@ -81,7 +82,7 @@ class Recovery extends Component {
                                 {this.state.errorServer}
                                 <a onClick={this.closeRecoverError}>X</a>
                             </div>
-                            <h2>Recuperar Contraseña</h2>
+                            <SectionTitle title={"Recuperar Contraseña"}/>
                             <li>
                                 <label htmlFor="email">Correo Electrónico</label>
                                 <input type="text" className="PraxisNext-Bold" name="email"
