@@ -11,10 +11,10 @@ class Account extends Component {
         let user = JSON.parse(localStorage.getItem('user'));
         if(user != null){
             this.state = {uuid: user.uuid, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "",
-                userEmail: "", userNewPassword: "", updateSuccess: false, errorMessage: ""};
+                userEmail: "", userNewPassword: "", updateSuccess: false, errorMessage: "", errorServer: ""};
         }else{
             this.state = {uuid: null, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "", userEmail: "",
-                userNewPassword: "",  updateSuccess: false, errorMessage: ""};
+                userNewPassword: "",  updateSuccess: false, errorMessage: "", errorServer: ""};
         }
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeLastName = this.handleChangeLastName.bind(this);
@@ -81,15 +81,14 @@ class Account extends Component {
                     lastName: this.state.userLastName
                 }, config
                 ).then(res => {
-                    if(res.status === 200){
-                        document.getElementById("account-error").style.display = "none";
-                        document.getElementById("account-pre-error").style.display = "none";
-                        document.getElementById("account-success").style.display = "block";
-                    }else{
-                        document.getElementById("account-pre-error").style.display = "none";
-                        document.getElementById("account-success").style.display = "none";
-                        document.getElementById("account-error").style.display = "block";
-                    }
+                    document.getElementById("account-error").style.display = "none";
+                    document.getElementById("account-pre-error").style.display = "none";
+                    document.getElementById("account-success").style.display = "block";
+                }).catch(err => {
+                    this.setState({errorServer: err.response.data.message});
+                    document.getElementById("account-pre-error").style.display = "none";
+                    document.getElementById("account-success").style.display = "none";
+                    document.getElementById("account-error").style.display = "block";
                 });
             }
         }else if(this.state.userNewPassword.length < 8){
@@ -108,11 +107,14 @@ class Account extends Component {
                     password: this.state.userNewPassword
                 }, config
                 ).then(res => {
-                    if(res.status === 200){
-                        document.getElementById("account-success").style.display = "block";
-                    }else{
-                        document.getElementById("account-error").style.display = "block";
-                    }
+                    document.getElementById("account-error").style.display = "none";
+                    document.getElementById("account-pre-error").style.display = "none";
+                    document.getElementById("account-success").style.display = "block";
+                }).catch(err => {
+                    this.setState({errorServer: err.response.data.message});
+                    document.getElementById("account-pre-error").style.display = "none";
+                    document.getElementById("account-success").style.display = "none";
+                    document.getElementById("account-error").style.display = "block";
                 });
             }
         }
@@ -144,7 +146,7 @@ class Account extends Component {
                                 <a onClick={this.closeAccountPreError}>X</a>
                             </div>
                             <div className="isa_error" id="account-error">
-                                La cuenta NO pudo ser actualizada.
+                                {this.state.errorServer}
                                 <a onClick={this.closeAccountError}>X</a>
                             </div>
                             <h2>Cuenta</h2>

@@ -63,6 +63,9 @@ class Menu extends Component {
                             <li>
                                 <a href={authUrl + "oauth/authorize?client_id=zenwherk&response_type=token&redirect_uri="+frontUrl}> Iniciar Sesión</a>
                             </li>
+                            <li>
+                                <NavLink to = {'/register'}>Registrarse</NavLink>
+                            </li>
                         </ul>
                         :
                         <ul className="list-account">
