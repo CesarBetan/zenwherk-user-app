@@ -73,6 +73,9 @@ class Menu extends Component {
                                 <NavLink to ={'/account'}>Ver Cuenta </NavLink>
                             </li>
                             <li>
+                                Ver Favoritos
+                            </li>
+                            <li>
                                 <a
                                     style={{color:'#FFF', cursor:'pointer'}}
                                     onClick={() => {
