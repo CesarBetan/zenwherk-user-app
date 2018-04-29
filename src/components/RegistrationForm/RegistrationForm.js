@@ -62,7 +62,7 @@ class RegistrationForm extends Component {
             document.getElementById("register-success").style.display = "none";
             document.getElementById("register-error").style.display = "none";
             document.getElementById("register-pre-error").style.display = "block";
-        }else if(!/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i.test(this.state.userEmail)){
+        }else if(!/^([a-zA-Z0-9_\-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i.test(this.state.userEmail)){
             this.setState({errorMessage: "Ingresa un correo válido."});
             document.getElementById("register-success").style.display = "none";
             document.getElementById("register-error").style.display = "none";

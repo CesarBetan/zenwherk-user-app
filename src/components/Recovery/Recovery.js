@@ -40,7 +40,7 @@ class Recovery extends Component {
     handleSubmit(event) {
         event.preventDefault();
         this.setState({errorMessage: ""})
-        if(!/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i.test(this.state.userEmail)){
+        if(!/^([a-zA-Z0-9_\-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i.test(this.state.userEmail)){
             this.setState({errorMessage: "Ingresa un correo válido."});
             document.getElementById("recover-success").style.display = "none";
             document.getElementById("recover-error").style.display = "none";
