@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Account.css';
-import NavBar from '../NavBar/index'
+import NavBar from '../NavBar/index';
 import {apiUrl} from "../../Constants";
 
 class Account extends Component {

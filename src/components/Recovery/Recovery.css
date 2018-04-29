@@ -1,0 +1,11 @@
+.recovery-view .nav-bar-wrapper{
+    background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.9));
+}
+
+#recover-success a, #recover-error a, #recover-pre-error a{
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    top: 3px;
+    right: 10px;
+}
