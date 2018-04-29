@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { apiUrl } from '../../Constants';
 import './Place.css';
 import NavBar from '../NavBar';
 import Hero from './Hero';
@@ -25,7 +26,7 @@ class Place extends Component {
     }
 
     getPlace() {
-      const endpoint = 'http://192.168.0.16:8080/v1/public/place/'
+      const endpoint = apiUrl + 'public/place/'
       axios.get(endpoint + this.state.uuid).then(response => {
         switch (response.status) {
           case 200:
