@@ -10,14 +10,20 @@ class Account extends Component {
         super(props);
         let user = JSON.parse(localStorage.getItem('user'));
         if(user != null){
-            this.state = {uuid: user.uuid, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "", userEmail: "", userNewPassword: ""};
+            this.state = {uuid: user.uuid, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "",
+                userEmail: "", userNewPassword: "", updateSuccess: false, errorMessage: ""};
         }else{
-            this.state = {uuid: null, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "", userEmail: "", userNewPassword: ""};
+            this.state = {uuid: null, userData:[], endpoint: apiUrl+"user/", userName: "", userLastName: "", userEmail: "",
+                userNewPassword: "",  updateSuccess: false, errorMessage: ""};
         }
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeLastName = this.handleChangeLastName.bind(this);
         this.handleChangeNewPassword = this.handleChangeNewPassword.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+
+        this.closeAccountSuccess = this.closeAccountSuccess.bind(this);
+        this.closeAccountError = this.closeAccountError.bind(this);
+        this.closeAccountPreError = this.closeAccountPreError.bind(this);
     }
 
     getUser(){
@@ -54,30 +60,72 @@ class Account extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+        this.setState({errorMessage: ""})
         if(this.state.userName.trim().length < 1){
-            console.log("El nombre debe de tener al menos 1 caracter");
+            this.setState({errorMessage: "El nombre debe de tener al menos 1 caracter."});
+            document.getElementById("account-success").style.display = "none";
+            document.getElementById("account-error").style.display = "none";
+            document.getElementById("account-pre-error").style.display = "block";
         }else if(this.state.userLastName.trim().length < 1) {
-            alert("El apellido debe de tener al menos 1 caracter");
+            this.setState({errorMessage: "El apellido debe de tener al menos 1 caracter."});
+            document.getElementById("account-success").style.display = "none";
+            document.getElementById("account-error").style.display = "none";
+            document.getElementById("account-pre-error").style.display = "block";
         }else if(this.state.userNewPassword === ''){
-            axios.put(this.state.endpoint + this.state.uuid, {
-                name: this.state.userName,
-                lastName: this.state.userLastName
-            }).then(res => {
-                console.log(res);
-                console.log(res.data);
-            });
-        }else if(this.state.userNewPassword.trim.length > 0 && this.state.userNewPassword.trim.length < 8){
-            console.log("La contraseña debe tener al menos 8 caracteres");
+            if(localStorage.getItem("accesstoken")){
+                const config = {
+                    headers:{'Authorization':'Bearer ' + localStorage.getItem("accesstoken")}
+                };
+                axios.put(this.state.endpoint + this.state.uuid, {
+                    name: this.state.userName,
+                    lastName: this.state.userLastName
+                }, config
+                ).then(res => {
+                    if(res.status === 200){
+                        document.getElementById("account-error").style.display = "none";
+                        document.getElementById("account-pre-error").style.display = "none";
+                        document.getElementById("account-success").style.display = "block";
+                    }else{
+                        document.getElementById("account-pre-error").style.display = "none";
+                        document.getElementById("account-success").style.display = "none";
+                        document.getElementById("account-error").style.display = "block";
+                    }
+                });
+            }
+        }else if(this.state.userNewPassword.length < 8){
+            this.setState({errorMessage: "La nueva contraseña debe tener al menos 8 caracteres."});
+            document.getElementById("account-success").style.display = "none";
+            document.getElementById("account-error").style.display = "none";
+            document.getElementById("account-pre-error").style.display = "block";
         }else{
-            axios.put(this.state.endpoint + this.state.uuid, {
-                name: this.state.userName,
-                lastName: this.state.userLastName,
-                password: this.state.userNewPassword
-            }).then(res => {
-                console.log(res);
-                console.log(res.data);
-            });
+            if(localStorage.getItem("accesstoken")){
+                const config = {
+                    headers:{'Authorization':'Bearer ' + localStorage.getItem("accesstoken")}
+                };
+                axios.put(this.state.endpoint + this.state.uuid, {
+                    name: this.state.userName,
+                    lastName: this.state.userLastName,
+                    password: this.state.userNewPassword
+                }, config
+                ).then(res => {
+                    if(res.status === 200){
+                        document.getElementById("account-success").style.display = "block";
+                    }else{
+                        document.getElementById("account-error").style.display = "block";
+                    }
+                });
+            }
         }
+    }
+
+    closeAccountSuccess(event) {
+        document.getElementById("account-success").style.display = "none";
+    }
+    closeAccountError(event) {
+        document.getElementById("account-error").style.display = "none";
+    }
+    closeAccountPreError(event) {
+        document.getElementById("account-pre-error").style.display = "none";
     }
 
     render() {
@@ -87,6 +135,18 @@ class Account extends Component {
                 <div>
                     <form className="form-style-user" onSubmit={this.handleSubmit}>
                         <ul className="PraxisNext-Bold">
+                            <div className="isa_success" id="account-success">
+                                La cuenta fue actualizada correctamente.
+                                <a onClick={this.closeAccountSuccess}>X</a>
+                            </div>
+                            <div className="isa_error" id="account-pre-error">
+                                {this.state.errorMessage}
+                                <a onClick={this.closeAccountPreError}>X</a>
+                            </div>
+                            <div className="isa_error" id="account-error">
+                                La cuenta NO pudo ser actualizada.
+                                <a onClick={this.closeAccountError}>X</a>
+                            </div>
                             <h2>Cuenta</h2>
                             <li>
                                 <label htmlFor="name">Nombre</label>
@@ -104,8 +164,8 @@ class Account extends Component {
                             </li>
                             <li>
                                 <label htmlFor="email">Correo Electrónico</label>
-                                <input type="email" className="PraxisNext-Bold" name="email"
-                                       value={this.state.userEmail} />
+                                <input type="email" className="PraxisNext-Bold user-input-disabled" name="email"
+                                       value={this.state.userEmail} disabled/>
                                 <span>Ingresa un correo electrónico válido</span>
                             </li>
                             <li>

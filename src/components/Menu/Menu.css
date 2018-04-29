@@ -1,0 +1,20 @@
+.expandable-menu{
+    background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.8));
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: calc(100vh - 3.75rem);
+    border-top: #909090 1px solid;overflow: hidden;
+}
+
+.expandable-menu ul{
+    list-style: none;
+    text-align: left;
+}
+
+
+.list-account li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
