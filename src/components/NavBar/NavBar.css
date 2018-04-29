@@ -1,18 +1,52 @@
 .nav-bar-wrapper {
-  width: 100%;
-  height: 3.75rem;
-  background-color: transparent;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  position: absolute;
-  z-index: 5;
+    width: 100%;
+    height: 3.75rem;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    position: absolute;
+    z-index: 5;
 }
 
-.hamburguer{
-  position: absolute;
-  left: 20px;
-  top: 15px;
+.hamburguer, .hamburguer-transform{
+    position: absolute;
+    left: 1.25rem;
+    top: 0.6875rem;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+    height: 1.5625rem;
+    width: 2.1875rem;
+}
+
+.hamburguer .menu-icon{
+    position: absolute;
+    top: 0.625rem;
+    left: 0rem;
+    transform: rotate(0deg);
+}
+
+.hamburguer .menu-icon1{
+    position: absolute;
+    top: 1.5625rem;
+    left: 0rem;
+}
+
+.hamburguer .menu-icon, .hamburguer .menu-icon1 {
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburguer-transform .menu-icon{
+    transform: rotate(135deg);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.hamburguer-transform .menu-icon1{
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0.125rem;
+    top: 1.125rem;
+    transition: all 0.4s ease-in-out;
 }

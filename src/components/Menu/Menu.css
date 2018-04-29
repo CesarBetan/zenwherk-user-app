@@ -4,7 +4,7 @@
     top: 60px;
     width: 100%;
     height: calc(100vh - 3.75rem);
-    border-top: #909090 1px solid;overflow: hidden;
+    border-top: #fafafa 2px solid;overflow: hidden;
 }
 
 .expandable-menu ul{

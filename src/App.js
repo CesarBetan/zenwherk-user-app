@@ -14,6 +14,7 @@ import Reviews from './components/Reviews';
 import Account from './components/Account';
 import Recovery from './components/Recovery';
 import RecoveryToken from "./components/RecoveryToken/RecoveryToken";
+import Favorite from "./components/Favorite/Favorite";
 
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
                         <Route path="/contact" component={Contact}/>
                         <Route path="/about" component={AboutUs}/>
                         <Route path="/account" component={Account}/>
+                        <Route path="/favorites" component={Favorite}/>
                         <Redirect from='*' to='/' />
                     </Switch>
                 </div>
