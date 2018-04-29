@@ -1,0 +1,18 @@
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.5rem;
+  height: 2.1875rem;
+  border-radius: 0.3125rem;
+  color: #002F37;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.filter-button:first-of-type {
+  margin-right: 0.625rem;
+}
+
+.filter-button-title {
+  margin-top: 0.1875rem;
+}

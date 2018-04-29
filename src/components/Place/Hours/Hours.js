@@ -8,7 +8,7 @@ class Hours extends Component {
         return (
           <div className="place-hours-container PraxisNext-ExtraBlack">
             <SectionTitle title="Hours"/>
-            <HoursDescription/>
+            <HoursDescription schedule={this.props.schedule}/>
           </div>
         );
     }

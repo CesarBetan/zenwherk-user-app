@@ -13,13 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
-.place-hero-image-wrapper {
+.place-hero-image {
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
-  background: linear-gradient(rgba(0, 47, 55, 0.5), rgba(0, 47, 55, 0.5)), url('../../../assets/Place/Place Hero.jpg') center center/cover no-repeat;
+  object-fit: cover;
 }
 
 .place-hero-name {
@@ -30,4 +30,12 @@
 .place-hero-hours-wrapper {
   position: absolute;
   bottom: 1.25rem;
+}
+
+
+.place-hero-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 47, 55, 0.5), rgba(0, 47, 55, 0.5));
 }

@@ -4,7 +4,7 @@ import ServiceCell from '../ServiceCell';
 
 class ServicesList extends Component {
 
-    getServices(servicesData) {
+    getServicesIdeal(servicesData) {
       var services = []
       var moreServices = []
       for(var i = 0; i < servicesData.length; i++) {
@@ -137,13 +137,12 @@ class ServicesList extends Component {
       services.push.apply(services, moreServices)
       return services
     }
-
     render() {
         const services = this.props.services;
         return (
           <div className="services-list-container">
             {
-              this.getServices(services.filter(service => service.available))
+              services
               .map((service, i) =>
                 <ServiceCell key={i} service={service}/>
               )

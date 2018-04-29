@@ -4,11 +4,11 @@ import './FullWidthButton.css';
 class FullWidthButton extends Component {
     render() {
         return (
-          <div className={`full-width-button PraxisNext-Ultra ${this.props.className}`}>
+          <a href={this.props.href} target="_blank" className={`full-width-button PraxisNext-Ultra ${this.props.className}`}>
             <span className="full-width-button-text">
               {this.props.title}
             </span>
-          </div>
+          </a>
         );
     }
 }

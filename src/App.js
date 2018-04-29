@@ -23,11 +23,11 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/register" component={RegistrationForm}/>
                         <Route path="/place/create" component={PlaceForm}/>
-                        <Route path="/place/:id/edit" component={PlaceForm}/>
-                        <Route path="/place/:id/reviews" component={Reviews}/>
-                        <Route path="/place/:id" component={Place}/>
+                        <Route path="/place/:uuid/edit" component={PlaceForm}/>
+                        <Route path="/place/:uuid/reviews" component={Reviews}/>
+                        <Route path="/place/:uuid" component={Place}/>
                         <Route path="/search" component={SearchResults}/>
-                        <Route path="/compare/:id_1/:id_2" component={CompareView}/>
+                        <Route path="/compare/:uuid_1/:uuid_2" component={CompareView}/>
                         <Route path="/near" component={NearPlaces}/>
                         <Route path="/contact" component={Contact}/>
                         <Route path="/about" component={AboutUs}/>

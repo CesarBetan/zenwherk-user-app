@@ -1,0 +1,20 @@
+.gallery-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.25rem;
+}
+
+.gallery-pictures-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.gallery-pictures-wrapper::after {
+  content: "";
+  flex: 0 0 0;
+  flex-basis: calc((100vw - 21.25rem)/2);
+}

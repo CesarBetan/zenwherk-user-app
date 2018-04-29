@@ -1,16 +1,38 @@
 import React, { Component } from 'react';
 import './HoursDescription.css';
-import { hours } from '../HoursData';
 
 class HoursDescription extends Component {
+
+    parseScheduleDay(current) {
+      switch (current.day) {
+        case 1:
+          return 'Monday'
+        case 2:
+          return 'Tuesday'
+        case 3:
+          return 'Wednesday'
+        case 4:
+          return 'Thursday'
+        case 5:
+          return 'Friday'
+        case 6:
+          return 'Saturday'
+        case 7:
+          return 'Sunday'
+        default:
+          return null
+      }
+    }
+
     render() {
+        const schedule = this.props.schedule
         return (
           <div className="hours-description-container PraxisNext-Heavy">
             {
-              hours.map((current, i) =>
+              schedule.map((current, i) =>
                 <div className="hours-description-wrapper" key={i}>
                   <span className="hours-description-day">
-                    {current.day}
+                    { this.parseScheduleDay(current) }
                   </span>
                   <span className="hours-description-times">
                     {

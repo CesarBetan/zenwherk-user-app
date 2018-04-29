@@ -5,7 +5,7 @@ import NavBar from '../NavBar/index'
 
 class Account extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         let user = JSON.parse(localStorage.getItem('user'));
         if(user == null){
@@ -14,15 +14,15 @@ class Account extends Component {
         }
         user = JSON.parse(localStorage.getItem('user'));
         user = user.user[0].uuid;
-        this.state = {uuid: user, userData:[], apiKey:"http://192.168.0.16:8080/v1/user/"};
+        this.state = {uuid: user, userData:[], endpoint:"http://192.168.0.16:8080/v1/user/"};
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeLastName = this.handleChangeLastName.bind(this);
         this.handleChangeNewPassword = this.handleChangeNewPassword.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    getUser(){
-        axios.get(this.state.apiKey + this.state.uuid).then(res => {
+    getUser() {
+        axios.get(this.state.endpoint + this.state.uuid).then(res => {
             this.setState({userData:res.data});
             this.setState({userName:res.data.name});
             this.setState({userLastName:res.data.lastName});
@@ -30,7 +30,7 @@ class Account extends Component {
         });
     }
 
-    componentWillMount(){
+    componentWillMount() {
         this.getUser();
     }
 
@@ -51,7 +51,7 @@ class Account extends Component {
         }else if(this.state.userLastName.trim().length < 1) {
             alert("El apellido debe de tener al menos 1 caracter");
         }else if(this.state.userNewPassword === ''){
-            axios.put(this.state.apiKey + this.state.uuid, {
+            axios.put(this.state.endpoint + this.state.uuid, {
                 name: this.state.userName,
                 lastName: this.state.userLastName
             }).then(res => {
@@ -61,7 +61,7 @@ class Account extends Component {
         }else if(this.state.userNewPassword.trim.length > 0 && this.state.userNewPassword.trim.length < 8){
             console.log("La contraseña debe tener al menos 8 caracteres");
         }else{
-            axios.put(this.state.apiKey + this.state.uuid, {
+            axios.put(this.state.endpoint + this.state.uuid, {
                 name: this.state.userName,
                 lastName: this.state.userLastName,
                 password: this.state.userNewPassword

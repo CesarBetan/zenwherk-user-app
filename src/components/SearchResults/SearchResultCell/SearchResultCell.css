@@ -1,0 +1,58 @@
+.search-result-cell-container {
+  min-width: 21.25rem;
+  width: calc(100% - (1.16rem * 2));
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.search-result-cell-title {
+  display: block;
+  font-size: 1.25rem;
+  overflow: hidden;
+  text-align: left;
+  color: #00DE91;
+  height: auto;
+  width: auto;
+}
+
+.search-result-cell-reviews {
+  font-size: 0.875rem;
+}
+
+.search-result-cell-star-wrapper {
+  margin-top: 0.3125rem;
+}
+
+.search-result-cell-star-image {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-left: 0.3125em;
+}
+
+.search-result-cell-star-image:first-of-type {
+  margin-left: 0;
+}
+
+.search-result-cell-text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.625rem;
+}
+
+.search-result-cell-image {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: calc(7.5rem / 2);
+  overflow: hidden;
+  object-fit: cover;
+  flex: 0 0 auto;
+  margin: 0 1.625rem;
+}

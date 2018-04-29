@@ -34,66 +34,68 @@ class ReviewsCell extends Component {
                 userPlaceholderImage : review.userImage}
               />
               <span className="review-cell-user-name PraxisNext-Bold">
-                {review.userName}
+                {`${review.user.name} ${review.user.lastName.substring(0, 1)}.`}
               </span>
               <span className="review-cell-number-of-reviews PraxisNext-Bold">
-                {review.numberOfUserReviews} reviews
+                {review.numberOfUserReviews === undefined ? '' :
+                review.numberOfUserReviews === 1 ? `${review.numberOfUserReviews} review`
+                : `${review.numberOfUserReviews} reviews`}
               </span>
             </div>
             <div className="review-cell-body-wrapper">
               <div className="review-cell-header-wrapper">
                 <div className="review-cell-star-wrapper">
                   <img className="review-cell-star-image"
-                    alt={(review.rating > 0 && review.rating != null)
+                    alt={(review.reviewRating > 0 && review.reviewRating != null)
                       ? "Filled Star" : "No Fill Star"}
-                    src={(review.rating > 0 && review.rating != null)
+                    src={(review.reviewRating > 0 && review.reviewRating != null)
                       ? filledStar : emptyStar}
                   />
                   <img className="review-cell-star-image"
-                    alt={(review.rating > 1 && review.rating != null)
+                    alt={(review.reviewRating > 1 && review.reviewRating != null)
                       ? "Filled Star" : "No Fill Star"}
-                    src={(review.rating > 1 && review.rating != null)
+                    src={(review.reviewRating > 1 && review.reviewRating != null)
                       ? filledStar : emptyStar}
                   />
                   <img className="review-cell-star-image"
-                    alt={(review.rating > 2 && review.rating != null)
+                    alt={(review.reviewRating > 2 && review.reviewRating != null)
                       ? "Filled Star" : "No Fill Star"}
-                    src={(review.rating > 2 && review.rating != null)
+                    src={(review.reviewRating > 2 && review.reviewRating != null)
                       ? filledStar : emptyStar}
                   />
                   <img className="review-cell-star-image"
-                    alt={(review.rating > 3 && review.rating != null)
+                    alt={(review.reviewRating > 3 && review.reviewRating != null)
                       ? "Filled Star" : "No Fill Star"}
-                    src={(review.rating > 3 && review.rating != null)
+                    src={(review.reviewRating > 3 && review.reviewRating != null)
                       ? filledStar : emptyStar}
                   />
                   <img className="review-cell-star-image"
-                    alt={(review.rating > 4 && review.rating != null)
+                    alt={(review.reviewRating > 4 && review.reviewRating != null)
                       ? "Filled Star" : "No Fill Star"}
-                    src={(review.rating > 4 && review.rating != null)
+                    src={(review.reviewRating > 4 && review.reviewRating != null)
                       ? filledStar : emptyStar}
                   />
                 </div>
                 <div className="review-cell-date PraxisNext-Regular">
                   {
-                    moment.utc(review.date * 1000).isSameOrAfter(moment()
+                    moment.utc(review.createdAt).isSameOrAfter(moment()
                     .subtract(24, 'hours')) ?
-                    moment.utc(review.date * 1000).fromNow()
+                    moment.utc(review.createdAt).fromNow()
                     :
-                    moment.utc(review.date * 1000).isSameOrAfter(moment()
+                    moment.utc(review.createdAt).isSameOrAfter(moment()
                     .subtract(7, 'days')) ?
-                    moment.utc(review.date * 1000).format("ddd")
+                    moment.utc(review.createdAt).format("ddd")
                     :
-                    moment.utc(review.date * 1000).isBefore(moment()
+                    moment.utc(review.createdAt).isBefore(moment()
                     .subtract(319, 'days')) ?
-                    moment.utc(review.date * 1000).fromNow()
+                    moment.utc(review.createdAt).fromNow()
                     :
-                    moment.utc(review.date * 1000).format("D MMM")
+                    moment.utc(review.createdAt).format("D MMM")
                   }
                 </div>
               </div>
               <div className="review-cell-content-wrapper PraxisNext-Regular">
-                {review.content}
+                {review.reviewText}
               </div>
             </div>
           </div>

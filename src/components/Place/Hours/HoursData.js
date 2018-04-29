@@ -1,42 +1,42 @@
 export const hours = [
   {
-    day: 'Monday',
+    day: 1,
     open: true,
     openingTime: '9:00AM',
     closingTime: '10:00PM',
   },
   {
-    day: 'Tuesday',
+    day: 2,
     open: true,
     openingTime: '9:00AM',
     closingTime: '10:00PM',
   },
   {
-    day: 'Wednesday',
+    day: 3,
     open: true,
     openingTime: '9:00AM',
     closingTime: '10:00PM',
   },
   {
-    day: 'Thursday',
+    day: 4,
     open: true,
     openingTime: '9:00AM',
     closingTime: '10:00PM',
   },
   {
-    day: 'Friday',
+    day: 5,
     open: true,
     openingTime: '9:00AM',
     closingTime: '10:00PM',
   },
   {
-    day: 'Saturday',
+    day: 6,
     open: true,
     openingTime: '8:00AM',
     closingTime: '9:00PM',
   },
   {
-    day: 'Sunday',
+    day: 7,
     open: false,
   },
 ]
