@@ -13,7 +13,7 @@
 }
 
 
-.list-account li a{
+.list-account li a, .expandable-menu ul li a{
     text-decoration: none;
     cursor: pointer;
     color: white;

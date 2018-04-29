@@ -171,7 +171,7 @@ class Account extends Component {
                                 <span>Ingresa un correo electrónico válido</span>
                             </li>
                             <li>
-                                <label htmlFor="password">Contraseña</label>
+                                <label htmlFor="password">Nueva Contraseña</label>
                                 <input type="password" className="PraxisNext-Bold" name="password"
                                        onChange={this.handleChangeNewPassword}
                                        value={this.state.userNewPassword} />

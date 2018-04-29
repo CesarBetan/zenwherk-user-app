@@ -13,6 +13,7 @@ import AboutUs from './components/AboutUs';
 import Reviews from './components/Reviews';
 import Account from './components/Account';
 import Recovery from './components/Recovery';
+import RecoveryToken from "./components/RecoveryToken/RecoveryToken";
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/register" component={RegistrationForm}/>
                         <Route path="/recovery" component={Recovery}/>
+                        <Route path="/recovery_token" component={RecoveryToken}/>
                         <Route path="/place/create" component={PlaceForm}/>
                         <Route path="/place/:uuid/edit" component={PlaceForm}/>
                         <Route path="/place/:uuid/reviews" component={Reviews}/>

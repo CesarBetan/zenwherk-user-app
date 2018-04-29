@@ -45,7 +45,7 @@ class Menu extends Component {
             <div className="expandable-menu">
                 <ul>
                     <li>
-                        Home
+                        <NavLink to={"/"}>Home</NavLink>
                     </li>
                     <li>
                         Nearby

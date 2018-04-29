@@ -98,8 +98,8 @@
     color: #4F8A10;
     background-color: #DFF2BF;
     font-size: 14px;
-    margin: 10px 0px;
-    padding:12px;
+    margin: 0.625rem 0rem;
+    padding: 0.75rem;
     display: none;
     text-align: left;
     position: relative;
@@ -107,9 +107,9 @@
 .isa_error {
     color: #D8000C;
     background-color: #FFD2D2;
-    font-size: 14px;
-    margin: 10px 0px;
-    padding:12px;
+    font-size: 0.875rem;
+    margin: 0.625rem 0rem;
+    padding: 0.75rem;
     display: none;
     text-align: left;
     position: relative;
@@ -118,6 +118,6 @@
     position: absolute;
     text-decoration: none;
     cursor: pointer;
-    top: 3px;
-    right: 10px;
+    top: 0.1875rem;
+    right: 0.625rem;
 }

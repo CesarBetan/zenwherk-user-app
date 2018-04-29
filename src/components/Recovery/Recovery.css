@@ -6,6 +6,6 @@
     position: absolute;
     text-decoration: none;
     cursor: pointer;
-    top: 3px;
-    right: 10px;
+    top: 0.1875rem;
+    right: 0.625rem;
 }
