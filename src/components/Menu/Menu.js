@@ -73,7 +73,7 @@ class Menu extends Component {
                                 <NavLink to ={'/account'}>Ver Cuenta </NavLink>
                             </li>
                             <li>
-                                <NavLink>Ver Favoritos</NavLink>
+                                <NavLink to ={'/favorites'}>Ver Favoritos</NavLink>
                             </li>
                             <li>
                                 <a
