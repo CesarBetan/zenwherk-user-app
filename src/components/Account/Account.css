@@ -70,12 +70,19 @@
 }
 .form-style-user input[type="submit"],
 .form-style-user input[type="button"]{
-    background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.9));
-    border: none;
-    font-size: 0.9375rem;
-    padding: 0.8125rem 2.5rem;
-    border-radius: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    background-color: #00DE91;
+    min-height: calc(3.125rem - (0.625rem * 2));
+    min-width: calc(10rem - (2.1875rem * 2));
+    width: auto;
     color: white;
+    max-width: calc(100% - 2.5rem);
+    padding: 0.625rem 2.1875rem;
+    border-radius: 0.3125rem;
+    border: none;
 }
 .form-style-user input[type="submit"]:hover,
 .form-style-user input[type="button"]:hover{
