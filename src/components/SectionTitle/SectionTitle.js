@@ -4,7 +4,7 @@ import './SectionTitle.css';
 class SectionTitle extends Component {
     render() {
         return (
-          <span className="section-title PraxisNext-ExtraBlack">
+          <span className={`${this.props.className} section-title PraxisNext-ExtraBlack`}>
             {this.props.title}
           </span>
         );

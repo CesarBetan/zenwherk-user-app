@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import './FilterButton.css';
 
 class FilterButton extends Component {
+    onClick() {
+      const { title, onClick } = this.props;
+      onClick(title);
+    }
+
     render() {
-        const { title, onClick } = this.props
+        const { title } = this.props
         return (
-          <div onClick={onClick} className="filter-button">
+          <div onClick={this.onClick.bind(this)} className="filter-button">
             <span className="filter-button-title">
               {title}
             </span>
