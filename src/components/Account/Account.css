@@ -42,7 +42,8 @@
 .form-style-user input[type="text"],
 .form-style-user input[type="email"],
 .form-style-user input[type="url"],
-.form-style-user input[type="password"]
+.form-style-user input[type="password"],
+.form-style-user textarea
 {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -56,10 +57,14 @@
     font-size: 0.875rem;
     padding: 0;
 }
+.form-style-user textarea{
+    resize: none;
+}
 .form-style-user input[type="text"]:focus,
 .form-style-user input[type="email"]:focus,
 .form-style-user input[type="url"]:focus,
-.form-style-user input[type="password"]:focus
+.form-style-user input[type="password"]:focus,
+.form-style-user textarea
 {
 }
 .form-style-user li > span{

@@ -4,6 +4,7 @@ import SectionTitle from '../../SectionTitle';
 import ReviewsList from './ReviewsList';
 import Button from '../../Button';
 import { NavLink } from 'react-router-dom';
+import FullWidthButton from "../../FullWidthButton/FullWidthButton";
 
 class Reviews extends Component {
     render() {
@@ -12,6 +13,7 @@ class Reviews extends Component {
         return (
           <div className="reviews-container">
             <SectionTitle title={`Reviews (${reviews.length})`}/>
+              <FullWidthButton href={'/place/' + placeUuid + '/review/create'} title={"Write Review"} targetBlank={false}/>
             <ReviewsList reviews={reviews} allReviews={false}/>
             {
               reviews.length > 2 ?
