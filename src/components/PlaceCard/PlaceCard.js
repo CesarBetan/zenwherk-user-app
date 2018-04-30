@@ -4,7 +4,7 @@ import placeholderImage from '../../assets/Place/Place Hero.jpg';
 
 class PlaceCard extends Component {
     render() {
-        const { featuredPlace } = this.props
+        const { featuredPlace } = this.props;
         return (
           <div className="place-card-container PraxisNext-ExtraBlack">
             <div className="place-card-rounded-container">
@@ -13,7 +13,7 @@ class PlaceCard extends Component {
                 <img className="place-card-image" alt="Place"
                 src={
                   (featuredPlace.pictures === null || featuredPlace.pictures.length === 0) ?
-                  placeholderImage : featuredPlace.pictures[0]
+                  placeholderImage : featuredPlace.pictures[0].url
                 }/>
               </div>
               <div className="place-card-text-wrapper">
@@ -21,7 +21,7 @@ class PlaceCard extends Component {
                   { featuredPlace.name }
                 </span>
                 <span className="place-card-headline PraxisNext-SemiBold">
-                  { featuredPlace.headline }
+                  { featuredPlace.description }
                 </span>
               </div>
             </div>

@@ -43,13 +43,13 @@
 .place-hero-favorite-heart-container {
   cursor: pointer;
   position: absolute;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.0rem;
+  height: 2.0rem;
   right: 1.0rem;
   top: 0.7rem;
   z-index: 10;
 }
 .place-hero-favorite-heart {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.0rem;
+  height: 2.0em;
 }

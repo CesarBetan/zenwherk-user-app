@@ -1,20 +1,33 @@
 import React, { Component } from 'react';
 import './FeaturedPlaces.css';
 import SectionTitle from '../SectionTitle';
+import {apiUrl} from "../../Constants";
 import PlaceCard from '../PlaceCard';
+import axios from "axios/index";
 
 class FeaturedPlaces extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = { places: [], endpoint: apiUrl+"public/place?q=featured" }
+    }
+
+    componentWillMount() {
+        axios.get(this.state.endpoint).then((res) => {
+            this.setState({ places: res.data.result });
+        }).catch(() => {
+
+        });
+    }
+
     render() {
-        const places = [{name: "Nothing But Coffee", pictures: [],
-        headline: "A hidden gem in the heart of L.A."}, {name: "Nothing But Coffee", pictures: [],
-        headline: "A hidden gem in the heart of L.A."}]
+        const { places } = this.state;
         return (
           <div className="featured-places-container PraxisNext-ExtraBlack">
             <SectionTitle title="Places We Love"/>
             {
-              places.map((featuredPlace, i) =>
-                <PlaceCard key={i} featuredPlace={featuredPlace}/>
+              places.map((featuredPlace) =>
+                <PlaceCard key={featuredPlace.uuid} featuredPlace={featuredPlace}/>
               )
             }
           </div>
