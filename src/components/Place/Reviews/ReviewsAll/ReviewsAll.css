@@ -1,0 +1,7 @@
+.reviews-all-view .nav-bar-wrapper{
+    background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.9));
+}
+
+.all-reviews-list{
+    padding: 3.625rem 1rem 0rem 1rem;
+}

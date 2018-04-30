@@ -10,7 +10,7 @@ import CompareView from './components/CompareView';
 import PlaceForm from './components/PlaceForm';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
-import Reviews from './components/Reviews';
+import Reviews from './components/Place/Reviews/ReviewsAll/';
 import Account from './components/Account';
 import Recovery from './components/Recovery';
 import RecoveryToken from "./components/RecoveryToken/RecoveryToken";

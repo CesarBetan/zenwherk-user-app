@@ -69,9 +69,9 @@ class Place extends Component {
     }
 
     render() {
-        const place = this.state.place
+        const place = this.state.place;
         const schedule = place === null ? undefined :
-        this.createSchedule(place.schedules)
+        this.createSchedule(place.schedules);
         return (
           <div>
               {
@@ -85,7 +85,7 @@ class Place extends Component {
                   <Hero title={place.name}
                   picture={place.pictures.length > 0 ?
                   place.pictures[0] : undefined} schedule={schedule}/>
-                  <Reviews reviews={place.reviews}/>
+                  <Reviews uuidPlace={this.state.uuid} reviews={place.reviews}/>
                   <Services services={place.features}/>
                   <Gallery pictures={place.pictures}/>
                   <Address latitude={place.latitude}

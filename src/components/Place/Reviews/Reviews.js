@@ -3,17 +3,21 @@ import './Reviews.css';
 import SectionTitle from '../../SectionTitle';
 import ReviewsList from './ReviewsList';
 import Button from '../../Button';
+import { NavLink } from 'react-router-dom';
 
 class Reviews extends Component {
     render() {
-        const reviews = this.props.reviews
+        const reviews = this.props.reviews;
+        const placeUuid = this.props.uuidPlace;
         return (
           <div className="reviews-container">
             <SectionTitle title={`Reviews (${reviews.length})`}/>
-            <ReviewsList reviews={reviews}/>
+            <ReviewsList reviews={reviews} allReviews={false}/>
             {
               reviews.length > 2 ?
-              <Button className="reviews-read-more-button" title="Read More"/>
+              <NavLink to ={'/place/' + placeUuid + '/reviews'}>
+                  <Button className="reviews-read-more-button" title="Read More"/>
+              </NavLink>
               :
               ''
             }
