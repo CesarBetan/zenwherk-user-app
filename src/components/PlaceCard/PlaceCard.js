@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './PlaceCard.css';
 import placeholderImage from '../../assets/Place/Place Hero.jpg';
+import { withRouter } from 'react-router-dom';
 
 class PlaceCard extends Component {
+
+    onClick() {
+      this.props.history.push(`/place/${this.props.featuredPlace.uuid}`);
+    }
+
     render() {
         const { featuredPlace } = this.props;
         return (
-          <div className="place-card-container PraxisNext-ExtraBlack">
+          <div className="place-card-container PraxisNext-ExtraBlack" onClick={this.onClick.bind(this)}>
             <div className="place-card-rounded-container">
               <div className="place-card-image-wrapper">
                 <div className="place-card-image-overlay"/>
@@ -30,4 +36,4 @@ class PlaceCard extends Component {
     }
 }
 
-export default PlaceCard;
+export default withRouter(PlaceCard);
