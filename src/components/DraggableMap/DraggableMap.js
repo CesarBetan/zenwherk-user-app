@@ -14,10 +14,17 @@ class DraggableMap extends Component {
           animation: google.maps.Animation.DROP,
         });
         marker.addListener('click', this.toggleBounce);
+        marker.addListener('dragend', this.handleEvent.bind(this));
         this.setState({marker : marker});
         this.map.setCenter(location);
+        this.props.onMapPinChanged(event.latLng.toString());
       }
-      console.log(event.latLng.toString());
+      //console.log(event.latLng.toString());
+    }
+
+    handleEvent(event) {
+        //console.log(event.latLng.toString());
+        this.props.onMapPinChanged(event.latLng.toString());
     }
 
     createInitialMarker(event) {
@@ -58,8 +65,8 @@ class DraggableMap extends Component {
 
     componentDidMount() {
       const EIFFEL_TOWER_POSITION = {
-        lat: 48.858608,
-        lng: 2.294471
+        lat: 19.426426,
+        lng: -99.167164
       };
       const google = window.google;
       this.map = new google.maps.Map(this.refs.map, {

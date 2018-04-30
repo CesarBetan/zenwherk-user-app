@@ -43,7 +43,8 @@
 .form-style-user input[type="email"],
 .form-style-user input[type="url"],
 .form-style-user input[type="password"],
-.form-style-user textarea
+.form-style-user textarea,
+.form-style-user select
 {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -64,7 +65,8 @@
 .form-style-user input[type="email"]:focus,
 .form-style-user input[type="url"]:focus,
 .form-style-user input[type="password"]:focus,
-.form-style-user textarea
+.form-style-user textarea,
+.form-style-user select
 {
 }
 .form-style-user li > span{

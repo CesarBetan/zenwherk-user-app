@@ -1,0 +1,33 @@
+.place-form-view .nav-bar-wrapper{
+  background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.9));
+}
+
+#place-form-success a, #place-form-error a, #place-form-pre-error a{
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  top: 0.1875rem;
+  right: 0.625rem;
+}
+
+.place-form-map-li{
+  height: 25rem;
+}
+
+.place-relative-li{
+  position: relative;
+}
+
+.place-relative-li p{
+  position: absolute;
+  top: 0.125rem;
+  font-size: 0.875rem;
+  left: 1.4375rem;
+}
+.place-relative-li input[type="text"]{
+  padding-left: 2.5rem !important;
+}
+
+.place-relative-li select{
+  appearance: none;
+}
