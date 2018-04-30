@@ -14,22 +14,22 @@
 .hamburguer, .hamburguer-transform{
     position: absolute;
     left: 1.25rem;
-    top: 0.6875rem;
+    top: 0.875rem;
     cursor: pointer;
     height: 1.5625rem;
-    width: 2.1875rem;
+    width: 1.875rem;
 }
 
 .hamburguer .menu-icon{
     position: absolute;
     top: 0.625rem;
     left: 0rem;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
 }
 
 .hamburguer .menu-icon1{
     position: absolute;
-    top: 1.5625rem;
+    top: 1.125rem;
     left: 0rem;
 }
 
@@ -38,14 +38,15 @@
 }
 
 .hamburguer-transform .menu-icon{
-    transform: rotate(135deg);
+    transform: rotate(-45deg);
     position: relative;
     transition: all 0.4s ease-in-out;
+    top: -4px
 }
 .hamburguer-transform .menu-icon1{
     transform: rotate(45deg);
     position: absolute;
-    left: 0.125rem;
-    top: 1.125rem;
+    left: 1px;
+    top: 14px;
     transition: all 0.4s ease-in-out;
 }

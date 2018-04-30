@@ -10,7 +10,8 @@ import CompareView from './components/CompareView';
 import PlaceForm from './components/PlaceForm';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
-import Reviews from './components/Reviews';
+import Reviews from './components/Place/Reviews/ReviewsAll';
+import ReviewForm from './components/Place/Reviews/ReviewForm';
 import Account from './components/Account';
 import Recovery from './components/Recovery';
 import RecoveryToken from "./components/RecoveryToken/RecoveryToken";
@@ -30,6 +31,7 @@ class App extends Component {
                         <Route path="/place/create" component={PlaceForm}/>
                         <Route path="/place/:uuid/edit" component={PlaceForm}/>
                         <Route path="/place/:uuid/reviews" component={Reviews}/>
+                        <Route path="/place/:uuid/review/create" component={ReviewForm}/>
                         <Route path="/place/:uuid" component={Place}/>
                         <Route path="/search" component={SearchResults}/>
                         <Route path="/compare/:uuid_1/:uuid_2" component={CompareView}/>

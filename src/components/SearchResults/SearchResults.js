@@ -5,7 +5,7 @@ import './SearchResults.css';
 import queryString from 'query-string';
 import NavBar from '../NavBar';
 import SearchBar from './SearchBar';
-import SearchResultCell from './SearchResultCell';
+import CompactPlaceCell from '../CompactPlaceCell';
 
 class SearchResults extends Component {
 
@@ -40,7 +40,7 @@ class SearchResults extends Component {
             <div className="search-results-container">
               <NavBar/>
               <SearchBar/>
-              <SearchResultCell/>
+              <CompactPlaceCell/>
               <p>SearchResults component! Please use q as a query params. {this.renderQueryParams()}</p>
             </div>
         );
