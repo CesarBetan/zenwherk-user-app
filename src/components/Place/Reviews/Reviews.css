@@ -8,3 +8,7 @@
   margin-top: 1.25rem;
   cursor: pointer;
 }
+
+.reviews-container > .full-width-button{
+  margin: 20px 0px;
+}
