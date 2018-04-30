@@ -20,7 +20,7 @@
   text-align: left;
   margin-top: -0.5rem;
   margin-left: 1.25rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 0.5rem;
 }
 .form-style-user textarea{
   resize: none;
@@ -28,3 +28,23 @@
   padding: 0.5rem !important;
 }
 
+.star-rating > input{
+  visibility: hidden;
+}
+
+.star-rating img{
+  height: 2.25rem !important;
+  width: 2.25rem !important;
+}
+
+.li-star-rating{
+  border: none !important;
+}
+
+#review-success a, #review-error a, #review-pre-error a{
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  top: 0.1875rem;
+  right: 0.625rem;
+}
