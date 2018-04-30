@@ -20,6 +20,12 @@ class TextField extends Component {
       this.props.onEnter(this.state.text);
     }
 
+    _handleKeyPress (e)  {
+      if (e.key === 'Enter') {
+        this.onEnter();
+      }
+    }
+
     render() {
         const { name, placeholder, icon } = this.props;
         return (
@@ -31,7 +37,7 @@ class TextField extends Component {
               :
               ''
             }
-            <input onChange={this.onChange.bind(this)} className="textfield-input PraxisNext-Bold"
+            <input onChange={this.onChange.bind(this)} onKeyPress={this._handleKeyPress.bind(this)} className="textfield-input PraxisNext-Bold"
             type="text" name={name} placeholder={placeholder} autoComplete="off"/>
           </div>
         );
