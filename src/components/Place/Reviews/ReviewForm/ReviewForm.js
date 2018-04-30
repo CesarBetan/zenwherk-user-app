@@ -12,7 +12,11 @@ class ReviewForm extends Component {
         super(props);
         let uuid = this.props.match.params.uuid;
         let user = JSON.parse(localStorage.getItem('user'));
-        this.state = { place : [], endpoint: apiUrl+"review/", uuid: uuid, uuidUser: user.uuid, rating: 1 , reviewDescription: ""};
+        if(user !== null){
+            this.state = { place : [], endpoint: apiUrl+"review/", uuid: uuid, uuidUser: user.uuid, rating: 1 , reviewDescription: ""};
+        }else{
+            this.state = { place : [], endpoint: apiUrl+"review/", uuid: uuid, uuidUser: null, rating: 1 , reviewDescription: ""}
+        }
         this.getPlace = this.getPlace.bind(this);
 
         this.handleReviewDescription = this.handleReviewDescription.bind(this);
@@ -21,7 +25,11 @@ class ReviewForm extends Component {
     }
 
     componentWillMount() {
-        this.getPlace()
+        if(!localStorage.getItem('accesstoken')) {
+            this.props.history.push('/');
+        }else {
+            this.getPlace();
+        }
     }
 
     handleReviewDescription(event) {
@@ -90,7 +98,6 @@ class ReviewForm extends Component {
                 const config = {
                     headers:{'Authorization':'Bearer ' + localStorage.getItem("accesstoken")}
                 };
-                console.log(this.state.uuid);
                 axios.post(this.state.endpoint, {
                     reviewRating: this.state.rating,
                     reviewText: this.state.reviewDescription,

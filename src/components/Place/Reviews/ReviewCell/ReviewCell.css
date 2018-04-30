@@ -47,6 +47,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .review-cell-body-wrapper {
@@ -95,4 +96,8 @@
   padding-top: 0;
   text-align: left;
   font-size: 0.875rem;
+}
+
+.review-report-text{
+  color: rgba(0, 222, 145, 1);
 }

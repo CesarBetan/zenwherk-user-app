@@ -13,7 +13,12 @@ class Reviews extends Component {
         return (
           <div className="reviews-container">
             <SectionTitle title={`Reviews (${reviews.length})`}/>
-              <FullWidthButton href={'/place/' + placeUuid + '/review/create'} title={"Write Review"} targetBlank={false}/>
+              {
+                  localStorage.getItem('accesstoken') ?
+                    <FullWidthButton href={'/place/' + placeUuid + '/review/create'} title={"Write Review"} targetBlank={false}/>
+                    :
+                        ""
+              }
             <ReviewsList reviews={reviews} allReviews={false}/>
             {
               reviews.length > 2 ?
