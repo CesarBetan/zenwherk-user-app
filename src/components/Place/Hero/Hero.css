@@ -39,3 +39,17 @@
   height: 100%;
   background: linear-gradient(rgba(0, 47, 55, 0.5), rgba(0, 47, 55, 0.5));
 }
+
+.place-hero-favorite-heart-container {
+  cursor: pointer;
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  right: 1.0rem;
+  top: 0.7rem;
+  z-index: 10;
+}
+.place-hero-favorite-heart {
+  width: 2.2rem;
+  height: 2.2rem;
+}

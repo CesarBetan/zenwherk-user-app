@@ -84,7 +84,7 @@ class Place extends Component {
                   <NavBar/>
                   <Hero title={place.name}
                   picture={place.pictures.length > 0 ?
-                  place.pictures[0] : undefined} schedule={schedule}/>
+                  place.pictures[0] : undefined} schedule={schedule} placeUuid={place.uuid}/>
                   <Reviews uuidPlace={this.state.uuid} reviews={place.reviews}/>
                   <Services services={place.features}/>
                   <Gallery pictures={place.pictures}/>
