@@ -5,15 +5,19 @@ class TextField extends Component {
 
     constructor(props) {
       super(props)
-      this.state = { "hasText" : false }
+      this.state = { hasText : false, text: '' }
     }
 
     onChange(event) {
       if(event.target.value === null || event.target.value === "") {
-        this.setState({ "hasText" : false })
+        this.setState({ hasText : false, text: '' })
       } else {
-        this.setState({ "hasText" : true })
+        this.setState({ hasText : true, text: event.target.value })
       }
+    }
+
+    onEnter() {
+      this.props.onEnter(this.state.text);
     }
 
     render() {
