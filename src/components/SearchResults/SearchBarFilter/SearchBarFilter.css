@@ -1,4 +1,5 @@
 .search-bar-filter-container {
+  display: block;
   width: 100%;
   height: 100vh;
   background-color: white;
@@ -12,9 +13,10 @@
 .search-bar-filter-cross-wrapper {
   width: 1.875rem;
   height: 1.875rem;
-  margin-top: 1.875rem;
-  margin-left: 1.875rem;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
   position: relative;
+  margin-bottom: 1.25rem;
 }
 
 .search-bar-filter-cross {
@@ -31,4 +33,46 @@
 
 .search-bar-filter-cross.cross-right {
   transform: translateY(calc(1.875rem / 2)) rotate(45deg);
+}
+
+.search-bar-filter-content-wrapper {
+  width: 100%;
+  height: calc(100% - 4.375rem);
+  overflow-y: scroll;
+}
+
+.search-bar-filter-scrollable-content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.search-bar-filter-section-title {
+  margin-top: 0;
+}
+
+.filter-checkbox-title {
+  margin-left: 0.5rem;
+}
+
+.filter-form {
+  text-align: left;
+  margin: 1.25rem;
+  margin-bottom: 0;
+}
+
+.filter-form input[type=checkbox] {
+  vertical-align: 0.125rem;
+  margin-bottom: 0.9375rem;
+}
+
+.filter-option-wrapper:last-of-type {
+}
+
+.filter-save-button {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  left: 1.25rem;
 }

@@ -3,8 +3,9 @@ import './Button.css';
 
 class Button extends Component {
     render() {
+        let onClick = this.props.onClick
         return (
-          <div className={`button PraxisNext-Ultra ${this.props.className}
+          <div onClick={onClick} className={`button PraxisNext-Ultra ${this.props.className}
             ${this.props.color == null ? '' : this.props.color === 'white'
             ? 'white-button' : 'green-button'
             }
