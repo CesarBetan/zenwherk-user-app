@@ -9,6 +9,9 @@ class TextField extends Component {
     }
 
     onChange(event) {
+      if(this.props.onTextChange !== undefined) {
+        this.props.onTextChange(event.target.value);
+      }
       if(event.target.value === null || event.target.value === "") {
         this.setState({ hasText : false, text: '' })
       } else {
@@ -17,7 +20,7 @@ class TextField extends Component {
     }
 
     onEnter() {
-      this.props.onEnter(this.state.text);
+      this.props.onEnter();
     }
 
     _handleKeyPress (e)  {
