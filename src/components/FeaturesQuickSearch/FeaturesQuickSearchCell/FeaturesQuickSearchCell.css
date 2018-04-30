@@ -1,4 +1,5 @@
 .features-quick-search-cell-container {
+  cursor: pointer;
   width: 100%;
   height: 5.125rem;
   background-color: #E5E5E5;
