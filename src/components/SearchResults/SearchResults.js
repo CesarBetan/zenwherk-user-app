@@ -40,7 +40,7 @@ class SearchResults extends Component {
             <div className="search-results-container">
               <NavBar/>
               <SearchBar/>
-              <CompactPlaceCell/>
+              {/*<CompactPlaceCell/>*/}
               <p>SearchResults component! Please use q as a query params. {this.renderQueryParams()}</p>
             </div>
         );
