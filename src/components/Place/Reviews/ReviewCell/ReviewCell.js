@@ -24,7 +24,7 @@ class ReviewsCell extends Component {
       axios.post(this.state.endpoint + "review/" + this.state.review.uuid + "/report", null, config
       ).then(res => {
           console.log(res);
-          document.getElementById("review-report-text").classList.add('review-report-text');
+          document.getElementById("review-report-text"+this.state.review.uuid).classList.add('review-report-text');
           this.setState({reportText: "Reported"});
       }).catch(err => {
           console.log(err);
@@ -62,7 +62,7 @@ class ReviewsCell extends Component {
               </span>
                 {
                     localStorage.getItem('accesstoken') ?
-                      <span id="review-report-text" className="review-cell-number-of-reviews PraxisNext-Bold" onClick={this.reportReview}>
+                      <span id={"review-report-text"+this.state.review.uuid} className="review-cell-number-of-reviews PraxisNext-Bold" onClick={this.reportReview}>
                         {/*{review.numberOfUserReviews === undefined ? '' :
                         review.numberOfUserReviews === 1 ? `${review.numberOfUserReviews} review`
                         : `${review.numberOfUserReviews} reviews`}*/}
