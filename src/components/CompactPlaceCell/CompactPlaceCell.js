@@ -3,12 +3,18 @@ import './CompactPlaceCell.css';
 import placeholderImage from '../../assets/Place/Place Hero.jpg'
 import filledStar from '../../assets/Global/Green Filled Star.svg';
 import emptyStar from '../../assets/Global/Green Empty Star.svg';
+import { withRouter } from 'react-router-dom';
 
 class CompactPlaceCell extends Component {
+
+    onClick() {
+        this.props.history.push(`/place/${this.props.place.uuid}`);
+    }
+
     render() {
         const result = this.props.place;
         return (
-          <div className="search-result-cell-container PraxisNext-Heavy">
+          <div className="search-result-cell-container PraxisNext-Heavy" onClick={this.onClick.bind(this)}>
             <div className="search-result-cell-text-wrapper">
               <span className="search-result-cell-title">
                   {result.name}
@@ -79,4 +85,4 @@ class CompactPlaceCell extends Component {
     }
 }
 
-export default CompactPlaceCell;
+export default withRouter(CompactPlaceCell);

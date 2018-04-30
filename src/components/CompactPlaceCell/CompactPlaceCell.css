@@ -1,4 +1,5 @@
 .search-result-cell-container {
+  cursor: pointer;
   min-width: 21.25rem;
   width: calc(100% - (1.16rem * 2));
   height: 10rem;
