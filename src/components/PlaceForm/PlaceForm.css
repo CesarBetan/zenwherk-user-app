@@ -31,3 +31,19 @@
 .place-relative-li select{
   appearance: none;
 }
+
+.place-form-list .stages-images{
+  padding-top: 5rem;
+}
+
+.place-form-list .form-style-user{
+  padding-top: 0rem;
+}
+
+.place-form-list .form-style-user ul {
+  margin-top: 0rem;
+}
+
+.place-form-stages{
+
+}

@@ -15,11 +15,11 @@ class PlaceForm extends Component {
         if(user != null){
             this.state = {uuid: user.uuid, endpoint: apiUrl+"place/", placeName: "", placePhone: "",
                 placeDescription: "", placeAddress: "", placeWebsite: "", updateSuccess: false, errorMessage: "", errorServer: "",
-                latitude: null, longitude: null, successMessage: "", placeCategory: "1"};
+                latitude: null, longitude: null, successMessage: "", placeCategory: "1", uuidPlace: null, stage: 1};
         }else{
             this.state = {uuid: null, endpoint: apiUrl+"place/", placeName: "", placePhone: "",
                 placeDescription: "", placeAddress: "", placeWebsite: "",  updateSuccess: false, errorMessage: "", errorServer: "",
-                latitude: null, longitude: null, successMessage: "", placeCategory: "1"};
+                latitude: null, longitude: null, successMessage: "", placeCategory: "1", uuidPlace: null, stage: 1};
         }
 
         this.closePlaceFormSuccess = this.closePlaceFormSuccess.bind(this);
@@ -139,6 +139,8 @@ class PlaceForm extends Component {
                   }, config
                 ).then(res => {
                     console.log(res);
+                    this.setState({uuidPlace: res.data.uuid});
+                    this.setState({stage: 2});
                     this.setState({successMessage: res.statusText});
                     document.getElementById("place-form-error").style.display = "none";
                     document.getElementById("place-form-pre-error").style.display = "none";
@@ -156,83 +158,134 @@ class PlaceForm extends Component {
         }
     }
 
+    changeStage(){
+        let s = this.state.stage;
+        s += 1;
+        this.setState({stage: s});
+    }
+
     render() {
         return (
           <div className="place-form-view">
               <NavBar/>
-              <div>
-                  <form className="form-style-user" onSubmit={this.handleSubmit}>
-                      <ul className="PraxisNext-Bold">
-                          <div className="isa_success" id="place-form-success">
-                              {this.state.successMessage}
-                              <a onClick={this.closePlaceFormSuccess}>X</a>
+              <div className="place-form-list">
+                  {
+                      this.state.stage === 1 ?
+                        <div className="stages-images">
+                            1
+                        </div>
+                        :
+                          this.state.stage === 2 ?
+                            <div className="stages-images">
+                                2
+                            </div>
+                          :
+                            this.state.stage === 3 ?
+                              <div className="stages-images">
+                                  3
+                              </div>
+                            :
+                              <div className="stages-images">
+                                  4
+                              </div>
+                  }
+                  {
+                      this.state.stage === 1 ?
+                        <form className="form-style-user" onSubmit={this.handleSubmit}>
+                            <ul className="PraxisNext-Bold">
+                                <div className="isa_success" id="place-form-success">
+                                    {this.state.successMessage}
+                                    <a onClick={this.closePlaceFormSuccess}>X</a>
+                                </div>
+                                <div className="isa_error" id="place-form-pre-error">
+                                    {this.state.errorMessage}
+                                    <a onClick={this.closePlaceFormPreError}>X</a>
+                                </div>
+                                <div className="isa_error" id="place-form-error">
+                                    {this.state.errorServer}
+                                    <a onClick={this.closePlaceFormError}>X</a>
+                                </div>
+                                <SectionTitle title={"Crear Lugar"}/>
+                                <li>
+                                    <label htmlFor="name">Nombre</label>
+                                    <input type="text" className="PraxisNext-Bold" name="name"
+                                           onChange={this.handlePlaceName}
+                                           value={this.state.placeName} />
+                                    <span>* Ingresa el nombre del lugar aquí</span>
+                                </li>
+                                <li>
+                                    <label htmlFor="address">Dirección</label>
+                                    <input type="text" className="PraxisNext-Bold" name="address"
+                                           onChange={this.handlePlaceAddress}
+                                           value={this.state.placeAddress}/>
+                                    <span>* Ingresa la dirección del lugar aquí</span>
+                                </li>
+                                <li className="place-relative-li">
+                                    <label htmlFor="phone">Teléfono</label>
+                                    <p>+52</p>
+                                    <input type="text" className="PraxisNext-Bold" name="phone" pattern="^[1-9][0-9]*$"
+                                           maxLength="10"
+                                           onChange={this.handlePlacePhone}
+                                           value={this.state.placePhone} />
+                                    <span>Ingresa el número de teléfono aquí</span>
+                                </li>
+                                <li>
+                                    <label htmlFor="website">Sitio Web</label>
+                                    <input type="text" className="PraxisNext-Bold" name="website"
+                                           onChange={this.handlePlaceWebsite}
+                                           value={this.state.placeWebsite} />
+                                    <span>Ingresa el sitio website aquí</span>
+                                </li>
+                                <li>
+                                    <label htmlFor="description">Descripción</label>
+                                    <textarea rows="5" className="PraxisNext-Bold" name="description"
+                                              onChange={this.handlePlaceDescription}
+                                              value={this.state.placeDescription} />
+                                    <span>* Ingresa la descripción del lugar aquí</span>
+                                </li>
+                                <li>
+                                    <label htmlFor="category">Categoría</label>
+                                    <select value={this.state.placeCategory} onChange={this.handleChangeCategory}
+                                            className="PraxisNext-Bold">
+                                        <option value="1">Coffee Shop</option>
+                                        <option value="2">Library</option>
+                                        <option value="3">Co-Working</option>
+                                    </select>
+                                    <span>* Selecciona una categoría</span>
+                                </li>
+                                <li className="place-form-map-li">
+                                    <label htmlFor="description">Ubicación</label>
+                                    <DraggableMap onMapPinChanged={this.onMapPinChanged}/>
+                                </li>
+                                <li>
+                                    <input type="submit" value="Guardar y Continuar" />
+                                </li>
+                            </ul>
+                        </form>
+                      :
+                        this.state.stage === 2 ?
+                          <div className="place-form-stages">
+                              <SectionTitle title={"Imágenes del Lugar"}/>
                           </div>
-                          <div className="isa_error" id="place-form-pre-error">
-                              {this.state.errorMessage}
-                              <a onClick={this.closePlaceFormPreError}>X</a>
-                          </div>
-                          <div className="isa_error" id="place-form-error">
-                              {this.state.errorServer}
-                              <a onClick={this.closePlaceFormError}>X</a>
-                          </div>
-                          <SectionTitle title={"Crear Lugar"}/>
-                          <li>
-                              <label htmlFor="name">Nombre</label>
-                              <input type="text" className="PraxisNext-Bold" name="name"
-                                     onChange={this.handlePlaceName}
-                                     value={this.state.placeName} />
-                              <span>* Ingresa el nombre del lugar aquí</span>
-                          </li>
-                          <li>
-                              <label htmlFor="address">Dirección</label>
-                              <input type="text" className="PraxisNext-Bold" name="address"
-                                     onChange={this.handlePlaceAddress}
-                                     value={this.state.placeAddress}/>
-                              <span>* Ingresa la dirección del lugar aquí</span>
-                          </li>
-                          <li className="place-relative-li">
-                              <label htmlFor="phone">Teléfono</label>
-                              <p>+52</p>
-                              <input type="text" className="PraxisNext-Bold" name="phone" pattern="^[1-9][0-9]*$"
-                                     maxLength="10"
-                                     onChange={this.handlePlacePhone}
-                                     value={this.state.placePhone} />
-                              <span>Ingresa el número de teléfono aquí</span>
-                          </li>
-                          <li>
-                              <label htmlFor="website">Sitio Web</label>
-                              <input type="text" className="PraxisNext-Bold" name="website"
-                                     onChange={this.handlePlaceWebsite}
-                                     value={this.state.placeWebsite} />
-                              <span>Ingresa el sitio website aquí</span>
-                          </li>
-                          <li>
-                              <label htmlFor="description">Descripción</label>
-                              <textarea rows="5" className="PraxisNext-Bold" name="description"
-                                        onChange={this.handlePlaceDescription}
-                                        value={this.state.placeDescription} />
-                              <span>* Ingresa la descripción del lugar aquí</span>
-                          </li>
-                          <li>
-                              <label htmlFor="category">Categoría</label>
-                              <select value={this.state.placeCategory} onChange={this.handleChangeCategory}
-                                      className="PraxisNext-Bold">
-                                  <option value="1">Coffee Shop</option>
-                                  <option value="2">Library</option>
-                                  <option value="3">Co-Working</option>
-                              </select>
-                              <span>* Selecciona una categoría</span>
-                          </li>
-                          <li className="place-form-map-li">
-                              <label htmlFor="description">Ubicación</label>
-                              <DraggableMap onMapPinChanged={this.onMapPinChanged}/>
-                          </li>
-                          <li>
-                              <input type="submit" value="Guardar y Continuar" />
-                          </li>
-                      </ul>
-                  </form>
+                        :
+                          this.state.stage === 3 ?
+                            <div className="place-form-stages">
+                                <SectionTitle title={"Features del Lugar"}/>
+                            </div>
+                          :
+                            this.state.stage === 4 ?
+                              <div className="place-form-stages">
+                                  <SectionTitle title={"Horarios del Lugar"}/>
+                              </div>
+                            :
+                              <div className="place-form-stages">
+                                  <SectionTitle title={"Lugar Creado, sé feliz"}/>
+                              </div>
+                  }
               </div>
+              <span onClick={this.changeStage.bind(this)}>
+                  proceso
+              </span>
           </div>
         );
     }
