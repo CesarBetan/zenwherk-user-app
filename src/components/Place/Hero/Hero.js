@@ -93,7 +93,7 @@ class Hero extends Component {
     renderFavoriteHeart() {
       if(this.state.isAuthenticated ) {
         return (<div className="place-hero-favorite-heart-container" onClick={this.onClickHeart.bind(this)}>
-                  <img src={(this.state.isFavorite) ? filled_heart : empty_heart }
+                  <img alt="Heart" src={(this.state.isFavorite) ? filled_heart : empty_heart }
                        className="place-hero-favorite-heart"/>
                 </div>);
       }

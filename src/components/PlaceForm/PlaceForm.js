@@ -129,7 +129,7 @@ class PlaceForm extends Component {
                     address: this.state.placeAddress,
                     description: this.state.placeDescription,
                     phone: "+52"+this.state.placePhone,
-                    category: parseInt(this.state.placeCategory),
+                    category: parseInt(this.state.placeCategory, 10),
                     website: this.state.placeWebsite,
                     latitude: parseFloat(this.state.latitude),
                     longitude: parseFloat(this.state.longitude),

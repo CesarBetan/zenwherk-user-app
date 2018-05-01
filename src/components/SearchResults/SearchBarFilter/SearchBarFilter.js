@@ -58,7 +58,6 @@ class SearchBarFilter extends Component {
       } else {
         filters.push(currentValue)
       }
-      console.log(filters)
       if(this.props.currentTab === "Categories") {
         this.setState({categoryFilters: filters})
       } else {
@@ -67,7 +66,7 @@ class SearchBarFilter extends Component {
     }
 
     render() {
-        let { onCloseFilter, currentTab, onSelectFilter } = this.props
+        let { currentTab } = this.props
         return (
           <div className={`${this.props.className}
           search-bar-filter-container PraxisNext-Heavy`}>

@@ -4,17 +4,20 @@ import SearchBarFilter from '../SearchBarFilter';
 import TextField from '../../TextField';
 import FilterButton from '../FilterButton';
 import smallDarkSearchIcon from '../../../assets/Global/small-dark-search-icon.svg';
-import { apiUrl } from '../../../Constants';
-import axios from 'axios';
 
 class SearchBar extends Component {
 
     constructor(props) {
       super(props)
-      this.state = { isFilterOpen: false, openTab: 'Categories' }
+      this.state = { isFilterOpen: false, openTab: 'Categories',
+      searchBarText: '', categoryFilters: this.props.categoryFilters,
+      featureFilters: this.props.featureFilters }
       this.onOpenFilter = this.onOpenFilter.bind(this)
       this.onCloseFilter = this.onCloseFilter.bind(this)
       this.onSelectFilter = this.onSelectFilter.bind(this)
+      this.onEnter = this.onEnter.bind(this)
+      this.onSearchRequested = this.onSearchRequested.bind(this)
+      this.onTextChange = this.onTextChange.bind(this)
     }
 
     onOpenFilter(title) {
@@ -29,8 +32,23 @@ class SearchBar extends Component {
 
     onSelectFilter(categoryFilters, featureFilters) {
       this.onCloseFilter()
-      const endpoint = apiUrl + 'public/place/'
+      this.setState({categoryFilters: categoryFilters,
+        featureFilters: featureFilters}, () => {
+          this.onSearchRequested(this.state.categoryFilters,
+          this.state.featureFilters)
+        })
+    }
+
+    onEnter() {
+      this.onSearchRequested(this.state.categoryFilters,
+      this.state.featureFilters)
+    }
+
+    onSearchRequested(categoryFilters, featureFilters) {
       let params = new URLSearchParams()
+      if(this.state.searchBarText !== '') {
+        params.append("name", this.state.searchBarText)
+      }
       for(let i = 0; i < categoryFilters.length; i++) {
         params.append("categories", categoryFilters[i])
       }
@@ -40,21 +58,27 @@ class SearchBar extends Component {
       this.props.onSearchRequested(params)
     }
 
+    onTextChange(newValue) {
+      this.setState({searchBarText : newValue})
+    }
+
     render() {
         return (
           <div className="search-bar-container PraxisNext-Heavy">
             <SearchBarFilter onSelectFilter={this.onSelectFilter}
-            categoryFilters={this.props.categoryFilters}
-            featureFilters={this.props.featureFilters}
+            categoryFilters={this.state.categoryFilters}
+            featureFilters={this.state.featureFilters}
             currentTab={this.state.openTab}
             className={this.state.isFilterOpen === true ?
             '' : 'search-bar-filter-close'}
-            onCloseFilter={this.onCloseFilter}
-            onSelectFilter={this.onSelectFilter}/>
+            onCloseFilter={this.onCloseFilter}/>
             <TextField className="search-bar-textfield"
             name="query" placeholder="What do you need?"
             icon={smallDarkSearchIcon}
-            value={this.props.nameFilter}/>
+            value={this.props.nameFilter}
+            onTextChange={this.onTextChange}
+            onEnter={this.onEnter}
+            />
             <div className="search-buttons-wrapper">
               <span className="search-bar-filter-text">
                 Filter by

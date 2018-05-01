@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
 import axios from 'axios';
 import { apiUrl } from '../../Constants';
 import './SearchResults.css';
 import queryString from 'query-string';
 import NavBar from '../NavBar';
 import SearchBar from './SearchBar';
-import CompactPlaceCell from '../CompactPlaceCell';
+import SearchResultsList from './SearchResultsList';
 
 class SearchResults extends Component {
 
@@ -72,14 +71,18 @@ class SearchResults extends Component {
     }
 
     onSearchRequested(params) {
-      this.props.history.replace('/search')
+      let endpoint = ''
+      if (params.toString() !== '') {
+        endpoint = '/search?' + params.toString()
+      } else {
+        endpoint = '/search' + params.toString()
+      }
+      this.props.history.replace(endpoint)
     }
 
     getResults(request) {
       const endpoint = apiUrl + 'public/place/'
-      console.log("SEARCH")
       axios.get(endpoint, request).then(response => {
-        console.log(response.status)
         switch (response.status) {
           case 200:
             this.setState({results: response.data.result})
@@ -102,11 +105,8 @@ class SearchResults extends Component {
               categoryFilters={this.state.categoryFilters}
               onSearchRequested={this.onSearchRequested}/>
               {
-                this.state.results.map((current, i) =>
-                  <CompactPlaceCell key={i} place={current}/>
-                )
+                <SearchResultsList results={this.state.results}/>
               }
-              {/*<CompactPlaceCell/>*/}
             </div>
         );
     }

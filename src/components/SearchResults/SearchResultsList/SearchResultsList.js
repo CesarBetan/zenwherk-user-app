@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './SearchResultsList.css';
+import CompactPlaceCell from '../../CompactPlaceCell';
 
 class SearchResultsList extends Component {
     render() {
@@ -14,7 +15,9 @@ class SearchResultsList extends Component {
               :
               <div className="search-results-list-container">
                 {
-                  
+                  results.map((place, i) => (
+                      <CompactPlaceCell key={i} place={place}/>
+                  ))
                 }
               </div>
             }
