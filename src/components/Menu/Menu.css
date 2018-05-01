@@ -1,15 +1,17 @@
 .expandable-menu{
-    background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.8));
+    background: linear-gradient(150deg, rgba(0, 222, 145, 1), rgba(0, 222, 145, 0.9));
     position: absolute;
     top: 60px;
     width: 100%;
     height: calc(100vh - 3.75rem);
-    border-top: #fafafa 2px solid;overflow: hidden;
+    border-top: #fafafa 2px solid;
+    overflow: hidden;
 }
 
 .expandable-menu ul{
     list-style: none;
     text-align: left;
+    transition: all 5s ease-out;
 }
 
 
