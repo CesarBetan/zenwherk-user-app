@@ -71,7 +71,7 @@ class PlaceForm extends Component {
     }
 
     handleSkip() {
-
+        this.props.changeStage();
     }
 
     closePlaceFormPreError(event) {
