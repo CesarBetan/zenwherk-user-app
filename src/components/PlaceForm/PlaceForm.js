@@ -4,11 +4,12 @@ import NavBar from "../NavBar/NavBar";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {apiUrl} from "../../Constants";
 import DraggableMap from "../DraggableMap/DraggableMap";
-import axios from "axios/index";
+import axios from 'axios';
 import steps1 from '../../assets/Global/steps1.svg';
 import steps2 from '../../assets/Global/steps2.svg';
 import steps3 from '../../assets/Global/steps3.svg';
 import steps4 from '../../assets/Global/steps4.svg';
+import PlaceImagesForm from './PlaceImagesForm';
 
 import PlaceFeaturesForm from './PlaceFeaturesForm';
 
@@ -41,6 +42,7 @@ class PlaceForm extends Component {
         this.handlePlaceDescription = this.handlePlaceDescription.bind(this);
         this.handleChangeCategory = this.handleChangeCategory.bind(this);
         this.onMapPinChanged = this.onMapPinChanged.bind(this);
+        this.changeStage = this.changeStage.bind(this)
     }
 
     componentWillMount() {
@@ -275,7 +277,7 @@ class PlaceForm extends Component {
                       :
                         this.state.stage === 2 ?
                           <div className="place-form-stages">
-                              <SectionTitle title={"Imágenes del Lugar"}/>
+                            <PlaceImagesForm onStageChange={this.changeStage} uuidPlace={this.state.uuidPlace}/>
                           </div>
                         :
                           this.state.stage === 3 ?
