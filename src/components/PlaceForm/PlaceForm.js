@@ -5,6 +5,10 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import {apiUrl} from "../../Constants";
 import DraggableMap from "../DraggableMap/DraggableMap";
 import axios from "axios/index";
+import steps1 from '../../assets/Global/steps1.svg';
+import steps2 from '../../assets/Global/steps2.svg';
+import steps3 from '../../assets/Global/steps3.svg';
+import steps4 from '../../assets/Global/steps4.svg';
 
 
 class PlaceForm extends Component {
@@ -172,21 +176,25 @@ class PlaceForm extends Component {
                   {
                       this.state.stage === 1 ?
                         <div className="stages-images">
-                            1
+                            <img className="steps-image"
+                                 alt="Step 1" src={steps1}/>
                         </div>
                         :
                           this.state.stage === 2 ?
                             <div className="stages-images">
-                                2
+                                <img className="steps-image"
+                                     alt="Step 1" src={steps2}/>
                             </div>
                           :
                             this.state.stage === 3 ?
                               <div className="stages-images">
-                                  3
+                                  <img className="steps-image"
+                                       alt="Step 1" src={steps3}/>
                               </div>
                             :
                               <div className="stages-images">
-                                  4
+                                  <img className="steps-image"
+                                       alt="Step 1" src={steps4}/>
                               </div>
                   }
                   {
