@@ -1,0 +1,26 @@
+.button-enabled {
+  pointer-events: auto;
+}
+
+.button-disabled {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.place-image-form-full-width-button:first-of-type {
+  margin: 1.25rem 0;
+  margin-bottom: 0.625rem;
+}
+
+.place-images-input-wrapper {
+  height: 6.25rem;
+  width: calc(100% - (1.25rem * 2));
+  margin: 0 auto;
+  margin-top: 1.25rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
