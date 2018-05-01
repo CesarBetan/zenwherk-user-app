@@ -43,7 +43,7 @@ class Menu extends Component {
                         <NavLink to={"/"}>Inicio</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/near"}>Lugares Cercanos</NavLink>
+                        <NavLink to={"/nearby"}>Lugares Cercanos</NavLink>
                     </li>
                     <li>
                         <NavLink to={"/search"}>Buscar</NavLink>

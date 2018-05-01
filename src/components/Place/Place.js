@@ -22,6 +22,7 @@ class Place extends Component {
     }
 
     componentWillMount() {
+      document.title = "ZenWherk | Lugar" 
       this.getPlace()
     }
 
@@ -30,6 +31,7 @@ class Place extends Component {
       axios.get(endpoint + this.state.uuid).then(response => {
         switch (response.status) {
           case 200:
+              document.title = "ZenWherk | " + response.data.name
               this.setState({place : response.data})
             break;
           case 404:

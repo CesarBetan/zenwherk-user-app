@@ -51,26 +51,37 @@ class CompactPlaceCell extends Component {
                     ? filledStar : emptyStar}
                 />
               </div>
-              <span className="search-result-cell-reviews PraxisNext-Bold">
-                  {
-                      result.rating < 1 ?
-                          result.category === 1 ?
-                              "Coffee Shop"
-                          :
-                              result.category === 2 ?
-                                  "Library"
-                              :
-                                  "Co-Working"
-                      :
-                          result.category === 1 ?
-                              `Coffee Shop (★ ${result.rating})`
-                              :
-                              result.category === 2 ?
-                                  `Library (★ ${result.rating})`
-                                  :
-                                  `Co-Working (★ ${result.rating})`
-                  }
-              </span>
+              {
+                (this.props.isNearPlace !== undefined
+                && this.props.isNearPlace === true)
+                ?
+                <span className="search-result-cell-reviews PraxisNext-Bold">
+                    {
+                      result.distanceInKm.toFixed(2) + 'km'
+                    }
+                </span>
+                :
+                <span className="search-result-cell-reviews PraxisNext-Bold">
+                    {
+                        result.rating < 1 ?
+                            result.category === 1 ?
+                                "Coffee Shop"
+                            :
+                                result.category === 2 ?
+                                    "Library"
+                                :
+                                    "Co-Working"
+                        :
+                            result.category === 1 ?
+                                `Coffee Shop (★ ${result.rating})`
+                                :
+                                result.category === 2 ?
+                                    `Library (★ ${result.rating})`
+                                    :
+                                    `Co-Working (★ ${result.rating})`
+                    }
+                </span>
+              }
             </div>
             <img className="search-result-cell-image" alt="Result"
                  src={

@@ -11,6 +11,7 @@ class SearchResults extends Component {
 
     constructor(props) {
       super(props)
+      document.title = "ZenWherk | Búsqueda"
       this.state = {nameFilter: '', results: [],
       featureFilters: [], categoryFilters:[], url: document.URL}
       this.getResults = this.getResults.bind(this)

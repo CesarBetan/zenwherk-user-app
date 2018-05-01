@@ -35,7 +35,7 @@ class App extends Component {
                         <Route path="/place/:uuid" component={Place}/>
                         <Route path="/search" component={SearchResults}/>
                         <Route path="/compare/:uuid_1/:uuid_2" component={CompareView}/>
-                        <Route path="/near" component={NearPlaces}/>
+                        <Route path="/nearby" component={NearPlaces}/>
                         <Route path="/contact" component={Contact}/>
                         <Route path="/about" component={AboutUs}/>
                         <Route path="/account" component={Account}/>

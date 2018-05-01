@@ -22,7 +22,7 @@ class Reviews extends Component {
             <ReviewsList reviews={reviews} allReviews={false}/>
             {
               reviews.length > 2 ?
-              <NavLink to ={'/place/' + placeUuid + '/reviews'}>
+              <NavLink className="reviews-nav-link" to ={'/place/' + placeUuid + '/reviews'}>
                   <Button className="reviews-read-more-button" title="Read More"/>
               </NavLink>
               :
