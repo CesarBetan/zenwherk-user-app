@@ -5,15 +5,27 @@ class TextField extends Component {
 
     constructor(props) {
       super(props)
-      this.state = { hasText: false, value:  props.value}
+      this.state = { hasText : false, text: '' }
     }
 
     onChange(event) {
-      this.setState({value: event.target.value})
+      if(this.props.onTextChange !== undefined) {
+        this.props.onTextChange(event.target.value);
+      }
       if(event.target.value === null || event.target.value === "") {
-        this.setState({ hasText : false })
+        this.setState({ hasText : false, text: '' })
       } else {
-        this.setState({ hasText : true })
+        this.setState({ hasText : true, text: event.target.value })
+      }
+    }
+
+    onEnter() {
+      this.props.onEnter();
+    }
+
+    _handleKeyPress (e)  {
+      if (e.key === 'Enter') {
+        this.onEnter();
       }
     }
 
@@ -28,8 +40,8 @@ class TextField extends Component {
               :
               ''
             }
-            <input onChange={this.onChange.bind(this)} className="textfield-input PraxisNext-Bold"
-            type="text" name={name} placeholder={placeholder} autoComplete="off" value={this.state.value}/>
+            <input onChange={this.onChange.bind(this)} onKeyPress={this._handleKeyPress.bind(this)} className="textfield-input PraxisNext-Bold"
+            type="text" name={name} placeholder={placeholder} autoComplete="off"/>
           </div>
         );
     }
