@@ -10,6 +10,8 @@ import steps2 from '../../assets/Global/steps2.svg';
 import steps3 from '../../assets/Global/steps3.svg';
 import steps4 from '../../assets/Global/steps4.svg';
 
+import PlaceFeaturesForm from './PlaceFeaturesForm';
+
 
 class PlaceForm extends Component {
 
@@ -277,9 +279,7 @@ class PlaceForm extends Component {
                           </div>
                         :
                           this.state.stage === 3 ?
-                            <div className="place-form-stages">
-                                <SectionTitle title={"Features del Lugar"}/>
-                            </div>
+                              <PlaceFeaturesForm  title="Features del lugar"/>
                           :
                             this.state.stage === 4 ?
                               <div className="place-form-stages">

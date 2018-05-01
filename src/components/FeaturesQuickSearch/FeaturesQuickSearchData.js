@@ -35,4 +35,4 @@ export const features = [
     icon: null,
     iconAlt: null,
   },
-]
+];

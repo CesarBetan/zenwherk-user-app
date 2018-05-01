@@ -1,0 +1,15 @@
+.place-features-form-element-delete-button-container {
+    color: red;
+    text-align: right;
+}
+
+.place-features-form-element-delete-button-container span {
+    cursor: pointer;
+    margin-right: 0.35em;
+}
+
+.place-features-form-element-container {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 0.5em;
+}
