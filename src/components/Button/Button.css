@@ -12,10 +12,12 @@
   max-width: calc(100% - 2.5rem);
   padding: 0.625rem 2.1875rem;
   border-radius: 0.3125rem;
+  text-decoration: none;
 }
 
 .button-text {
   margin-top: 0.35rem;
+  text-decoration: none;
 }
 
 .white-button {

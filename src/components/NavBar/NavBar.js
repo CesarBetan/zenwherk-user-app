@@ -35,7 +35,9 @@ class NavBar extends Component {
 
     render() {
         return (
-          <div className="nav-bar-wrapper PraxisNext-ExtraBlack">
+          <div className={`nav-bar-wrapper PraxisNext-ExtraBlack
+            ${this.props.hasSolidBackground === true
+              ? 'nav-bar-wrapper-solid-background' : ''}`}>
               <div>
                   <div id="menu-ham" className="hamburguer" onClick={this.handleClickHam}>
                       <img className="menu-icon"
@@ -45,7 +47,9 @@ class NavBar extends Component {
                            alt={"Menu"}
                            src={menuIcon}/>
                   </div>
-                  ZenWherk
+                  <span className="nav-bar-title">
+                    ZenWherk
+                  </span>
               </div>
               {
                   this.state.expand === true ?

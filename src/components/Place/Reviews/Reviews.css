@@ -12,3 +12,7 @@
 .reviews-container > .full-width-button{
   margin: 20px 0px;
 }
+
+.reviews-nav-link {
+  text-decoration: none;
+}

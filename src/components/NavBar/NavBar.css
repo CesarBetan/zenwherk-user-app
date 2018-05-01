@@ -11,6 +11,15 @@
     z-index: 5;
 }
 
+.nav-bar-wrapper-solid-background {
+  background-color: #00DE91;
+}
+
+.nav-bar-title {
+  display: block;
+  margin-top: 0.3rem;
+}
+
 .hamburguer, .hamburguer-transform{
     position: absolute;
     left: 1.25rem;
