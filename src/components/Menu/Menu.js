@@ -40,38 +40,41 @@ class Menu extends Component {
             <div className="expandable-menu">
                 <ul>
                     <li>
-                        <NavLink to={"/"}>Home</NavLink>
+                        <NavLink to={"/"}>Inicio</NavLink>
                     </li>
                     <li>
-                        Nearby
+                        <NavLink to={"/near"}>Lugares Cercanos</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/search"}>Search</NavLink>
+                        <NavLink to={"/search"}>Buscar</NavLink>
                     </li>
                     <li>
-                        About
+                        <NavLink to={"/about"}>Acerca de</NavLink>
                     </li>
                     <li>
-                        Contact
+                        <NavLink to={"/contact"}>Contacto</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={"/place/create"}>Crear Lugar</NavLink>
                     </li>
                 </ul>
                 {
                     !localStorage.getItem('accesstoken') ?
                         <ul className="list-account">
                             <li>
-                                <a href={authUrl + "oauth/authorize?client_id=zenwherk&response_type=token&redirect_uri="+frontUrl}>Login</a>
+                                <a href={authUrl + "oauth/authorize?client_id=zenwherk&response_type=token&redirect_uri="+frontUrl}>Iniciar Sesión</a>
                             </li>
                             <li>
-                                <NavLink to = {'/register'}>Register</NavLink>
+                                <NavLink to = {'/register'}>Registrarse</NavLink>
                             </li>
                         </ul>
                         :
                         <ul className="list-account">
                             <li>
-                                <NavLink to ={'/account'}>Account</NavLink>
+                                <NavLink to ={'/account'}>Cuenta</NavLink>
                             </li>
                             <li>
-                                <NavLink to ={'/favorites'}>Favorites</NavLink>
+                                <NavLink to ={'/favorites'}>Favoritos</NavLink>
                             </li>
                             <li>
                                 <a
@@ -81,7 +84,7 @@ class Menu extends Component {
                                         localStorage.removeItem("user");
                                         window.location.href = authUrl + 'logout';
                                     }
-                                    }>Log Out</a>
+                                    }>Cerrar Sesión</a>
                             </li>
                         </ul>
                 }
