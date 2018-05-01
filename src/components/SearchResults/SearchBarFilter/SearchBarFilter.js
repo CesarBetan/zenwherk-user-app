@@ -8,8 +8,12 @@ class SearchBarFilter extends Component {
 
     constructor(props) {
       super(props)
-      this.state = {filters: [], oldTab: ''}
+      this.state = {categoryFilters: this.props.categoryFilters,
+        featureFilters: this.props.featureFilters,
+        savedCategoryFilters: this.props.categoryFilters,
+        savedFeatureFilters: this.props.featureFilters}
       this.onInnerSelectFilter = this.onInnerSelectFilter.bind(this)
+      this.onCloseFilter = this.onCloseFilter.bind(this)
     }
 
     componentWillMount() {
@@ -21,18 +25,45 @@ class SearchBarFilter extends Component {
     }
 
     onInnerSelectFilter() {
-      this.props.onSelectFilter(this.state.filters, this.props.currentTab)
+      if(this.props.currentTab === "Categories") {
+        this.setState({savedCategoryFilters: this.state.categoryFilters})
+        this.props.onSelectFilter(this.state.categoryFilters,
+          this.state.savedFeatureFilters)
+      } else {
+        this.setState({savedFeatureFilters: this.state.featureFilters})
+        this.props.onSelectFilter(this.state.savedCategoryFilters,
+          this.state.featureFilters)
+      }
+    }
+
+    onCloseFilter() {
+      if(this.props.currentTab === "Categories") {
+        this.setState({categoryFilters: this.state.savedCategoryFilters})
+      } else {
+        this.setState({featureFilters: this.state.savedFeatureFilters})
+      }
+      this.props.onCloseFilter()
     }
 
     onChange(event) {
-      let filters = [...this.state.filters];
+      let filters = []
+      if(this.props.currentTab === "Categories") {
+        filters = [...this.state.categoryFilters]
+      } else {
+        filters = [...this.state.featureFilters]
+      }
       let currentValue = event.target.value
       if (filters.includes(currentValue) === true) {
         filters = filters.filter((current) => current !== currentValue)
       } else {
         filters.push(currentValue)
       }
-      this.setState({filters: filters})
+      console.log(filters)
+      if(this.props.currentTab === "Categories") {
+        this.setState({categoryFilters: filters})
+      } else {
+        this.setState({featureFilters: filters})
+      }
     }
 
     render() {
@@ -41,7 +72,7 @@ class SearchBarFilter extends Component {
           <div className={`${this.props.className}
           search-bar-filter-container PraxisNext-Heavy`}>
             <div className="search-bar-filter-cross-wrapper"
-            onClick={onCloseFilter}>
+            onClick={this.onCloseFilter}>
               <div className="search-bar-filter-cross cross-left"/>
               <div className="search-bar-filter-cross cross-right"/>
             </div>
@@ -58,6 +89,7 @@ class SearchBarFilter extends Component {
                           key={i}>
                             <input type="checkbox" name="category"
                             value={current.value}
+                            checked={this.state.categoryFilters.includes((i + 1).toString())}
                             onChange={this.onChange.bind(this)}/>
                             <span className="filter-checkbox-title">
                               {current.title}
@@ -74,7 +106,10 @@ class SearchBarFilter extends Component {
                           <div className="filter-option-wrapper"
                           key={i}>
                             <input type="checkbox" name="feature"
-                            value={current.value}/>
+                            value={current.value}
+                            checked={this.state.featureFilters.includes((i + 1).toString())}
+                            onChange={this.onChange.bind(this)}
+                            />
                             <span className="filter-checkbox-title">
                               {current.title}
                             </span>

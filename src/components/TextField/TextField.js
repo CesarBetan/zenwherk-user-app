@@ -5,14 +5,15 @@ class TextField extends Component {
 
     constructor(props) {
       super(props)
-      this.state = { "hasText" : false }
+      this.state = { hasText: false, value:  props.value}
     }
 
     onChange(event) {
+      this.setState({value: event.target.value})
       if(event.target.value === null || event.target.value === "") {
-        this.setState({ "hasText" : false })
+        this.setState({ hasText : false })
       } else {
-        this.setState({ "hasText" : true })
+        this.setState({ hasText : true })
       }
     }
 
@@ -28,7 +29,7 @@ class TextField extends Component {
               ''
             }
             <input onChange={this.onChange.bind(this)} className="textfield-input PraxisNext-Bold"
-            type="text" name={name} placeholder={placeholder} autoComplete="off"/>
+            type="text" name={name} placeholder={placeholder} autoComplete="off" value={this.state.value}/>
           </div>
         );
     }

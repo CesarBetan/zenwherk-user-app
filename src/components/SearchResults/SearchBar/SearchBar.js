@@ -27,47 +27,34 @@ class SearchBar extends Component {
       document.body.style.overflow = "scroll";
     }
 
-    onSelectFilter(filters, type) {
+    onSelectFilter(categoryFilters, featureFilters) {
       this.onCloseFilter()
       const endpoint = apiUrl + 'public/place/'
       let params = new URLSearchParams()
-      for(let i = 0; i < filters.length; i++) {
-        console.log(type.toLowerCase())
-        console.log(filters[i])
-        params.append(type.toLowerCase(), filters[i])
+      for(let i = 0; i < categoryFilters.length; i++) {
+        params.append("categories", categoryFilters[i])
       }
-      console.log(params)
-      let request = {
-        params: params
+      for(let i = 0; i < featureFilters.length; i++) {
+        params.append("features", featureFilters[i])
       }
-
-      axios.get(endpoint, request).then(response => {
-        switch (response.status) {
-          case 200:
-            console.log(response.result)
-            break;
-          case 404:
-            console.log("NOTHING TO SEE HERE")
-            break;
-          default:
-
-        }
-      })
-      //console.log(filters)
-      //console.log(type)
+      this.props.onSearchRequested(params)
     }
 
     render() {
         return (
           <div className="search-bar-container PraxisNext-Heavy">
-            <SearchBarFilter onSelectFilter={this.onSelectFilter} currentTab={this.state.openTab}
+            <SearchBarFilter onSelectFilter={this.onSelectFilter}
+            categoryFilters={this.props.categoryFilters}
+            featureFilters={this.props.featureFilters}
+            currentTab={this.state.openTab}
             className={this.state.isFilterOpen === true ?
             '' : 'search-bar-filter-close'}
             onCloseFilter={this.onCloseFilter}
             onSelectFilter={this.onSelectFilter}/>
             <TextField className="search-bar-textfield"
             name="query" placeholder="What do you need?"
-            icon={smallDarkSearchIcon}/>
+            icon={smallDarkSearchIcon}
+            value={this.props.nameFilter}/>
             <div className="search-buttons-wrapper">
               <span className="search-bar-filter-text">
                 Filter by
