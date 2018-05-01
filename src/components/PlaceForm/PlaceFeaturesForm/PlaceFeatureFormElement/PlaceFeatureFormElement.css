@@ -1,6 +1,7 @@
 .place-features-form-element-delete-button-container {
     color: red;
     text-align: right;
+    margin-top: 0.35em;
 }
 
 .place-features-form-element-delete-button-container span {
@@ -9,7 +10,18 @@
 }
 
 .place-features-form-element-container {
-    background-color: #f7f7f7;
+    border: 1px solid #c9c9c9;
     border-radius: 5px;
-    padding: 0.5em;
+    padding: 1.0em;
+    margin-bottom: 1.0em;
+}
+
+.place-features-form-element-description-input {
+    border: 1px solid #c9c9c9 !important;
+    border-radius: 5px;
+    padding: 0 1.5em !important;
+}
+
+.place-features-form-element-description-input-container {
+    margin-bottom: 1.5em;
 }

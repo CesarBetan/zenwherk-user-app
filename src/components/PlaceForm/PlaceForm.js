@@ -41,6 +41,7 @@ class PlaceForm extends Component {
         this.handlePlaceDescription = this.handlePlaceDescription.bind(this);
         this.handleChangeCategory = this.handleChangeCategory.bind(this);
         this.onMapPinChanged = this.onMapPinChanged.bind(this);
+        this.changeStage = this.changeStage.bind(this);
     }
 
     componentWillMount() {
@@ -279,7 +280,7 @@ class PlaceForm extends Component {
                           </div>
                         :
                           this.state.stage === 3 ?
-                              <PlaceFeaturesForm  title="Features del lugar"/>
+                              <PlaceFeaturesForm  title="Features del lugar" placeUuid={this.state.uuidPlace} changeStage={this.changeStage}/>
                           :
                             this.state.stage === 4 ?
                               <div className="place-form-stages">

@@ -6,3 +6,9 @@
     cursor: pointer;
     color: deepskyblue;
 }
+
+.place-features-form-add-button-container {
+    text-align: right;
+    margin-bottom: 1.0em;
+    margin-right: 0.35em;
+}
