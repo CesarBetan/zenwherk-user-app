@@ -73,7 +73,7 @@ class SearchBar extends Component {
             '' : 'search-bar-filter-close'}
             onCloseFilter={this.onCloseFilter}/>
             <TextField className="search-bar-textfield"
-            name="query" placeholder="What do you need?"
+            name="query" placeholder="¿Qué necesitas?"
             icon={smallDarkSearchIcon}
             value={this.props.nameFilter}
             onTextChange={this.onTextChange}
@@ -81,7 +81,7 @@ class SearchBar extends Component {
             />
             <div className="search-buttons-wrapper">
               <span className="search-bar-filter-text">
-                Filter by
+                Filtrar por
               </span>
               <FilterButton onClick={this.onOpenFilter} title="Categories"/>
               <FilterButton onClick={this.onOpenFilter} title="Features"/>

@@ -5,7 +5,7 @@ class Reviews extends Component {
 
     render() {
         return (
-            <p>Reviewx component!</p>
+            <p>Reviews component!</p>
         );
     }
 }

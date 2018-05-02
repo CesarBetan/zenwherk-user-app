@@ -32,11 +32,11 @@ class TallSearchHeader extends Component {
           <div className="tall-search-header-container PraxisNext-ExtraBlack">
             <div className="tall-search-header-wrapper">
               <span className="tall-search-header-title">
-                Where Are We<br/>Working Today?
+                ¿Dónde trabajaremos<br/>el día de hoy?
               </span>
               <div className="tall-search-header-textfield-wrapper">
                 <TextField className="tall-search-header-textfield"
-                name="query" placeholder="What do you need?"
+                name="query" placeholder="¿Qué necesitas?"
                 icon={smallDarkSearchIcon}
                 onEnter={this.onSearch.bind(this)}
                 onTextChange={this.onTextChange.bind(this)}/>

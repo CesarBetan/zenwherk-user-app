@@ -24,7 +24,7 @@ class FeaturedPlaces extends Component {
         const { places } = this.state;
         return (
           <div className="featured-places-container PraxisNext-ExtraBlack">
-            <SectionTitle title="Places We Love"/>
+            <SectionTitle title="Lugares Que Amamos"/>
             {
               places.map((featuredPlace) =>
                 <PlaceCard key={featuredPlace.uuid} featuredPlace={featuredPlace}/>

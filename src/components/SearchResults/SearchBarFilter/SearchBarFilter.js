@@ -119,7 +119,7 @@ class SearchBarFilter extends Component {
                     </form>
                 }
                 <Button onClick={this.onInnerSelectFilter} className="filter-save-button"
-                title="Save"/>
+                title="Guardar"/>
               </div>
             </div>
           </div>

@@ -43,7 +43,7 @@ class Favorite extends Component {
             <div className="favorite-view">
                 <NavBar/>
                 <div className="favorites-list PraxisNext-ExtraBlack">
-                    <SectionTitle title={"Favorites"}/>
+                    <SectionTitle title={"Favoritos"}/>
                     <FavoritePlaceList userFavorites={this.state.userFavorites} />
                 </div>
             </div>

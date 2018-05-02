@@ -10,7 +10,7 @@ class FavoritePlaceList extends Component {
                 {
                     userFavorites === undefined ?
                         <div>
-                            Have some fun and add some places to your favorites!
+                            Diviértete y añade algunos lugares a tus favoritos!
                         </div>
                         :
                         <div className="favorites-list-container">

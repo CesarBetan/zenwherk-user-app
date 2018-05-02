@@ -118,7 +118,7 @@ class RegistrationForm extends Component {
                                 {this.state.errorServer}
                                 <a onClick={this.closeRegisterError}>X</a>
                             </div>
-                            <SectionTitle title={"Register"}/>
+                            <SectionTitle title={"Registro"}/>
                             <li>
                                 <label htmlFor="name">Nombre</label>
                                 <input type="text" className="PraxisNext-Bold" name="name"
