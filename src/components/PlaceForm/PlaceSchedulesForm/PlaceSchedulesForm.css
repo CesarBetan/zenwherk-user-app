@@ -1,0 +1,25 @@
+.form-place-schedule{
+  margin-top: 20px;
+}
+
+.hour-selections{
+  margin-bottom: 0.3125rem;
+}
+.place-select-open{
+  margin-left: 0.625rem;
+}
+.hour-selections select{
+  display: inline-block !important;
+  width: 15% !important;
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  border: 0.0625rem solid #DDDDDD !important;
+  text-align: center;
+  padding-right: 0.3125rem !important;
+}
+.hour-selections select:first-child{
+  margin-right: 5%;
+}
+.hour-selections select:last-child{
+  margin-left: 5%;
+}

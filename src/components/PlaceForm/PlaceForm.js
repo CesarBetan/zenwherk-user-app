@@ -5,6 +5,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import {apiUrl} from "../../Constants";
 import DraggableMap from "../DraggableMap/DraggableMap";
 import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 import steps1 from '../../assets/Global/steps1.svg';
 import steps2 from '../../assets/Global/steps2.svg';
 import steps3 from '../../assets/Global/steps3.svg';
@@ -12,6 +13,8 @@ import steps4 from '../../assets/Global/steps4.svg';
 import PlaceImagesForm from './PlaceImagesForm';
 
 import PlaceFeaturesForm from './PlaceFeaturesForm';
+import PlaceSchedulesForm from "./PlaceSchedulesForm/PlaceSchedulesForm";
+import FullWidthButton from "../FullWidthButton/FullWidthButton";
 
 
 class PlaceForm extends Component {
@@ -285,17 +288,17 @@ class PlaceForm extends Component {
                           :
                             this.state.stage === 4 ?
                               <div className="place-form-stages">
-                                  <SectionTitle title={"Horarios del Lugar"}/>
+                                  <PlaceSchedulesForm title="Horarios del lugar" placeUuid={this.state.uuidPlace} changeStage={this.changeStage}/>
                               </div>
                             :
                               <div className="place-form-stages">
-                                  <SectionTitle title={"Lugar Creado, sé feliz"}/>
+                                  <SectionTitle className="section-no-capitalize" title={"Lugar creado exitosamente Espera a que el lugar se aprobado (:"}/>
+                                  <NavLink to={"/"}>
+                                    <FullWidthButton title="Ir a Inicio"/>
+                                  </NavLink>
                               </div>
                   }
               </div>
-              <span onClick={this.changeStage.bind(this)}>
-                  proceso
-              </span>
           </div>
         );
     }

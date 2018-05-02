@@ -41,7 +41,6 @@ class PlaceForm extends Component {
                     <input type="text" className="PraxisNext-Bold place-features-form-element-description-input" name="name"
                            onChange={this.handleChangeFeatureDesc.bind(this)}
                            value={featureDesc} />
-                    <span>* Ingresa el nombre del lugar aquí</span>
                 </div>
                 <div>
                     <label>Tipo de feature</label>

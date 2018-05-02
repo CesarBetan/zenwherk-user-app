@@ -47,3 +47,6 @@
 .steps-image{
   width: 11.5625rem;
 }
+.section-no-capitalize{
+  text-transform: none !important;
+}
