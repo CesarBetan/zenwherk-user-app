@@ -51,9 +51,6 @@ class Menu extends Component {
                     <li>
                         <NavLink to={"/about"}>Acerca de</NavLink>
                     </li>
-                    <li>
-                        <NavLink to={"/contact"}>Contacto</NavLink>
-                    </li>
                     {
                         localStorage.getItem('accesstoken') ?
                           <li>
