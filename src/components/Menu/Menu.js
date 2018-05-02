@@ -54,9 +54,14 @@ class Menu extends Component {
                     <li>
                         <NavLink to={"/contact"}>Contacto</NavLink>
                     </li>
-                    <li>
-                        <NavLink to={"/place/create"}>Crear Lugar</NavLink>
-                    </li>
+                    {
+                        localStorage.getItem('accesstoken') ?
+                          <li>
+                              <NavLink to={"/place/create"}>Crear Lugar</NavLink>
+                          </li>
+                        :
+                          ""
+                    }
                 </ul>
                 {
                     !localStorage.getItem('accesstoken') ?

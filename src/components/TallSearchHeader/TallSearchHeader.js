@@ -32,7 +32,7 @@ class TallSearchHeader extends Component {
           <div className="tall-search-header-container PraxisNext-ExtraBlack">
             <div className="tall-search-header-wrapper">
               <span className="tall-search-header-title">
-                ¿Dónde trabajaremos<br/>el día de hoy?
+                ¿Dónde trabajaremos<yarn start/>el día de hoy?
               </span>
               <div className="tall-search-header-textfield-wrapper">
                 <TextField className="tall-search-header-textfield"
