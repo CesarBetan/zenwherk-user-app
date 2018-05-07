@@ -83,8 +83,8 @@ class SearchBar extends Component {
               <span className="search-bar-filter-text">
                 Filtrar por
               </span>
-              <FilterButton onClick={this.onOpenFilter} title="Categorías"/>
-              <FilterButton onClick={this.onOpenFilter} title="Features"/>
+              <FilterButton onClick={this.onOpenFilter} title="Categories" title2="Categorías"/>
+              <FilterButton onClick={this.onOpenFilter} title="Features" title2="Features"/>
             </div>
           </div>
         );

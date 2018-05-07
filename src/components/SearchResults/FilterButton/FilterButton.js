@@ -8,11 +8,11 @@ class FilterButton extends Component {
     }
 
     render() {
-        const { title } = this.props
+        const { title2 } = this.props
         return (
           <div onClick={this.onClick.bind(this)} className="filter-button">
             <span className="filter-button-title">
-              {title}
+              {title2}
             </span>
           </div>
         );
