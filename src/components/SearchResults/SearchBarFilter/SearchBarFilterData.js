@@ -1,33 +1,49 @@
 export const categories = [
   {
     value: 1,
-    title: 'Coffee Shops',
+    title: 'Cafeterías',
   },
   {
     value: 2,
-    title: 'Library',
+    title: 'Biblioteca',
   },
   {
     value: 3,
     title: 'Co-Working',
   },
-]
+];
 
 export const features = [
   {
     value: 1,
-    title: 'Internet',
+    title: 'Wi-Fi',
   },
   {
     value: 2,
-    title: 'Food',
+    title: 'Comida',
   },
   {
     value: 3,
-    title: 'Parking',
+    title: 'Estacionamiento',
   },
   {
     value: 4,
-    title: 'Bike Parking',
+    title: 'Zona para fumadores',
   },
-]
+  {
+    value: 5,
+    title: 'Acepta tarjeta'
+  },
+  {
+    value: 6,
+    title: 'Cierra tarde'
+  },
+  {
+    value: 7,
+    title: 'Estacionamiento para bicicletas'
+  },
+  {
+    value: 8,
+    title: 'Ethernet'
+  }
+];
