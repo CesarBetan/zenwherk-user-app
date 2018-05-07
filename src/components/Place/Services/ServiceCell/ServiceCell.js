@@ -7,9 +7,21 @@ class ServiceCell extends Component {
     imageForType(featureRaw) {
       switch (featureRaw) {
         case 1:
-          return iconPlaceholderImage
+          return iconPlaceholderImage;
         case 2:
-          return iconPlaceholderImage
+          return iconPlaceholderImage;
+          case 3:
+              return iconPlaceholderImage;
+          case 4:
+              return iconPlaceholderImage;
+          case 5:
+              return iconPlaceholderImage;
+          case 6:
+              return iconPlaceholderImage;
+          case 7:
+              return iconPlaceholderImage;
+          case 8:
+              return iconPlaceholderImage;
         default:
 
       }
