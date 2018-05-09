@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ServiceCell.css';
 import iconPlaceholderImage from '../../../../assets/Place/Icon Placeholder.svg'
+import PropTypes from "prop-types";
 
 class ServiceCell extends Component {
 
@@ -42,5 +43,13 @@ class ServiceCell extends Component {
         );
     }
 }
+
+ServiceCell.defaultProps = {
+    service: ["Arreglo con los datos de un service: featureEnum, iconAlt, featureDescription"]
+};
+
+ServiceCell.propTypes = {
+    service: PropTypes.array.isRequired
+};
 
 export default ServiceCell;

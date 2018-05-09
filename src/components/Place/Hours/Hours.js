@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Hours.css';
 import SectionTitle from '../../SectionTitle';
 import HoursDescription from './HoursDescription';
+import PropTypes from "prop-types";
 
 class Hours extends Component {
     render() {
@@ -13,5 +14,13 @@ class Hours extends Component {
         );
     }
 }
+
+Hours.defaultProps = {
+    schedule: ["Arreglo con datos de un schedule"]
+};
+
+Hours.propTypes = {
+    schedule: PropTypes.array.isRequired
+};
 
 export default Hours;

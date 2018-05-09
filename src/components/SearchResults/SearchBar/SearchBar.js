@@ -4,6 +4,7 @@ import SearchBarFilter from '../SearchBarFilter';
 import TextField from '../../TextField';
 import FilterButton from '../FilterButton';
 import smallDarkSearchIcon from '../../../assets/Global/small-dark-search-icon.svg';
+import PropTypes from "prop-types";
 
 class SearchBar extends Component {
 
@@ -90,5 +91,21 @@ class SearchBar extends Component {
         );
     }
 }
+
+SearchBar.defaultProps = {
+    nameFilter: "Nombre filtro",
+    onSearchRequested: () => {
+      console.log("Se espera una función onSearchRequested");
+    },
+    categoryFilters: ["Arreglo de filtros por categorías"],
+    featureFilters: ["Arreglo de filtros por features"]
+};
+
+SearchBar.propTypes = {
+    nameFilter: PropTypes.string.isRequired,
+    onSearchRequested: PropTypes.func.isRequired,
+    categoryFilters: PropTypes.array.isRequired,
+    featureFilters: PropTypes.array.isRequired
+};
 
 export default SearchBar;

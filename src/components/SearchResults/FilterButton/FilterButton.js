@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './FilterButton.css';
+import PropTypes from "prop-types";
 
 class FilterButton extends Component {
     onClick() {
@@ -18,5 +19,19 @@ class FilterButton extends Component {
         );
     }
 }
+
+FilterButton.defaultProps = {
+    title: "Título",
+    onClick: () => {
+        console.log("Se espera función onClick");
+    },
+    title2: "Título 2"
+};
+
+FilterButton.propTypes = {
+    title: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+    title2: PropTypes.string.isRequired
+};
 
 export default FilterButton;

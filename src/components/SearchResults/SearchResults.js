@@ -6,6 +6,7 @@ import queryString from 'query-string';
 import NavBar from '../NavBar';
 import SearchBar from './SearchBar';
 import SearchResultsList from './SearchResultsList';
+import PropTypes from "prop-types";
 
 class SearchResults extends Component {
 
@@ -112,5 +113,15 @@ class SearchResults extends Component {
         );
     }
 }
+
+SearchResults.defaultProps = {
+    history: [],
+    location: ["Arreglo de un location con datos: search[]"]
+};
+
+SearchResults.propTypes = {
+    history: PropTypes.array.isRequired,
+    location: PropTypes.array.isRequired
+};
 
 export default SearchResults;

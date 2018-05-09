@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './AboutDescription.css';
+import PropTypes from "prop-types";
 
 class AboutDescription extends Component {
     render() {
-        const description = this.props.description
+        const description = this.props.description;
         return (
           <div className="about-description-place-container PraxisNext-Heavy">
             <p className="about-description-place-text">
@@ -13,5 +14,13 @@ class AboutDescription extends Component {
         );
     }
 }
+
+AboutDescription.defaultProps = {
+    description: "Descripción"
+};
+
+AboutDescription.propTypes = {
+    description: PropTypes.string.isRequired
+};
 
 export default AboutDescription;

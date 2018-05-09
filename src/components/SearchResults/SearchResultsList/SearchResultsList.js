@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './SearchResultsList.css';
 import CompactPlaceCell from '../../CompactPlaceCell';
+import PropTypes from "prop-types";
 
 class SearchResultsList extends Component {
     render() {
@@ -25,5 +26,13 @@ class SearchResultsList extends Component {
         );
     }
 }
+
+SearchResultsList.defaultProps = {
+    results: ["Arreglo de results"]
+};
+
+SearchResultsList.propTypes = {
+    results: PropTypes.array.isRequired
+};
 
 export default SearchResultsList;

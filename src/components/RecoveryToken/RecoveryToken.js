@@ -7,6 +7,7 @@ import queryString from 'query-string'
 import Button from "../Button/Button";
 import { NavLink } from 'react-router-dom';
 import SectionTitle from "../SectionTitle/SectionTitle";
+import PropTypes from "prop-types";
 
 class RecoveryToken extends Component {
 
@@ -115,5 +116,15 @@ class RecoveryToken extends Component {
         );
     }
 }
+
+RecoveryToken.defaultProps = {
+    history: [],
+    location: ["Arreglo de un location con datos: search[]"]
+};
+
+RecoveryToken.propTypes = {
+    history: PropTypes.array.isRequired,
+    location: PropTypes.array.isRequired
+};
 
 export default RecoveryToken;

@@ -6,6 +6,7 @@ import filled_heart from '../../../assets/Place/filled_heart.svg';
 import moment from 'moment';
 import {apiUrl} from "../../../Constants";
 import axios from 'axios';
+import PropTypes from "prop-types";
 
 class Hero extends Component {
 
@@ -123,5 +124,20 @@ class Hero extends Component {
         );
     }
 }
+
+Hero.defaultProps = {
+    schedule: ["Arreglo con datos de un schedule"],
+    title: "Título",
+    picture: ["Arreglo con los datos de la imágen"],
+    placeUuid: "uuid de un lugar de 32 caracteres"
+
+};
+
+Hero.propTypes = {
+    schedule: PropTypes.array.isRequired,
+    title: PropTypes.string.isRequired,
+    picture: PropTypes.array.isRequired,
+    placeUuid: PropTypes.string.isRequired
+};
 
 export default Hero;

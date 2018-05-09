@@ -4,6 +4,7 @@ import TextField from '../TextField';
 import Button from '../Button';
 import smallDarkSearchIcon from '../../assets/Global/small-dark-search-icon.svg';
 import { withRouter } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 class TallSearchHeader extends Component {
 
@@ -47,5 +48,13 @@ class TallSearchHeader extends Component {
         );
     }
 }
+
+TallSearchHeader.defaultProps = {
+    history: []
+};
+
+TallSearchHeader.propTypes = {
+    history: PropTypes.array.isRequired
+};
 
 export default withRouter(TallSearchHeader);

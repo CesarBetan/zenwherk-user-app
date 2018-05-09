@@ -4,6 +4,7 @@ import './RegistrationForm.css';
 import NavBar from '../NavBar/index'
 import {apiUrl} from "../../Constants";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import PropTypes from "prop-types";
 
 class RegistrationForm extends Component {
 
@@ -157,5 +158,13 @@ class RegistrationForm extends Component {
         );
     }
 }
+
+RegistrationForm.defaultProps = {
+    history: []
+};
+
+RegistrationForm.propTypes = {
+    history: PropTypes.array.isRequired
+};
 
 export default RegistrationForm;

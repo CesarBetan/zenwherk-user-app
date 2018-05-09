@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './DraggableMap.css';
+import PropTypes from "prop-types";
 
 class DraggableMap extends Component {
 
@@ -84,5 +85,15 @@ class DraggableMap extends Component {
         );
     }
 }
+
+DraggableMap.defaultProps = {
+    onMapPinChanged: () => {
+        console.log("Se espera la función onMapPinChanged con un latLng de String")
+    }
+};
+
+DraggableMap.propTypes = {
+    onMapPinChanged: PropTypes.func.isRequired
+};
 
 export default DraggableMap;

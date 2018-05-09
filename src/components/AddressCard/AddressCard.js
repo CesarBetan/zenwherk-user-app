@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './AddressCard.css';
 import Map from '../Map'
+import PropTypes from 'prop-types';
 
 class AddressCard extends Component {
+
     render() {
-        const { latitude, longitude, address } = this.props
+        const { latitude, longitude, address } = this.props;
         const location = {
           lat: latitude,
           lng: longitude
@@ -21,5 +23,17 @@ class AddressCard extends Component {
         );
     }
 }
+
+AddressCard.defaultProps = {
+    latitude: "[19.00]",
+    longitude:"[90.00]",
+    address: "[Dirección]"
+};
+
+AddressCard.propTypes = {
+    latitude: PropTypes.string.isRequired,
+    longitude: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired
+};
 
 export default AddressCard;

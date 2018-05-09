@@ -7,6 +7,7 @@ import NavBar from '../NavBar';
 import SectionTitle from '../SectionTitle';
 import NearPlacesMap from './NearPlacesMap';
 import NearPlacesList from './NearPlacesList';
+import PropTypes from "prop-types";
 
 class NearPlaces extends Component {
 
@@ -82,5 +83,13 @@ class NearPlaces extends Component {
         );
     }
 }
+
+NearPlaces.defaultProps = {
+    location: ["Array con: {search: [category, lat, long]}"]
+};
+
+NearPlaces.propTypes = {
+    location: PropTypes.array.isRequired
+};
 
 export default NearPlaces;

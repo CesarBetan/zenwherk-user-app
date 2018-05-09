@@ -3,6 +3,7 @@ import './SearchBarFilter.css';
 import SectionTitle from '../../SectionTitle';
 import Button from '../../Button';
 import { categories, features } from './SearchBarFilterData';
+import PropTypes from "prop-types";
 
 class SearchBarFilter extends Component {
 
@@ -126,5 +127,15 @@ class SearchBarFilter extends Component {
         );
     }
 }
+
+SearchBarFilter.defaultProps = {
+    currentTab: "Current Tab",
+    className: "class-name"
+};
+
+SearchBarFilter.propTypes = {
+    currentTab: PropTypes.string.isRequired,
+    className: PropTypes.string.isRequired
+};
 
 export default SearchBarFilter;

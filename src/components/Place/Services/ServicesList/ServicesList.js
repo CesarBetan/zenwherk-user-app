@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ServicesList.css';
 import ServiceCell from '../ServiceCell';
+import PropTypes from "prop-types";
 
 class ServicesList extends Component {
 
@@ -151,5 +152,13 @@ class ServicesList extends Component {
         );
     }
 }
+
+ServicesList.defaultProps = {
+    services: ["Arreglo de services"]
+};
+
+ServicesList.propTypes = {
+    services: PropTypes.array.isRequired
+};
 
 export default ServicesList;

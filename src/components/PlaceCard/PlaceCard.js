@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './PlaceCard.css';
 import placeholderImage from '../../assets/Place/Place Hero.jpg';
 import { withRouter } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 class PlaceCard extends Component {
 
@@ -35,5 +36,13 @@ class PlaceCard extends Component {
         );
     }
 }
+
+PlaceCard.defaultProps = {
+    featuredPlace: ["Arreglo de un lugar con datos: pictuires[], name, description"]
+};
+
+PlaceCard.propTypes = {
+    featuredPlace: PropTypes.array.isRequired
+};
 
 export default withRouter(PlaceCard);

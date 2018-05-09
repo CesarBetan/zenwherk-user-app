@@ -3,6 +3,7 @@ import './About.css';
 import SectionTitle from '../../SectionTitle';
 import AboutDescription from './AboutDescription';
 import FullWidthButton from '../../FullWidthButton';
+import PropTypes from "prop-types";
 
 class About extends Component {
 
@@ -11,7 +12,7 @@ class About extends Component {
     }
 
     render() {
-        const { description, phone, website } = this.props
+        const { description, phone, website } = this.props;
         return (
           <div className="about-place-container PraxisNext-ExtraBlack">
             <SectionTitle title="About"/>
@@ -27,5 +28,17 @@ class About extends Component {
         );
     }
 }
+
+About.defaultProps = {
+    description: "Descripción",
+    phone: "+525512345678",
+    website: "www.zenwherk-user"
+};
+
+About.propTypes = {
+    description: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+    website: PropTypes.string.isRequired
+};
 
 export default About;

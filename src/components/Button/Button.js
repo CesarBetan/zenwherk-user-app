@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Button.css';
+import PropTypes from "prop-types";
 
 class Button extends Component {
     render() {
@@ -17,5 +18,21 @@ class Button extends Component {
         );
     }
 }
+
+Button.defaultProps = {
+    onClick: () => {
+        console.log("Faltó la función onClick")
+    },
+    className:"custom-class",
+    color: "white",
+    title: "Título"
+};
+
+Button.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    className: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+};
 
 export default Button;

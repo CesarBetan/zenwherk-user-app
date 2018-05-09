@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Map.css';
+import PropTypes from "prop-types";
 
 class Map extends Component {
 
@@ -44,5 +45,13 @@ class Map extends Component {
         );
     }
 }
+
+Map.defaultProps = {
+    title: "Título"
+};
+
+Map.propTypes = {
+    title: PropTypes.string.isRequired
+};
 
 export default Map;

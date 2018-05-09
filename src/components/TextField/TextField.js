@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './TextField.css';
+import PropTypes from "prop-types";
 
 class TextField extends Component {
 
@@ -55,5 +56,30 @@ class TextField extends Component {
         );
     }
 }
+
+TextField.defaultProps = {
+    onTextChange: () => {
+        console.log("Se espera función onTextChange");
+    },
+    value: "value",
+    onEnter: () => {
+        console.log("Se espera función onEnter");
+    },
+    name: "nombre",
+    placeholder: "placeholder",
+    icon: "url de un ícono",
+    className: "class-name"
+};
+
+TextField.propTypes = {
+    onTextChange: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+    onEnter: PropTypes.func.isRequired,
+    name: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    className: PropTypes.string.isRequired
+
+};
 
 export default TextField;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './SectionTitle.css';
+import PropTypes from "prop-types";
 
 class SectionTitle extends Component {
     render() {
@@ -10,5 +11,15 @@ class SectionTitle extends Component {
         );
     }
 }
+
+SectionTitle.defaultProps = {
+    className: "class-name",
+    title: "Título"
+};
+
+SectionTitle.propTypes = {
+    className: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+};
 
 export default SectionTitle;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './NavBar.css';
 import Menu from "../Menu/Menu";
 import menuIcon from '../../assets/Global/MenuLine.svg'
+import PropTypes from "prop-types";
 
 class NavBar extends Component {
 
@@ -62,5 +63,13 @@ class NavBar extends Component {
         );
     }
 }
+
+NavBar.defaultProps = {
+    hasSolidBackground: true
+};
+
+NavBar.propTypes = {
+    hasSolidBackground: PropTypes.bool.isRequired
+};
 
 export default NavBar;

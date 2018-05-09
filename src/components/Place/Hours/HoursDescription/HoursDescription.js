@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HoursDescription.css';
+import PropTypes from "prop-types";
 
 class HoursDescription extends Component {
 
@@ -25,7 +26,7 @@ class HoursDescription extends Component {
     }
 
     render() {
-        const schedule = this.props.schedule
+        const schedule = this.props.schedule;
         return (
           <div className="hours-description-container PraxisNext-Heavy">
             {
@@ -48,5 +49,13 @@ class HoursDescription extends Component {
         );
     }
 }
+
+HoursDescription.defaultProps = {
+    schedule: ["Arreglo con datos de un schedule: open, openingTime y closingTime"]
+};
+
+HoursDescription.propTypes = {
+    schedule: PropTypes.array.isRequired
+};
 
 export default HoursDescription;

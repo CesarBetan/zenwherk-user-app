@@ -4,6 +4,7 @@ import placeholderImage from '../../assets/Place/Place Hero.jpg'
 import filledStar from '../../assets/Global/Green Filled Star.svg';
 import emptyStar from '../../assets/Global/Green Empty Star.svg';
 import { withRouter } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 class CompactPlaceCell extends Component {
 
@@ -95,5 +96,27 @@ class CompactPlaceCell extends Component {
         );
     }
 }
+
+CompactPlaceCell.defaultProps = {
+    history: [],
+    place: [],
+    uuid: "uuid de 32 caracteres",
+    rating: 1,
+    category: 1,
+    pictures: "Array",
+    isNearPlace: true,
+    name: "Nombre lugar"
+};
+
+CompactPlaceCell.propTypes = {
+    history: PropTypes.array.isRequired,
+    place: PropTypes.array.isRequired,
+    uuid: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    category: PropTypes.number.isRequired,
+    pictures: PropTypes.string.isRequired,
+    isNearPlace: PropTypes.bool.isRequired,
+    name: PropTypes.string.isRequired
+};
 
 export default withRouter(CompactPlaceCell);

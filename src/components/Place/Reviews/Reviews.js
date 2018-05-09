@@ -5,6 +5,7 @@ import ReviewsList from './ReviewsList';
 import Button from '../../Button';
 import { NavLink } from 'react-router-dom';
 import FullWidthButton from "../../FullWidthButton/FullWidthButton";
+import PropTypes from "prop-types";
 
 class Reviews extends Component {
     render() {
@@ -32,5 +33,15 @@ class Reviews extends Component {
         );
     }
 }
+
+Reviews.defaultProps = {
+    reviews: ["Arreglo de reviews"],
+    uuidPlace: "uuid de un lugar de 32 caracteres"
+};
+
+Reviews.propTypes = {
+    reviews: PropTypes.array.isRequired,
+    uuidPlace: PropTypes.string.isRequired
+};
 
 export default Reviews;

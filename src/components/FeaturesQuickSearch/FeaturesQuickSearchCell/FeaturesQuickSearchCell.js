@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './FeaturesQuickSearchCell.css';
 import placeholderIcon from '../../../assets/Global/FeatureQuickSearchPlaceholder.svg'
+import PropTypes from "prop-types";
 
 class FeaturesQuickSearchCell extends Component {
     onClick() {
@@ -21,5 +22,17 @@ class FeaturesQuickSearchCell extends Component {
         );
     }
 }
+
+FeaturesQuickSearchCell.defaultProps = {
+    onClick: () => {
+        console.log("Se espera función onClick");
+    },
+    feature: ["Array of features: id, iconAlt, icon, and name"]
+};
+
+FeaturesQuickSearchCell.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    feature: PropTypes.array.isRequired
+};
 
 export default FeaturesQuickSearchCell;

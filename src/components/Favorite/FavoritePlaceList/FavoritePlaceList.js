@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './FavoritePlaceList.css';
 import CompactPlaceCell from "../../CompactPlaceCell/CompactPlaceCell";
+import PropTypes from "prop-types";
 
 class FavoritePlaceList extends Component {
     render() {
@@ -25,5 +26,13 @@ class FavoritePlaceList extends Component {
         );
     }
 }
+
+FavoritePlaceList.defaultProps = {
+    userFavorites: []
+};
+
+FavoritePlaceList.propTypes = {
+    userFavorites: PropTypes.array.isRequired
+};
 
 export default FavoritePlaceList;

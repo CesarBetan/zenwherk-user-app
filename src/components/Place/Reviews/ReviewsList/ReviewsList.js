@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ReviewsList.css';
 import ReviewCell from '../ReviewCell';
+import PropTypes from "prop-types";
 
 class ReviewsList extends Component {
     render() {
@@ -22,5 +23,15 @@ class ReviewsList extends Component {
         );
     }
 }
+
+ReviewsList.defaultProps = {
+    reviews: ["Arreglo de algunos reviews"],
+    allReviews: ["Arreglo de todos los reviews"],
+};
+
+ReviewsList.propTypes = {
+    reviews: PropTypes.array.isRequired,
+    allReviews: PropTypes.array.isRequired
+};
 
 export default ReviewsList;

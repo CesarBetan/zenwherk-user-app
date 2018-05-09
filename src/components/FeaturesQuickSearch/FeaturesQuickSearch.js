@@ -3,6 +3,7 @@ import './FeaturesQuickSearch.css';
 import FeaturesQuickSearchCell from './FeaturesQuickSearchCell';
 import { features } from './FeaturesQuickSearchData';
 import { withRouter } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 class FeaturesQuickSearch extends Component {
 
@@ -24,5 +25,13 @@ class FeaturesQuickSearch extends Component {
         );
     }
 }
+
+FeaturesQuickSearch.defaultProps = {
+    history: []
+};
+
+FeaturesQuickSearch.propTypes = {
+    history: PropTypes.array.isRequired
+};
 
 export default withRouter(FeaturesQuickSearch);
