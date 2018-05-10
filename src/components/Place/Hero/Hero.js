@@ -126,17 +126,17 @@ class Hero extends Component {
 }
 
 Hero.defaultProps = {
-    schedule: ["Arreglo con datos de un schedule"],
-    title: "Título",
-    picture: ["Arreglo con los datos de la imágen"],
-    placeUuid: "uuid de un lugar de 32 caracteres"
+    schedule: [],
+    title: "",
+    picture: {},
+    placeUuid: ""
 
 };
 
 Hero.propTypes = {
     schedule: PropTypes.array.isRequired,
     title: PropTypes.string.isRequired,
-    picture: PropTypes.array.isRequired,
+    picture: PropTypes.object.isRequired,
     placeUuid: PropTypes.string.isRequired
 };
 

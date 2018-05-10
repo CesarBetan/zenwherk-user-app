@@ -16,7 +16,7 @@ class AboutDescription extends Component {
 }
 
 AboutDescription.defaultProps = {
-    description: "Descripción"
+    description: ""
 };
 
 AboutDescription.propTypes = {

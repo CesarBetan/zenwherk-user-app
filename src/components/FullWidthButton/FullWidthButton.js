@@ -37,16 +37,16 @@ FullWidthButton.defaultProps = {
         console.log("Hace falta la función onClick")
     },
     targetBlank: false,
-    className:"custom-class",
-    href: "www.zenwherk-user.firesbaseapp.com",
-    title: "Título"
+    className: "",
+    href: "",
+    title: ""
 };
 
 FullWidthButton.propTypes = {
-    onClick: PropTypes.func.isRequired,
-    targetBlank: PropTypes.bool.isRequired,
-    className: PropTypes.string.isRequired,
-    href: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+    targetBlank: PropTypes.bool,
+    className: PropTypes.string,
+    href: PropTypes.string,
     title: PropTypes.string.isRequired
 };
 

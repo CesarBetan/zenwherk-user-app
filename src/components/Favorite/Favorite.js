@@ -5,7 +5,6 @@ import NavBar from '../NavBar/index';
 import axios from "axios/index";
 import FavoritePlaceList from "./FavoritePlaceList/FavoritePlaceList";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import PropTypes from "prop-types";
 
 class Favorite extends Component {
 
@@ -51,13 +50,5 @@ class Favorite extends Component {
         );
     }
 }
-
-Favorite.defaultProps = {
-    history: []
-};
-
-Favorite.propTypes = {
-    history: PropTypes.array.isRequired
-};
 
 export default Favorite;

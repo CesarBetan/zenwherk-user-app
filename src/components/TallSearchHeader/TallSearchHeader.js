@@ -4,7 +4,6 @@ import TextField from '../TextField';
 import Button from '../Button';
 import smallDarkSearchIcon from '../../assets/Global/small-dark-search-icon.svg';
 import { withRouter } from 'react-router-dom';
-import PropTypes from "prop-types";
 
 class TallSearchHeader extends Component {
 
@@ -33,14 +32,15 @@ class TallSearchHeader extends Component {
           <div className="tall-search-header-container PraxisNext-ExtraBlack">
             <div className="tall-search-header-wrapper">
               <span className="tall-search-header-title">
-                ¿Dónde trabajaremos<yarn start/>el día de hoy?
+                ¿Dónde trabajaremos<br/>el día de hoy?
               </span>
               <div className="tall-search-header-textfield-wrapper">
                 <TextField className="tall-search-header-textfield"
                 name="query" placeholder="¿Qué necesitas?"
                 icon={smallDarkSearchIcon}
                 onEnter={this.onSearch.bind(this)}
-                onTextChange={this.onTextChange.bind(this)}/>
+                onTextChange={this.onTextChange.bind(this)}
+                value=''/>
               </div>
               <Button color="white" title="Buscar" onClick={this.onSearch.bind(this)}/>
             </div>
@@ -48,13 +48,5 @@ class TallSearchHeader extends Component {
         );
     }
 }
-
-TallSearchHeader.defaultProps = {
-    history: []
-};
-
-TallSearchHeader.propTypes = {
-    history: PropTypes.array.isRequired
-};
 
 export default withRouter(TallSearchHeader);

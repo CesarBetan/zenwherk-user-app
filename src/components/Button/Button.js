@@ -23,15 +23,15 @@ Button.defaultProps = {
     onClick: () => {
         console.log("Faltó la función onClick")
     },
-    className:"custom-class",
-    color: "white",
-    title: "Título"
+    className:"",
+    color: "",
+    title: ""
 };
 
 Button.propTypes = {
     onClick: PropTypes.func.isRequired,
-    className: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    color: PropTypes.string,
     title: PropTypes.string.isRequired
 };
 

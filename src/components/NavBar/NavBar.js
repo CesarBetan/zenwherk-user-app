@@ -65,7 +65,7 @@ class NavBar extends Component {
 }
 
 NavBar.defaultProps = {
-    hasSolidBackground: true
+    hasSolidBackground: false
 };
 
 NavBar.propTypes = {

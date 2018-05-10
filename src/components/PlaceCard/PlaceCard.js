@@ -38,11 +38,11 @@ class PlaceCard extends Component {
 }
 
 PlaceCard.defaultProps = {
-    featuredPlace: ["Arreglo de un lugar con datos: pictuires[], name, description"]
+    featuredPlace: {}
 };
 
 PlaceCard.propTypes = {
-    featuredPlace: PropTypes.array.isRequired
+    featuredPlace: PropTypes.object.isRequired
 };
 
 export default withRouter(PlaceCard);

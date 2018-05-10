@@ -5,7 +5,6 @@ import {apiUrl} from "../../../../Constants";
 import axios from "axios/index";
 import filledStar from '../../../../assets/Place/Filled Star.svg';
 import emptyStar from '../../../../assets/Place/Empty Star.svg';
-import PropTypes from "prop-types";
 
 class ReviewForm extends Component {
 
@@ -210,13 +209,5 @@ class ReviewForm extends Component {
         );
     }
 }
-
-ReviewForm.defaultProps = {
-    history: []
-};
-
-ReviewForm.propTypes = {
-    history: PropTypes.array.isRequired
-};
 
 export default ReviewForm;

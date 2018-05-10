@@ -17,7 +17,8 @@ class TextField extends Component {
       if(this.props.onTextChange !== undefined) {
         this.props.onTextChange(event.target.value);
       }
-      if(event.target.value === null || event.target.value === "") {
+      console.log(event.target.value)
+      if(event.target.value === null || event.target.value === "" || event.target.value === undefined) {
         this.setState({ hasText : false, text: '' })
       } else {
         this.setState({ hasText : true, text: event.target.value })
@@ -61,14 +62,14 @@ TextField.defaultProps = {
     onTextChange: () => {
         console.log("Se espera función onTextChange");
     },
-    value: "value",
+    value: "",
     onEnter: () => {
         console.log("Se espera función onEnter");
     },
-    name: "nombre",
-    placeholder: "placeholder",
-    icon: "url de un ícono",
-    className: "class-name"
+    name: "",
+    placeholder: "",
+    icon: "",
+    className: ""
 };
 
 TextField.propTypes = {
@@ -77,7 +78,7 @@ TextField.propTypes = {
     onEnter: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.string,
     className: PropTypes.string.isRequired
 
 };

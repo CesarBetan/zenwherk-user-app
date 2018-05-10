@@ -26,12 +26,12 @@ class ReviewsList extends Component {
 
 ReviewsList.defaultProps = {
     reviews: ["Arreglo de algunos reviews"],
-    allReviews: ["Arreglo de todos los reviews"],
+    allReviews: false,
 };
 
 ReviewsList.propTypes = {
     reviews: PropTypes.array.isRequired,
-    allReviews: PropTypes.array.isRequired
+    allReviews: PropTypes.bool.isRequired
 };
 
 export default ReviewsList;

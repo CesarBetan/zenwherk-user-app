@@ -13,7 +13,7 @@ class PlaceForm extends Component {
     }
 
     handleChangeFeatureEnum(event) {
-        this.props.handleChangeFeatureEnum(this.props.id, parseInt(event.target.value));
+        this.props.handleChangeFeatureEnum(this.props.id, parseInt(event.target.value, 10));
     }
 
     handleChangeFeatureDesc(event) {

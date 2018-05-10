@@ -14,8 +14,9 @@ class AboutUs extends Component {
                       <h5>Versión: 1.0.0</h5>
                       <h4>Zenwherk</h4>
                       <h3>
-                          Aplicación desarrollada en ITESM Campus Ciudad de Mexico en la materia:
-                          <h2>Laboratorio de desarrollo de aplicaciones Web</h2>
+                          Aplicación desarrollada en ITESM Campus Ciudad de Mexico para:
+                          <br/><br/>
+                          <span>Laboratorio de desarrollo de aplicaciones Web</span>
                       </h3>
                       <h5>Profesor: Maykel Farha Boulos</h5>
                   </div>

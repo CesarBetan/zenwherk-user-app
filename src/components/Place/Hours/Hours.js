@@ -16,7 +16,7 @@ class Hours extends Component {
 }
 
 Hours.defaultProps = {
-    schedule: ["Arreglo con datos de un schedule"]
+    schedule: []
 };
 
 Hours.propTypes = {

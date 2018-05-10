@@ -154,7 +154,7 @@ class ServicesList extends Component {
 }
 
 ServicesList.defaultProps = {
-    services: ["Arreglo de services"]
+    services: []
 };
 
 ServicesList.propTypes = {

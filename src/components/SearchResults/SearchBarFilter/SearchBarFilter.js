@@ -129,8 +129,8 @@ class SearchBarFilter extends Component {
 }
 
 SearchBarFilter.defaultProps = {
-    currentTab: "Current Tab",
-    className: "class-name"
+    currentTab: "Categories",
+    className: ""
 };
 
 SearchBarFilter.propTypes = {

@@ -85,11 +85,11 @@ class NearPlaces extends Component {
 }
 
 NearPlaces.defaultProps = {
-    location: ["Array con: {search: [category, lat, long]}"]
+    location: {}
 };
 
 NearPlaces.propTypes = {
-    location: PropTypes.array.isRequired
+    location: PropTypes.object.isRequired
 };
 
 export default NearPlaces;

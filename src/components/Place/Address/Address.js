@@ -18,14 +18,14 @@ class Address extends Component {
 }
 
 Address.defaultProps = {
-    latitude: "19.00",
-    longitude: "90.00",
-    address: "Dirección"
+    latitude: 0.0,
+    longitude: 0.0,
+    address: ""
 };
 
 Address.propTypes = {
-    latitude: PropTypes.string.isRequired,
-    longitude: PropTypes.string.isRequired,
+    latitude: PropTypes.number.isRequired,
+    longitude: PropTypes.number.isRequired,
     address: PropTypes.string.isRequired
 };
 

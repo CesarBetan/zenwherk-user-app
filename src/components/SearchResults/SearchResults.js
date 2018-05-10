@@ -115,13 +115,11 @@ class SearchResults extends Component {
 }
 
 SearchResults.defaultProps = {
-    history: [],
-    location: ["Arreglo de un location con datos: search[]"]
+    location: {}
 };
 
 SearchResults.propTypes = {
-    history: PropTypes.array.isRequired,
-    location: PropTypes.array.isRequired
+    location: PropTypes.object.isRequired
 };
 
 export default SearchResults;

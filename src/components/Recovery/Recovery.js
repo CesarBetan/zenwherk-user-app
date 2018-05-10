@@ -4,7 +4,6 @@ import {apiUrl} from "../../Constants";
 import NavBar from '../NavBar/index';
 import axios from "axios/index";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import PropTypes from "prop-types";
 
 class Recovery extends Component {
 
@@ -101,13 +100,5 @@ class Recovery extends Component {
         );
     }
 }
-
-Recovery.defaultProps = {
-    history: []
-};
-
-Recovery.propTypes = {
-    history: PropTypes.array.isRequired
-};
 
 export default Recovery;

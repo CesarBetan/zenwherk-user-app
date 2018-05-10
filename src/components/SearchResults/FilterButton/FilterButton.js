@@ -21,11 +21,11 @@ class FilterButton extends Component {
 }
 
 FilterButton.defaultProps = {
-    title: "Título",
+    title: "",
     onClick: () => {
         console.log("Se espera función onClick");
     },
-    title2: "Título 2"
+    title2: ""
 };
 
 FilterButton.propTypes = {

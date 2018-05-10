@@ -15,8 +15,6 @@ import PlaceImagesForm from './PlaceImagesForm';
 import PlaceFeaturesForm from './PlaceFeaturesForm';
 import PlaceSchedulesForm from "./PlaceSchedulesForm/PlaceSchedulesForm";
 import FullWidthButton from "../FullWidthButton/FullWidthButton";
-import PropTypes from "prop-types";
-
 
 class PlaceForm extends Component {
 
@@ -304,13 +302,5 @@ class PlaceForm extends Component {
         );
     }
 }
-
-PlaceForm.defaultProps = {
-    history: []
-};
-
-PlaceForm.propTypes = {
-    history: PropTypes.array.isRequired
-};
 
 export default PlaceForm;

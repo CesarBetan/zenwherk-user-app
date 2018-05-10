@@ -25,7 +25,7 @@ class Gallery extends Component {
 }
 
 Gallery.defaultProps = {
-    pictures: ["Arreglo con datos de una imágen"]
+    pictures: []
 };
 
 Gallery.propTypes = {

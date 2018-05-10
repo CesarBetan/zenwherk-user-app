@@ -24,7 +24,7 @@ class Services extends Component {
 }
 
 Services.defaultProps = {
-    services: ["Arreglo de services"]
+    services: []
 };
 
 Services.propTypes = {

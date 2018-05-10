@@ -97,8 +97,8 @@ SearchBar.defaultProps = {
     onSearchRequested: () => {
       console.log("Se espera una función onSearchRequested");
     },
-    categoryFilters: ["Arreglo de filtros por categorías"],
-    featureFilters: ["Arreglo de filtros por features"]
+    categoryFilters: [],
+    featureFilters: []
 };
 
 SearchBar.propTypes = {

@@ -30,9 +30,9 @@ class About extends Component {
 }
 
 About.defaultProps = {
-    description: "Descripción",
-    phone: "+525512345678",
-    website: "www.zenwherk-user"
+    description: "",
+    phone: "",
+    website: ""
 };
 
 About.propTypes = {

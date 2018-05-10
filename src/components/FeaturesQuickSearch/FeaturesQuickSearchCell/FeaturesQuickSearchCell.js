@@ -27,12 +27,12 @@ FeaturesQuickSearchCell.defaultProps = {
     onClick: () => {
         console.log("Se espera función onClick");
     },
-    feature: ["Array of features: id, iconAlt, icon, and name"]
+    feature: {}
 };
 
 FeaturesQuickSearchCell.propTypes = {
     onClick: PropTypes.func.isRequired,
-    feature: PropTypes.array.isRequired
+    feature: PropTypes.object.isRequired
 };
 
 export default FeaturesQuickSearchCell;

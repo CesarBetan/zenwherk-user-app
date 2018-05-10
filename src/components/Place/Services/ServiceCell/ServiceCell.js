@@ -45,11 +45,11 @@ class ServiceCell extends Component {
 }
 
 ServiceCell.defaultProps = {
-    service: ["Arreglo con los datos de un service: featureEnum, iconAlt, featureDescription"]
+    service: {}
 };
 
 ServiceCell.propTypes = {
-    service: PropTypes.array.isRequired
+    service: PropTypes.object.isRequired
 };
 
 export default ServiceCell;

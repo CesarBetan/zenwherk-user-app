@@ -118,13 +118,11 @@ class RecoveryToken extends Component {
 }
 
 RecoveryToken.defaultProps = {
-    history: [],
-    location: ["Arreglo de un location con datos: search[]"]
+    location: {}
 };
 
 RecoveryToken.propTypes = {
-    history: PropTypes.array.isRequired,
-    location: PropTypes.array.isRequired
+    location: PropTypes.object.isRequired
 };
 
 export default RecoveryToken;

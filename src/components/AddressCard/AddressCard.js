@@ -25,14 +25,14 @@ class AddressCard extends Component {
 }
 
 AddressCard.defaultProps = {
-    latitude: "[19.00]",
-    longitude:"[90.00]",
+    latitude: 0.0,
+    longitude: 0.0,
     address: "[Dirección]"
 };
 
 AddressCard.propTypes = {
-    latitude: PropTypes.string.isRequired,
-    longitude: PropTypes.string.isRequired,
+    latitude: PropTypes.number.isRequired,
+    longitude: PropTypes.number.isRequired,
     address: PropTypes.string.isRequired
 };
 

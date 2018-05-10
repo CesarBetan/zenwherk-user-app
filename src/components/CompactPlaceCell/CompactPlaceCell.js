@@ -98,23 +98,21 @@ class CompactPlaceCell extends Component {
 }
 
 CompactPlaceCell.defaultProps = {
-    history: [],
-    place: [],
-    uuid: "uuid de 32 caracteres",
-    rating: 1,
-    category: 1,
-    pictures: "Array",
-    isNearPlace: true,
-    name: "Nombre lugar"
+    place: {},
+    uuid: "",
+    rating: -1,
+    category: -1,
+    pictures: [],
+    isNearPlace: false,
+    name: ""
 };
 
 CompactPlaceCell.propTypes = {
-    history: PropTypes.array.isRequired,
-    place: PropTypes.array.isRequired,
+    place: PropTypes.object.isRequired,
     uuid: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     category: PropTypes.number.isRequired,
-    pictures: PropTypes.string.isRequired,
+    pictures: PropTypes.array,
     isNearPlace: PropTypes.bool.isRequired,
     name: PropTypes.string.isRequired
 };

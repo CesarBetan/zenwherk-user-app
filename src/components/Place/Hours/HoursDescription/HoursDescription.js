@@ -51,7 +51,7 @@ class HoursDescription extends Component {
 }
 
 HoursDescription.defaultProps = {
-    schedule: ["Arreglo con datos de un schedule: open, openingTime y closingTime"]
+    schedule: []
 };
 
 HoursDescription.propTypes = {

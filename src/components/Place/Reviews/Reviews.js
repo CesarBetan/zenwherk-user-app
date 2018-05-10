@@ -35,8 +35,8 @@ class Reviews extends Component {
 }
 
 Reviews.defaultProps = {
-    reviews: ["Arreglo de reviews"],
-    uuidPlace: "uuid de un lugar de 32 caracteres"
+    reviews: [],
+    uuidPlace: ""
 };
 
 Reviews.propTypes = {

@@ -15,7 +15,7 @@ class PictureCard extends Component {
 }
 
 PictureCard.defaultProps = {
-    picture: "url de una imágen"
+    picture: ""
 };
 
 PictureCard.propTypes = {

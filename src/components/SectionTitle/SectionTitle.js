@@ -13,8 +13,8 @@ class SectionTitle extends Component {
 }
 
 SectionTitle.defaultProps = {
-    className: "class-name",
-    title: "Título"
+    className: "",
+    title: ""
 };
 
 SectionTitle.propTypes = {
